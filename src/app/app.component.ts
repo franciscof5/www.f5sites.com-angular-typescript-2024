@@ -11,4 +11,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'f5sites';
+  
+  // Método que carrega o script main.js dinamicamente
+  private loadScript(url: string) {
+    const script = document.createElement('script');
+    script.src = url;
+    script.async = true;
+    document.body.appendChild(script);
+  }
+
+  ngAfterViewInit() {
+    // Carrega o main.js após a view ser inicializada
+    this.loadScript('assets/js/main.js');
+  }
 }
