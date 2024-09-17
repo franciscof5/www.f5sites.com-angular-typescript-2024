@@ -1,3 +1,18 @@
 {
-  "title":"We create websites and applications<br />since 2005"
+  "title":"We create"
+,
+  "menu": {
+    "home": "AAHome",
+    "features": "Funzionalità",
+    "clients": "Clienti",
+    "prices": "Prezzi",
+    "contact": "Contatto"
+  },
+  "header": {
+    "title": "Benvenuti",
+    "subtitle": "AAA Creiamo siti web e applicazioni dal 2005",
+    "description": "Creare un'app, un sito web e un sistema per gestire e promuovere la tua attività è la chiave del successo. Con la digitalizzazione dell'economia, siamo tutti connessi. Ignorare questo significa lasciare spazio alla concorrenza. F5 Sites è un'azienda brasiliana appena arrivata in Italia, pronta a portare vantaggi competitivi alle aziende italiane a basso costo. Vuoi parlare di come digitalizzare la tua attività?",
+    "watchVideo": "Guarda il video",
+    "contact": "Contatto"
+  }
 }

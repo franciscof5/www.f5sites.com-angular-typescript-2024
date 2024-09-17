@@ -1,745 +1,734 @@
-
-
-<!-- <div class="preloade">
+<ng-container *transloco="let t; lang: 'en'">
+  <!-- <div class="preloade">
 <span><i class="ti-mobile"></i></span>
 </div> -->
 
-<!--Header-Area-->
-<header class="blue-bg relative fix" id="home">
-  <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
-  <!--Mainmenu-->
-  <nav
-    class="navbar navbar-default mainmenu-area navbar-fixed-top"
-    data-spy="affix"
-    data-offset-top="60"
-  >
-    <div class="container">
-      <div class="navbar-header">
-        <button
-          type="button"
-          data-toggle="collapse"
-          class="navbar-toggle"
-          data-target="#mainmenu"
-        >
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#" class="navbar-brand">
-          <img src="../assets/images/logo.png" alt="" />
-          <!--h2 class="text-white logo-text">appro</h2-->
-        </a>
+  <!--Header-Area-->
+  <header class="blue-bg relative fix" id="home">
+    <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
+    <!--Mainmenu-->
+    <nav
+      class="navbar navbar-default mainmenu-area navbar-fixed-top"
+      data-spy="affix"
+      data-offset-top="60"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            data-toggle="collapse"
+            class="navbar-toggle"
+            data-target="#mainmenu"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            <img src="../assets/images/logo.png" alt="" />
+            <!--h2 class="text-white logo-text">appro</h2-->
+          </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="mainmenu">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#home">{{ t("menu.home") }}</a>
+            </li>
+            <li>
+              <a href="#feature">{{ t("menu.features") }}</a>
+            </li>
+            <li>
+              <a href="#client">{{ t("menu.clients") }}</a>
+            </li>
+            <li>
+              <a href="#price">{{ t("menu.prices") }}</a>
+            </li>
+            <li>
+              <a href="#contact">{{ t("menu.contact") }}</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse navbar-right" id="mainmenu">
-        <ul class="nav navbar-nav">
-          <li><a href="#home">Home</a></li>
-          <!--li><a href="#blog">Blog</a></li-->
-          <!--li><a href="#work">Lavoro</a></li-->
-          <li><a href="#feature">Funzionalità</a></li>
-          <!--li><a href="#team">Team</a></li-->
-          <li><a href="#client">Clienti</a></li>
-          <li><a href="#price">Prezzi</a></li>
-          <li><a href="#contact">Contatto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--Mainmenu/-->
-  <div class="space-100"></div>
-  <div class="space-20 hidden-xs"></div>
-  <!--Header-Text-->
-  <div class="container text-white">
-    <div class="row">
-      <div class="col-xs-12 col-md-8">
-        <div class="space-100"></div>
-        <ng-container *transloco="let t">
-          <p>{{ t('title') }}</p>
-        
-        </ng-container>
-        <h1>Creiamo siti web e applicazioni<br />dal 2005</h1>
-        <!-- <div class="space-10"></div> -->
-        <h2>🇧🇷🇺🇸🇮🇹🇪🇸</h2>
-        <p style="font-size: 18px">
-          Creare un'app, un sito web e un sistema per gestire e promuovere
-          la tua attività è la chiave del successo. Con la digitalizzazione
-          dell'economia, siamo tutti connessi. Ignorare questo significa
-          lasciare spazio alla concorrenza. F5 Sites è un'azienda brasiliana
-          appena arrivata in Italia, pronta a portare vantaggi competitivi
-          alle aziende italiane a basso costo. Vuoi parlare di come
-          digitalizzare la tua attività?
-        </p>
-        <div class="space-50"></div>
-        <a
-          href="https://www.youtube.com/watch?v=ysWq4pA2TBA"
-          class="btn btn-icon video-popup btn-warning"
-          style="padding: 12px 28px 12px 50px"
-          ><span class="ti-control-play" style="top: 2px; left: 2px"></span
-          >Guarda il video</a
-        >
-        <a
-          href="#contact"
-          class="btn btn-warning"
-          style="padding: 12px 22px 12px 22px"
-          >Contatto</a
-        >
-      </div>
-      <div class="hidden-xs hidden-sm col-md-4">
-        <div class="home_screen_slide">
-          <div class="single_screen_slide wow fadeInRight">
-            <div class="item">
-              <img src="../assets/images/screen/screen1.jpg" alt="" />
-            </div>
-            <div class="item">
-              <img src="../assets/images/screen/screen2.jpg" alt="" />
-            </div>
-            <div class="item">
-              <img src="../assets/images/screen/screen3.jpg" alt="" />
-            </div>
-            <div class="item">
-              <img src="../assets/images/screen/screen4.jpg" alt="" />
-            </div>
-            <div class="item">
-              <img src="../assets/images/screen/screen5.jpg" alt="" />
+    </nav>
+    <!--Mainmenu/-->
+    <div class="space-100"></div>
+    <div class="space-20 hidden-xs"></div>
+    <!--Header-Text-->
+    <div class="container text-white">
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <div class="space-100"></div>
+
+          <p>{{ t("header.title") }}</p>
+
+          <h1>{{ t("header.subtitle") }}</h1>
+          <h2>🇧🇷🇺🇸🇮🇹🇪🇸</h2>
+          <p style="font-size: 18px">
+            {{ t("header.description") }}
+          </p>
+          <div class="space-50"></div>
+          <a
+            href="https://www.youtube.com/watch?v=ysWq4pA2TBA"
+            class="btn btn-icon video-popup btn-warning"
+            style="padding: 12px 28px 12px 50px"
+            ><span class="ti-control-play" style="top: 2px; left: 2px"></span
+            >{{ t("header.watchVideo") }}</a
+          >
+          <a
+            href="#contact"
+            class="btn btn-warning"
+            style="padding: 12px 22px 12px 22px"
+            >{{ t("header.contact") }}</a
+          >
+        </div>
+        <div class="hidden-xs hidden-sm col-md-4">
+          <div class="home_screen_slide">
+            <div class="single_screen_slide wow fadeInRight">
+              <div class="item">
+                <img src="../assets/images/screen/screen1.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen2.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen3.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen4.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen5.jpg" alt="" />
+              </div>
             </div>
           </div>
+          <div class="home_screen_nav">
+            <span class="ti-angle-left testi_prev"></span>
+            <span class="ti-angle-right testi_next"></span>
+          </div>
         </div>
-        <div class="home_screen_nav">
-          <span class="ti-angle-left testi_prev"></span>
-          <span class="ti-angle-right testi_next"></span>
+      </div>
+      <div class="space-80"></div>
+    </div>
+    <!--Header-Text/-->
+  </header>
+  <!--Header-Area/-->
+
+  <!--React Docker WP-Area-->
+  <section>
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="well well-hover text-center">
+            <p class="md-icon" style="font-size: 50px">
+              <span class="ti-mobile"></span>
+            </p>
+            <div class="space-2"></div>
+            <h5 class="text-uppercase" style="font-size: 22px">React</h5>
+            <p>
+              Un framework completo per la creazione di applicazioni web moderne
+              e facili da usare, integrato con API esterne e WordPress.
+            </p>
+          </div>
         </div>
+        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="well well-hover text-center">
+            <p class="md-icon" style="font-size: 50px">
+              <span class="ti-cloud-up"></span>
+            </p>
+            <div class="space-2"></div>
+            <h5 class="text-uppercase" style="font-size: 22px">Docker</h5>
+            <p>
+              Soluzioni per mettere il tuo sito web e applicazioni in produzione
+              in qualsiasi infrastruttura cloud.
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="well well-hover text-center">
+            <p class="md-icon" style="font-size: 50px">
+              <span class="ti-wordpress"></span>
+            </p>
+            <div class="space-2"></div>
+            <h5 class="text-uppercase" style="font-size: 22px">Rest API</h5>
+            <p>
+              WordPress fornisce uno strato di interazione REST per facilitare
+              il rapporto delle aziende con le loro applicazioni
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--React Docker WP-Area-->
+
+  <!--Client-Section -->
+  <section class="gray-bg" id="client">
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h3 class="text-uppercase">Clienti</h3>
+          <p>Di seguito i nostri principali clienti.</p>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <a href="https://ftd.com.br" alt="FTD" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="single-team relative panel fix">
+              <img src="../assets/images/client/FTD-logo.png" alt="" />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">FTD 🇧🇷</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://cogna.com.br" alt="cogna" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="single-team relative panel fix">
+              <img src="../assets/images/client/cogna--600.png" alt="" />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">Cogna 🇧🇷</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.ambev.com.br" alt="Ambev" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="single-team relative panel fix">
+              <img
+                src="../assets/images/client/ambev-logo-3-47191638.png"
+                alt=""
+              />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">Ambev 🇧🇷</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.edocente.com.br/" alt="edocente" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="single-team relative panel fix">
+              <img src="../assets/images/client/edocente_logo.png" alt="" />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">E-Docente 🇧🇷</h5>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
     <div class="space-80"></div>
-  </div>
-  <!--Header-Text/-->
-  </header>
-  <!--Header-Area/-->
-  
-  <!--React Docker WP-Area-->
-  <section>
-  <div class="space-80"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
-        <div class="well well-hover text-center">
-          <p class="md-icon" style="font-size: 50px">
-            <span class="ti-mobile"></span>
-          </p>
-          <div class="space-2"></div>
-          <h5 class="text-uppercase" style="font-size: 22px">React</h5>
-          <p>
-            Un framework completo per la creazione di applicazioni web
-            moderne e facili da usare, integrato con API esterne e
-            WordPress.
-          </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="well well-hover text-center">
-          <p class="md-icon" style="font-size: 50px">
-            <span class="ti-cloud-up"></span>
-          </p>
-          <div class="space-2"></div>
-          <h5 class="text-uppercase" style="font-size: 22px">Docker</h5>
-          <p>
-            Soluzioni per mettere il tuo sito web e applicazioni in
-            produzione in qualsiasi infrastruttura cloud.
-          </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="well well-hover text-center">
-          <p class="md-icon" style="font-size: 50px">
-            <span class="ti-wordpress"></span>
-          </p>
-          <div class="space-2"></div>
-          <h5 class="text-uppercase" style="font-size: 22px">Rest API</h5>
-          <p>
-            WordPress fornisce uno strato di interazione REST per facilitare
-            il rapporto delle aziende con le loro applicazioni
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-  <!--React Docker WP-Area-->
-  
-  <!--Client-Section -->
-  <section class="gray-bg" id="client">
-  <div class="space-80"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-        <h3 class="text-uppercase">Clienti</h3>
-        <p>Di seguito i nostri principali clienti.</p>
-      </div>
-    </div>
-    <div class="space-60"></div>
-    <div class="row">
-      <a href="https://ftd.com.br" alt="FTD" target="_blank">
-        <div
-          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-          data-wow-delay="0.2s"
-        >
-          <div class="single-team relative panel fix">
-            <img src="../assets/images/client/FTD-logo.png" alt="" />
-            <div class="team_details text-center">
-              <h5 class="text-uppercase">FTD 🇧🇷</h5>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://cogna.com.br" alt="cogna" target="_blank">
-        <div
-          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-          data-wow-delay="0.4s"
-        >
-          <div class="single-team relative panel fix">
-            <img src="../assets/images/client/cogna--600.png" alt="" />
-            <div class="team_details text-center">
-              <h5 class="text-uppercase">Cogna 🇧🇷</h5>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://www.ambev.com.br" alt="Ambev" target="_blank">
-        <div
-          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-          data-wow-delay="0.6s"
-        >
-          <div class="single-team relative panel fix">
-            <img src="../assets/images/client/ambev-logo-3-47191638.png" alt="" />
-            <div class="team_details text-center">
-              <h5 class="text-uppercase">Ambev 🇧🇷</h5>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://www.edocente.com.br/" alt="edocente" target="_blank">
-        <div
-          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-          data-wow-delay="0.8s"
-        >
-          <div class="single-team relative panel fix">
-            <img src="../assets/images/client/edocente_logo.png" alt="" />
-            <div class="team_details text-center">
-              <h5 class="text-uppercase">E-Docente 🇧🇷</h5>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="space-80"></div>
   </section>
   <!--Client-Section/-->
-  
+
   <!--Feature-Section-->
   <section class="fix">
-  <!--div class="space-60"></div-->
-  <div class="container" id="feature">
-    <div class="space-60"></div>
-    <div class="row wow fadeInUp">
-      <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-        <h3 class="text-uppercase">Funzionalità</h3>
-        <p>Tu decidi: noi facciamo.</p>
-      </div>
-    </div>
-    <div class="space-20"></div>
-    <div class="row feature-area">
-      <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft">
-        <div class="space-30"></div>
-        <a href="#feature1" data-toggle="tab">
-          <div class="media single-feature">
-            <div class="media-body text-right" style="width: 90%">
-              <h5>Progetti Robusti</h5>
-              <p>
-                La qualità del codice si traduce in facilità di adattamento
-                del prodotto alle esigenze dei nostri clienti
-              </p>
-            </div>
-            <div class="media-right">
-              <div class="border-icon">
-                <span class="ti-light-bulb"></span>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class="space-30"></div>
-        <a href="#feature2" data-toggle="tab">
-          <div class="media single-feature">
-            <div class="media-body text-right" style="width: 90%">
-              <h5>Su misura</h5>
-              <p>
-                Funzionalità create appositamente per il tuo business, fatte
-                su misura
-              </p>
-            </div>
-            <div class="media-right">
-              <div class="border-icon">
-                <span class="ti-cup"></span>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class="space-30"></div>
-        <a href="#feature3" data-toggle="tab">
-          <div class="media single-feature">
-            <div class="media-body text-right" style="width: 90%">
-              <h5>Intelligente</h5>
-              <p>
-                La capacità di un'applicazione di anticipare e prevedere
-                l'utente
-              </p>
-            </div>
-            <div class="media-right">
-              <div class="border-icon">
-                <span class="ti-comments"></span>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class="space-30"></div>
-      </div>
-      <div class="col-md-4 text-center fix wow fadeIn">
-        <div class="relative">
-          <img
-            src="../assets/images/lavaggioapp-sample-2024-08-20at19.40.53-ezgif.com-resize-small.gif"
-            alt=""
-            style="
-              min-width: 230px;
-              margin-bottom: 20px;
-              border: 4px solid;
-              border-radius: 15px;
-            "
-          />
+    <!--div class="space-60"></div-->
+    <div class="container" id="feature">
+      <div class="space-60"></div>
+      <div class="row wow fadeInUp">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h3 class="text-uppercase">Funzionalità</h3>
+          <p>Tu decidi: noi facciamo.</p>
         </div>
       </div>
-      <div
-        class="hidden-xs hidden-sm col-xs-12 col-sm-6 col-md-4 wow fadeInRight"
-      >
-        <div class="space-30"></div>
-        <a href="#feature4" data-toggle="tab">
-          <div class="media single-feature">
-            <div class="media-left">
-              <div class="border-icon">
-                <span class="ti-eye"></span>
+      <div class="space-20"></div>
+      <div class="row feature-area">
+        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft">
+          <div class="space-30"></div>
+          <a href="#feature1" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-body text-right" style="width: 90%">
+                <h5>Progetti Robusti</h5>
+                <p>
+                  La qualità del codice si traduce in facilità di adattamento
+                  del prodotto alle esigenze dei nostri clienti
+                </p>
+              </div>
+              <div class="media-right">
+                <div class="border-icon">
+                  <span class="ti-light-bulb"></span>
+                </div>
               </div>
             </div>
-            <div class="media-body">
-              <h5>Innovativo</h5>
-              <p>
-                Qualità delle schermate più moderne per gli utenti più
-                esigenti
-              </p>
-            </div>
-          </div>
-        </a>
-        <div class="space-30"></div>
-        <a href="#feature5" data-toggle="tab">
-          <div class="media single-feature">
-            <div class="media-left">
-              <div class="border-icon">
-                <span class="ti-shine"></span>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature2" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-body text-right" style="width: 90%">
+                <h5>Su misura</h5>
+                <p>
+                  Funzionalità create appositamente per il tuo business, fatte
+                  su misura
+                </p>
+              </div>
+              <div class="media-right">
+                <div class="border-icon">
+                  <span class="ti-cup"></span>
+                </div>
               </div>
             </div>
-            <div class="media-body">
-              <h5>PWA</h5>
-              <p>
-                È nativo e si trova nello store di Google e Apple, ma può
-                anche essere accessibile dal browser
-              </p>
-            </div>
-          </div>
-        </a>
-        <div class="space-30"></div>
-        <a href="#feature6" data-toggle="tab">
-          <div class="media single-feature">
-            <div class="media-left">
-              <div class="border-icon">
-                <span class="ti-layout-slider"></span>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature3" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-body text-right" style="width: 90%">
+                <h5>Intelligente</h5>
+                <p>
+                  La capacità di un'applicazione di anticipare e prevedere
+                  l'utente
+                </p>
+              </div>
+              <div class="media-right">
+                <div class="border-icon">
+                  <span class="ti-comments"></span>
+                </div>
               </div>
             </div>
-            <div class="media-body">
-              <h5>Design Creativo</h5>
-              <p>
-                Creazione di schermate esclusive e originali per il tuo
-                progetto
-              </p>
-            </div>
+          </a>
+          <div class="space-30"></div>
+        </div>
+        <div class="col-md-4 text-center fix wow fadeIn">
+          <div class="relative">
+            <img
+              src="../assets/images/lavaggioapp-sample-2024-08-20at19.40.53-ezgif.com-resize-small.gif"
+              alt=""
+              style="
+                min-width: 230px;
+                margin-bottom: 20px;
+                border: 4px solid;
+                border-radius: 15px;
+              "
+            />
           </div>
-        </a>
-        <div class="space-30"></div>
+        </div>
+        <div
+          class="hidden-xs hidden-sm col-xs-12 col-sm-6 col-md-4 wow fadeInRight"
+        >
+          <div class="space-30"></div>
+          <a href="#feature4" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-left">
+                <div class="border-icon">
+                  <span class="ti-eye"></span>
+                </div>
+              </div>
+              <div class="media-body">
+                <h5>Innovativo</h5>
+                <p>
+                  Qualità delle schermate più moderne per gli utenti più
+                  esigenti
+                </p>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature5" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-left">
+                <div class="border-icon">
+                  <span class="ti-shine"></span>
+                </div>
+              </div>
+              <div class="media-body">
+                <h5>PWA</h5>
+                <p>
+                  È nativo e si trova nello store di Google e Apple, ma può
+                  anche essere accessibile dal browser
+                </p>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature6" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-left">
+                <div class="border-icon">
+                  <span class="ti-layout-slider"></span>
+                </div>
+              </div>
+              <div class="media-body">
+                <h5>Design Creativo</h5>
+                <p>
+                  Creazione di schermate esclusive e originali per il tuo
+                  progetto
+                </p>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+        </div>
       </div>
+      <div class="space-40"></div>
     </div>
-    <div class="space-40"></div>
-  </div>
   </section>
   <!--Feature-Section-->
   <hr />
   <!--Question-section-->
   <section class="fix">
-  <div class="space-40"></div>
-  <div class="container">
-    <div class="row wow fadeInUp">
-      <a href="https://www.lavaggioapp.it/" target="_blank">
-        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-          <h3 class="text-uppercase">LavaggioApp.it</h3>
-          <p>
-            Stiamo lanciando un servizio in abbonamento per l'autolavaggio.
-            Sono costituiti da due applicazioni, una per il cliente e una
-            per il partner, come Uber. Il nostro principale progetto
-            tecnologico per il mercato italiano.
-          </p>
-        </div>
-      </a>
-    </div>
-    <div class="space-60"></div>
-    <div class="row">
-      <div class="col-xs-12 col-md-6 wow fadeInUp">
-        <div class="space-60"></div>
-        <div class="panel-group" id="accordion">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a
-                  data-toggle="collapse"
-                  data-parent="#accordion"
-                  href="#collapse1"
-                  >Delivery de lavaggio manuale
-                </a>
-              </h4>
-            </div>
-            <div id="collapse1" class="panel-collapse collapse in">
-              <div class="panel-body">
-                Il servizio di lavaggio a mano a domicilio è progettato per
-                offrire comodità e qualità. Usiamo tecniche speciali per
-                garantire la pulizia accurata di ogni capo. Ci occupiamo del
-                ritiro e della consegna, tutto senza che tu debba uscire di
-                casa.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a
-                  data-toggle="collapse"
-                  data-parent="#accordion"
-                  href="#collapse2"
-                  >Scarica e prenota</a
-                >
-              </h4>
-            </div>
-            <div id="collapse2" class="panel-collapse collapse">
-              <div class="panel-body">
-                Scarica la nostra app e prenota il servizio in pochi clic.
-                Con facilità, puoi programmare la tua consegna.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a
-                  data-toggle="collapse"
-                  data-parent="#accordion"
-                  href="#collapse3"
-                  >Creando un’IA esclusiva per il settore</a
-                >
-              </h4>
-            </div>
-            <div id="collapse3" class="panel-collapse collapse">
-              <div class="panel-body">
-                Stiamo creando un’IA esclusiva per il settore della
-                lavaggio, progettata per valutare con precisione la qualità
-                del processo e assicurare risultati per ogni capo trattato.
-              </div>
-            </div>
-          </div>
-  
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a
-                  data-toggle="collapse"
-                  data-parent="#accordion"
-                  href="#collapse4"
-                  >Made in Italy 🇮🇹</a
-                >
-              </h4>
-            </div>
-            <div id="collapse4" class="panel-collapse collapse">
-              <div class="panel-body">
-                Siamo immensamente orgogliosi di sviluppare un'app qui in
-                Italia. Ogni linea di codice, ogni funzionalità è pensata e
-                realizzata con la passione e la qualità che
-                contraddistinguono il "Made in Italy" 🇮🇹. Stiamo creando
-                qualcosa di unico, radicato nella nostra tradizione
-                d'eccellenza, per offrire al mondo un prodotto innovativo e
-                autenticamente italiano.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="hidden-xs hidden-sm col-md-5 col-md-offset-1 wow fadeInRight"
-      >
+    <div class="space-40"></div>
+    <div class="container">
+      <div class="row wow fadeInUp">
         <a href="https://www.lavaggioapp.it/" target="_blank">
-          <img
-            src="../assets/images/lavami-perfavore.jpg"
-            alt=""
-            style="border-radius: 20px"
-          />
+          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+            <h3 class="text-uppercase">LavaggioApp.it</h3>
+            <p>
+              Stiamo lanciando un servizio in abbonamento per l'autolavaggio.
+              Sono costituiti da due applicazioni, una per il cliente e una per
+              il partner, come Uber. Il nostro principale progetto tecnologico
+              per il mercato italiano.
+            </p>
+          </div>
         </a>
       </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 wow fadeInUp">
+          <div class="space-60"></div>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse1"
+                    >Delivery de lavaggio manuale
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  Il servizio di lavaggio a mano a domicilio è progettato per
+                  offrire comodità e qualità. Usiamo tecniche speciali per
+                  garantire la pulizia accurata di ogni capo. Ci occupiamo del
+                  ritiro e della consegna, tutto senza che tu debba uscire di
+                  casa.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse2"
+                    >Scarica e prenota</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Scarica la nostra app e prenota il servizio in pochi clic. Con
+                  facilità, puoi programmare la tua consegna.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse3"
+                    >Creando un’IA esclusiva per il settore</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Stiamo creando un’IA esclusiva per il settore della lavaggio,
+                  progettata per valutare con precisione la qualità del processo
+                  e assicurare risultati per ogni capo trattato.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse4"
+                    >Made in Italy 🇮🇹</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Siamo immensamente orgogliosi di sviluppare un'app qui in
+                  Italia. Ogni linea di codice, ogni funzionalità è pensata e
+                  realizzata con la passione e la qualità che contraddistinguono
+                  il "Made in Italy" 🇮🇹. Stiamo creando qualcosa di unico,
+                  radicato nella nostra tradizione d'eccellenza, per offrire al
+                  mondo un prodotto innovativo e autenticamente italiano.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden-xs hidden-sm col-md-5 col-md-offset-1 wow fadeInRight"
+        >
+          <a href="https://www.lavaggioapp.it/" target="_blank">
+            <img
+              src="../assets/images/lavami-perfavore.jpg"
+              alt=""
+              style="border-radius: 20px"
+            />
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="space-80"></div>
+    <div class="space-80"></div>
   </section>
   <!--Question-section/-->
-  
+
   <!-- <hr /> -->
-  
+
   <!--Video-Section-->
   <section class="section-video relative fix">
-  <a href="https://www.youtube.com/watch?v=ysWq4pA2TBA" target="_blank">
-    <div class="section-bg overlay-bg alpha"></div>
-    <video class="ivideo" id="cvideo">
-      <source
-        src="http://intimissibd.com/video/background-video.webm"
-        type="video/webm"
-      />
-    </video>
-    <div class="section-video-text text-center">
-      <button type="button" id="vbutton" class="video-button">
-        <span class="ti-control-play"></span>
-      </button>
-      <div class="space-50"></div>
-      <h2 class="text-white">Scopri il nostro canale su YouTube</h2>
-    </div>
-  </a>
+    <a href="https://www.youtube.com/watch?v=ysWq4pA2TBA" target="_blank">
+      <div class="section-bg overlay-bg alpha"></div>
+      <video class="ivideo" id="cvideo">
+        <source
+          src="http://intimissibd.com/video/background-video.webm"
+          type="video/webm"
+        />
+      </video>
+      <div class="section-video-text text-center">
+        <button type="button" id="vbutton" class="video-button">
+          <span class="ti-control-play"></span>
+        </button>
+        <div class="space-50"></div>
+        <h2 class="text-white">Scopri il nostro canale su YouTube</h2>
+      </div>
+    </a>
   </section>
   <!--Video-Section/-->
-  
+
   <!--Price-section-->
   <section class="relative fix" id="price">
-  <div class="section-bg overlay-bg fix">
-    <img src="../assets/images/bg2.jpg" alt="" />
-  </div>
-  <div class="space-80"></div>
-  <div class="container">
-    <div class="row wow fadeInUp">
-      <div
-        class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white"
-      >
-        <h3 class="text-uppercase">Prezzi Accessibili</h3>
-        <p>
-          Non importa la dimensione della tua organizzazione, il prezzo è
-          legato al prodotto finale che sarà sviluppato su misura.
-        </p>
+    <div class="section-bg overlay-bg fix">
+      <img src="../assets/images/bg2.jpg" alt="" />
+    </div>
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white">
+          <h3 class="text-uppercase">Prezzi Accessibili</h3>
+          <p>
+            Non importa la dimensione della tua organizzazione, il prezzo è
+            legato al prodotto finale che sarà sviluppato su misura.
+          </p>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 wow fadeInLeft">
+          <div class="panel price-table text-center">
+            <h3 class="text-uppercase price-title">Creazione</h3>
+            <hr />
+            <div class="space-30"></div>
+            <ul class="list-unstyled">
+              <li>
+                <strong class="amount">€ <span class="big"> 1200</span></strong
+                >/anno *
+              </li>
+              <li>Creazione di App/PWA</li>
+              <li>Sito web e applicazione Android</li>
+              <li>Funzioni su misura</li>
+              <li>Assistenza prioritaria</li>
+              <li>Tempistica da 4 settimane</li>
+            </ul>
+            <div class="space-30"></div>
+            <hr />
+            <a href="#contact" class="btn btn-link text-uppercase">Valutare</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 wow flipInY">
+          <div class="panel price-table active center text-center">
+            <h3 class="text-uppercase price-title">Cloud</h3>
+            <hr />
+            <div class="space-30"></div>
+            <ul class="list-unstyled">
+              <li>
+                <strong class="amount">€ <span class="big">60</span></strong
+                >/mese *
+              </li>
+              <li>Applicazione interattiva</li>
+              <li>Funzioni online</li>
+              <li>Cloud economica</li>
+              <li>Migliore di AWS, G Cloud, Azure</li>
+              <li>Sicurezza del cloud</li>
+            </ul>
+            <div class="space-30"></div>
+            <hr />
+            <a href="#contact" class="btn btn-link text-uppercase">Valutare</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 wow fadeInRight">
+          <div class="panel price-table text-center">
+            <h3 class="text-uppercase price-title">Supporto</h3>
+            <hr />
+            <div class="space-30"></div>
+            <ul class="list-unstyled">
+              <li>
+                <strong class="amount"
+                  >€ <span class="big">Abbinare</span></strong
+                >*
+              </li>
+              <li>Supporto per la tua azienda</li>
+              <li>Sistema di ticket</li>
+              <li>Utenti e dipendenti rispettati</li>
+              <li>Assistenza su come utilizzare</li>
+              <li>Sicurezza nell'espansione</li>
+            </ul>
+            <div class="space-30"></div>
+            <hr />
+            <a href="#contact" class="btn btn-link text-uppercase">Valutare</a>
+          </div>
+        </div>
+        <sub class="text-white">* a partire da</sub>
       </div>
     </div>
-    <div class="space-60"></div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 wow fadeInLeft">
-        <div class="panel price-table text-center">
-          <h3 class="text-uppercase price-title">Creazione</h3>
-          <hr />
-          <div class="space-30"></div>
-          <ul class="list-unstyled">
-            <li>
-              <strong class="amount"
-                >€ <span class="big"> 1200</span></strong
-              >/anno *
-            </li>
-            <li>Creazione di App/PWA</li>
-            <li>Sito web e applicazione Android</li>
-            <li>Funzioni su misura</li>
-            <li>Assistenza prioritaria</li>
-            <li>Tempistica da 4 settimane</li>
-          </ul>
-          <div class="space-30"></div>
-          <hr />
-          <a href="#contact" class="btn btn-link text-uppercase"
-            >Valutare</a
-          >
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 wow flipInY">
-        <div class="panel price-table active center text-center">
-          <h3 class="text-uppercase price-title">Cloud</h3>
-          <hr />
-          <div class="space-30"></div>
-          <ul class="list-unstyled">
-            <li>
-              <strong class="amount">€ <span class="big">60</span></strong
-              >/mese *
-            </li>
-            <li>Applicazione interattiva</li>
-            <li>Funzioni online</li>
-            <li>Cloud economica</li>
-            <li>Migliore di AWS, G Cloud, Azure</li>
-            <li>Sicurezza del cloud</li>
-          </ul>
-          <div class="space-30"></div>
-          <hr />
-          <a href="#contact" class="btn btn-link text-uppercase"
-            >Valutare</a
-          >
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 wow fadeInRight">
-        <div class="panel price-table text-center">
-          <h3 class="text-uppercase price-title">Supporto</h3>
-          <hr />
-          <div class="space-30"></div>
-          <ul class="list-unstyled">
-            <li>
-              <strong class="amount">€ <span class="big">Abbinare</span></strong
-              >*
-            </li>
-            <li>Supporto per la tua azienda</li>
-            <li>Sistema di ticket</li>
-            <li>Utenti e dipendenti rispettati</li>
-            <li>Assistenza su come utilizzare</li>
-            <li>Sicurezza nell'espansione</li>
-          </ul>
-          <div class="space-30"></div>
-          <hr />
-          <a href="#contact" class="btn btn-link text-uppercase"
-            >Valutare</a
-          >
-        </div>
-      </div>
-      <sub class="text-white">* a partire da</sub>
-    </div>
-  </div>
-  <div class="space-80"></div>
+    <div class="space-80"></div>
   </section>
   <!-- Price-section/-->
-  
+
   <!--Map-->
   <!-- <div id="contact"></div> -->
   <!-- <div id="maps"></div> -->
   <section class="relative fix" id="contact">
-  <!-- <img src="../assets/images/europe2.webp" width="100%" alt="" /> -->
-  <div class="section-bg overlay-bg fix">
-    <img src="../assets/images/europe2.webp" alt="" />
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="space-40"></div>
-      <div class="DDDoffset-top">
-        <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-          <div class="well well-lg">
-            <h3>Contatto</h3>
-            <div class="space-20"></div>
-            <script
-              charset="utf-8"
-              type="text/javascript"
-              src="//js-eu1.hsforms.net/forms/embed/v2.js"
-            ></script>
-            <script>
-              hbspt.forms.create({
-                region: "eu1",
-                portalId: "145294488",
-                formId: "d648a8ae-fd17-42a4-a02b-b4e2241734d3",
-              });
-            </script>
+    <!-- <img src="../assets/images/europe2.webp" width="100%" alt="" /> -->
+    <div class="section-bg overlay-bg fix">
+      <img src="../assets/images/europe2.webp" alt="" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="space-40"></div>
+        <div class="DDDoffset-top">
+          <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="well well-lg">
+              <h3>Contatto</h3>
+              <div class="space-20"></div>
+              <script
+                charset="utf-8"
+                type="text/javascript"
+                src="//js-eu1.hsforms.net/forms/embed/v2.js"
+              ></script>
+              <script>
+                hbspt.forms.create({
+                  region: "eu1",
+                  portalId: "145294488",
+                  formId: "d648a8ae-fd17-42a4-a02b-b4e2241734d3",
+                });
+              </script>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-          <div class="well well-lg">
-            <h3>Prenota 15 minuti gratis</h3>
-            <div class="space-20"></div>
-            <p>
-              Pianifica una videochiamata gratuita di 15 minuti per la
-              presentazione del tuo progetto..
-            </p>
-            <p>Siamo situati a Milano, Italia.</p>
-  
-            <div class="space-25"></div>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="border-icon sm">
-                      <span class="ti-headphone"></span>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="callto:+59"
-                      >Assistenza prioritaria telefonica per i clienti</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="border-icon sm">
-                      <span class="ti-email"></span>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="mailto:francisco@f5sites.it"
-                      >Invia il contatto tramite il modulo e ti risponderemo
-                      via email para per confermare l'orario.</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="border-icon sm">
-                      <span class="ti-location-pin"></span>
-                    </div>
-                  </td>
-                  <td>
-                    <address>Milano, Italia</address>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <h2>🇧🇷🇺🇸🇮🇹🇪🇸</h2>
+          <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="well well-lg">
+              <h3>Prenota 15 minuti gratis</h3>
+              <div class="space-20"></div>
+              <p>
+                Pianifica una videochiamata gratuita di 15 minuti per la
+                presentazione del tuo progetto..
+              </p>
+              <p>Siamo situati a Milano, Italia.</p>
+
+              <div class="space-25"></div>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="border-icon sm">
+                        <span class="ti-headphone"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="callto:+59"
+                        >Assistenza prioritaria telefonica per i clienti</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="border-icon sm">
+                        <span class="ti-email"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="mailto:francisco@f5sites.it"
+                        >Invia il contatto tramite il modulo e ti risponderemo
+                        via email para per confermare l'orario.</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="border-icon sm">
+                        <span class="ti-location-pin"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <address>Milano, Italia</address>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>🇧🇷🇺🇸🇮🇹🇪🇸</h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
   <!-- Map -->
   <!-- Footer-area -->
   <footer class="black-bg">
-  <div class="container">
-    <div class="space-80"></div>
-    <div class="row text-white wow fadeIn">
-      <div class="col-xs-12 text-center">
-        <div class="social-menu">
-          <a href="https://www.instagram.com/f5sites/"
-            ><span class="ti-instagram"></span
-          ></a>
-          <a href="https://web.facebook.com/f5sites/"
-            ><span class="ti-facebook"></span
-          ></a>
-          <!--a href="#"><span class="ti-twitter-alt"></span></a-->
-          <a href="https://www.linkedin.com/company/627006/admin/"
-            ><span class="ti-linkedin"></span
-          ></a>
-          <!--a href="#"><span class="ti-pinterest-alt"></span></a-->
+    <div class="container">
+      <div class="space-80"></div>
+      <div class="row text-white wow fadeIn">
+        <div class="col-xs-12 text-center">
+          <div class="social-menu">
+            <a href="https://www.instagram.com/f5sites/"
+              ><span class="ti-instagram"></span
+            ></a>
+            <a href="https://web.facebook.com/f5sites/"
+              ><span class="ti-facebook"></span
+            ></a>
+            <!--a href="#"><span class="ti-twitter-alt"></span></a-->
+            <a href="https://www.linkedin.com/company/627006/admin/"
+              ><span class="ti-linkedin"></span
+            ></a>
+            <!--a href="#"><span class="ti-pinterest-alt"></span></a-->
+          </div>
+          <div class="space-20"></div>
+          <p>
+            2024 <a href="https://www.f5sites.com">F5 Sites</a> tutti i diritti
+            riservati. Pagina di
+            <a href="https://www.franciscomatelli.com.br">Francisco Matelli</a>
+          </p>
         </div>
-        <div class="space-20"></div>
-        <p>
-          2024 <a href="https://www.f5sites.com">F5 Sites</a> tutti i
-          diritti riservati. Pagina di
-          <a href="https://www.franciscomatelli.com.br"
-            >Francisco Matelli</a
-          >
-        </p>
       </div>
+      <div class="space-20"></div>
     </div>
-    <div class="space-20"></div>
-  </div>
   </footer>
   <!-- Footer-area-->
   <!--Vendor JS-->
@@ -756,4 +745,4 @@
   <script src="../assets/js/wow.min.js"></script>
   <script src="../assets/js/plugins.js"></script>
   <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script> -->
-  
+</ng-container>
