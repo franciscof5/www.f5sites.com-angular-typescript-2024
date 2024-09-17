@@ -1,14 +1,4 @@
-# F5sites
-
-These project was built to teach how to transform an pure HTML website to Angular, so I can separate the content off the application, to internationalization and make multi idioms
-
-```
-www.f5sites.com
-www.f5sites.com.br
-www.f5sites.it
-```
-
-Reference: https://www.youtube.com/watch?v=Lyd9tcttXDA&list=PLY7EDLM5qnl7dcJZj8-g4h9mfvTt3iZuL&index=2
+# F5sites2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 

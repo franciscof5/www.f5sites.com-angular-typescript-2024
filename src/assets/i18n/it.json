@@ -1,0 +1,19 @@
+{
+  "title":"We create websites and applications<br />since 2005"
+,
+  "header": {
+    "h1": "Creiamo siti web e applicazioni<br />dal 2005",
+    "h2": "🇧🇷🇺🇸🇮🇹🇪🇸",
+    "p": "Creare un'app, un sito web e un sistema per gestire e promuovere la tua attività è la chiave del successo. Con la digitalizzazione dell'economia, siamo tutti connessi. Ignorare questo significa lasciare spazio alla concorrenza. F5 Sites è un'azienda brasiliana appena arrivata in Italia, pronta a portare vantaggi competitivi alle aziende italiane a basso costo. Vuoi parlare di come digitalizzare la tua attività?",
+    "video_button": "Guarda il video",
+    "contact_button": "Contatto"
+  },
+  "features": {
+    "react_title": "React",
+    "react_description": "Un framework completo per la creazione di applicazioni web moderne e facili da usare, integrato con API esterne e WordPress.",
+    "docker_title": "Docker",
+    "docker_description": "Soluzioni per mettere il tuo sito web e applicazioni in produzione in qualsiasi infrastruttura cloud.",
+    "restapi_title": "Rest API",
+    "restapi_description": "WordPress fornisce uno strato di interazione REST per facilitare il rapporto delle aziende con le loro applicazioni"
+  }
+}
