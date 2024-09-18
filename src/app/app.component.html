@@ -46,6 +46,11 @@
             <li>
               <a href="#contact">{{ t("menu.contact") }}</a>
             </li>
+            <li>
+              <app-language-selector
+                class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
+              ></app-language-selector>
+            </li>
           </ul>
         </div>
       </div>
@@ -59,10 +64,14 @@
         <div class="col-xs-12 col-md-8">
           <div class="space-100"></div>
 
-          <p>{{ t("header.title") }}</p>
+          <!-- <p>{{ t("header.title") }}</p> -->
 
           <h1>{{ t("header.subtitle") }}</h1>
-          <h2>🇧🇷🇺🇸🇮🇹🇪🇸</h2>
+          <div>
+            <app-language-selector
+              class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
+            ></app-language-selector>
+          </div>
           <p style="font-size: 18px">
             {{ t("header.description") }}
           </p>
@@ -124,11 +133,10 @@
               <span class="ti-mobile"></span>
             </p>
             <div class="space-2"></div>
-            <h5 class="text-uppercase" style="font-size: 22px">React</h5>
-            <p>
-              Un framework completo per la creazione di applicazioni web moderne
-              e facili da usare, integrato con API esterne e WordPress.
-            </p>
+            <h5 class="text-uppercase" style="font-size: 22px">
+              {{ t("reactDockerWpSection.react.title") }}
+            </h5>
+            <p>{{ t("reactDockerWpSection.react.description") }}</p>
           </div>
         </div>
         <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
@@ -137,11 +145,10 @@
               <span class="ti-cloud-up"></span>
             </p>
             <div class="space-2"></div>
-            <h5 class="text-uppercase" style="font-size: 22px">Docker</h5>
-            <p>
-              Soluzioni per mettere il tuo sito web e applicazioni in produzione
-              in qualsiasi infrastruttura cloud.
-            </p>
+            <h5 class="text-uppercase" style="font-size: 22px">
+              {{ t("reactDockerWpSection.docker.title") }}
+            </h5>
+            <p>{{ t("reactDockerWpSection.docker.description") }}</p>
           </div>
         </div>
         <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
@@ -150,11 +157,10 @@
               <span class="ti-wordpress"></span>
             </p>
             <div class="space-2"></div>
-            <h5 class="text-uppercase" style="font-size: 22px">Rest API</h5>
-            <p>
-              WordPress fornisce uno strato di interazione REST per facilitare
-              il rapporto delle aziende con le loro applicazioni
-            </p>
+            <h5 class="text-uppercase" style="font-size: 22px">
+              {{ t("reactDockerWpSection.restApi.title") }}
+            </h5>
+            <p>{{ t("reactDockerWpSection.restApi.description") }}</p>
           </div>
         </div>
       </div>
@@ -168,8 +174,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-          <h3 class="text-uppercase">Clienti</h3>
-          <p>Di seguito i nostri principali clienti.</p>
+          <h3 class="text-uppercase">{{ t("clientSection.title") }}</h3>
+          <p>{{ t("clientSection.description") }}</p>
         </div>
       </div>
       <div class="space-60"></div>
@@ -182,7 +188,9 @@
             <div class="single-team relative panel fix">
               <img src="../assets/images/client/FTD-logo.png" alt="" />
               <div class="team_details text-center">
-                <h5 class="text-uppercase">FTD 🇧🇷</h5>
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.ftd") }}
+                </h5>
               </div>
             </div>
           </div>
@@ -195,7 +203,9 @@
             <div class="single-team relative panel fix">
               <img src="../assets/images/client/cogna--600.png" alt="" />
               <div class="team_details text-center">
-                <h5 class="text-uppercase">Cogna 🇧🇷</h5>
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.cogna") }}
+                </h5>
               </div>
             </div>
           </div>
@@ -211,7 +221,9 @@
                 alt=""
               />
               <div class="team_details text-center">
-                <h5 class="text-uppercase">Ambev 🇧🇷</h5>
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.ambev") }}
+                </h5>
               </div>
             </div>
           </div>
@@ -224,7 +236,9 @@
             <div class="single-team relative panel fix">
               <img src="../assets/images/client/edocente_logo.png" alt="" />
               <div class="team_details text-center">
-                <h5 class="text-uppercase">E-Docente 🇧🇷</h5>
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.edocente") }}
+                </h5>
               </div>
             </div>
           </div>
@@ -242,8 +256,8 @@
       <div class="space-60"></div>
       <div class="row wow fadeInUp">
         <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-          <h3 class="text-uppercase">Funzionalità</h3>
-          <p>Tu decidi: noi facciamo.</p>
+          <h3 class="text-uppercase">{{ t("featureSection.title") }}</h3>
+          <p>{{ t("featureSection.subtitle") }}</p>
         </div>
       </div>
       <div class="space-20"></div>
@@ -253,11 +267,8 @@
           <a href="#feature1" data-toggle="tab">
             <div class="media single-feature">
               <div class="media-body text-right" style="width: 90%">
-                <h5>Progetti Robusti</h5>
-                <p>
-                  La qualità del codice si traduce in facilità di adattamento
-                  del prodotto alle esigenze dei nostri clienti
-                </p>
+                <h5>{{ t("featureSection.robustProjectsTitle") }}</h5>
+                <p>{{ t("featureSection.robustProjectsDescription") }}</p>
               </div>
               <div class="media-right">
                 <div class="border-icon">
@@ -270,11 +281,8 @@
           <a href="#feature2" data-toggle="tab">
             <div class="media single-feature">
               <div class="media-body text-right" style="width: 90%">
-                <h5>Su misura</h5>
-                <p>
-                  Funzionalità create appositamente per il tuo business, fatte
-                  su misura
-                </p>
+                <h5>{{ t("featureSection.customTitle") }}</h5>
+                <p>{{ t("featureSection.customDescription") }}</p>
               </div>
               <div class="media-right">
                 <div class="border-icon">
@@ -287,11 +295,8 @@
           <a href="#feature3" data-toggle="tab">
             <div class="media single-feature">
               <div class="media-body text-right" style="width: 90%">
-                <h5>Intelligente</h5>
-                <p>
-                  La capacità di un'applicazione di anticipare e prevedere
-                  l'utente
-                </p>
+                <h5>{{ t("featureSection.smartTitle") }}</h5>
+                <p>{{ t("featureSection.smartDescription") }}</p>
               </div>
               <div class="media-right">
                 <div class="border-icon">
@@ -328,11 +333,8 @@
                 </div>
               </div>
               <div class="media-body">
-                <h5>Innovativo</h5>
-                <p>
-                  Qualità delle schermate più moderne per gli utenti più
-                  esigenti
-                </p>
+                <h5>{{ t("featureSection.innovativeTitle") }}</h5>
+                <p>{{ t("featureSection.innovativeDescription") }}</p>
               </div>
             </div>
           </a>
@@ -345,11 +347,8 @@
                 </div>
               </div>
               <div class="media-body">
-                <h5>PWA</h5>
-                <p>
-                  È nativo e si trova nello store di Google e Apple, ma può
-                  anche essere accessibile dal browser
-                </p>
+                <h5>{{ t("featureSection.pwaTitle") }}</h5>
+                <p>{{ t("featureSection.pwaDescription") }}</p>
               </div>
             </div>
           </a>
@@ -362,11 +361,8 @@
                 </div>
               </div>
               <div class="media-body">
-                <h5>Design Creativo</h5>
-                <p>
-                  Creazione di schermate esclusive e originali per il tuo
-                  progetto
-                </p>
+                <h5>{{ t("featureSection.creativeDesignTitle") }}</h5>
+                <p>{{ t("featureSection.creativeDesignDescription") }}</p>
               </div>
             </div>
           </a>
@@ -377,6 +373,7 @@
     </div>
   </section>
   <!--Feature-Section-->
+
   <hr />
   <!--Question-section-->
   <section class="fix">
@@ -385,13 +382,10 @@
       <div class="row wow fadeInUp">
         <a href="https://www.lavaggioapp.it/" target="_blank">
           <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-            <h3 class="text-uppercase">LavaggioApp.it</h3>
-            <p>
-              Stiamo lanciando un servizio in abbonamento per l'autolavaggio.
-              Sono costituiti da due applicazioni, una per il cliente e una per
-              il partner, come Uber. Il nostro principale progetto tecnologico
-              per il mercato italiano.
-            </p>
+            <h3 class="text-uppercase">
+              {{ t("questionSection.lavaggioAppTitle") }}
+            </h3>
+            <p>{{ t("questionSection.lavaggioAppDescription") }}</p>
           </div>
         </a>
       </div>
@@ -407,17 +401,13 @@
                     data-toggle="collapse"
                     data-parent="#accordion"
                     href="#collapse1"
-                    >Delivery de lavaggio manuale
-                  </a>
+                    >{{ t("questionSection.manualWashTitle") }}</a
+                  >
                 </h4>
               </div>
               <div id="collapse1" class="panel-collapse collapse in">
                 <div class="panel-body">
-                  Il servizio di lavaggio a mano a domicilio è progettato per
-                  offrire comodità e qualità. Usiamo tecniche speciali per
-                  garantire la pulizia accurata di ogni capo. Ci occupiamo del
-                  ritiro e della consegna, tutto senza che tu debba uscire di
-                  casa.
+                  {{ t("questionSection.manualWashDescription") }}
                 </div>
               </div>
             </div>
@@ -428,14 +418,13 @@
                     data-toggle="collapse"
                     data-parent="#accordion"
                     href="#collapse2"
-                    >Scarica e prenota</a
+                    >{{ t("questionSection.downloadAndBookTitle") }}</a
                   >
                 </h4>
               </div>
               <div id="collapse2" class="panel-collapse collapse">
                 <div class="panel-body">
-                  Scarica la nostra app e prenota il servizio in pochi clic. Con
-                  facilità, puoi programmare la tua consegna.
+                  {{ t("questionSection.downloadAndBookDescription") }}
                 </div>
               </div>
             </div>
@@ -446,19 +435,16 @@
                     data-toggle="collapse"
                     data-parent="#accordion"
                     href="#collapse3"
-                    >Creando un’IA esclusiva per il settore</a
+                    >{{ t("questionSection.exclusiveAIForSectorTitle") }}</a
                   >
                 </h4>
               </div>
               <div id="collapse3" class="panel-collapse collapse">
                 <div class="panel-body">
-                  Stiamo creando un’IA esclusiva per il settore della lavaggio,
-                  progettata per valutare con precisione la qualità del processo
-                  e assicurare risultati per ogni capo trattato.
+                  {{ t("questionSection.exclusiveAIForSectorDescription") }}
                 </div>
               </div>
             </div>
-
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -466,18 +452,13 @@
                     data-toggle="collapse"
                     data-parent="#accordion"
                     href="#collapse4"
-                    >Made in Italy 🇮🇹</a
+                    >{{ t("questionSection.madeInItalyTitle") }}</a
                   >
                 </h4>
               </div>
               <div id="collapse4" class="panel-collapse collapse">
                 <div class="panel-body">
-                  Siamo immensamente orgogliosi di sviluppare un'app qui in
-                  Italia. Ogni linea di codice, ogni funzionalità è pensata e
-                  realizzata con la passione e la qualità che contraddistinguono
-                  il "Made in Italy" 🇮🇹. Stiamo creando qualcosa di unico,
-                  radicato nella nostra tradizione d'eccellenza, per offrire al
-                  mondo un prodotto innovativo e autenticamente italiano.
+                  {{ t("questionSection.madeInItalyDescription") }}
                 </div>
               </div>
             </div>
@@ -517,7 +498,9 @@
           <span class="ti-control-play"></span>
         </button>
         <div class="space-50"></div>
-        <h2 class="text-white">Scopri il nostro canale su YouTube</h2>
+        <h2 class="text-white">
+          {{ t("videoSection.discoverYouTubeChannel") }}
+        </h2>
       </div>
     </a>
   </section>
@@ -526,86 +509,103 @@
   <!--Price-section-->
   <section class="relative fix" id="price">
     <div class="section-bg overlay-bg fix">
-      <img src="../assets/images/bg2.jpg" alt="" />
+      <img
+        src="../assets/images/bg2.jpg"
+        alt="{{ t('priceSection.imageAlt') }}"
+      />
     </div>
     <div class="space-80"></div>
     <div class="container">
       <div class="row wow fadeInUp">
         <div class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white">
-          <h3 class="text-uppercase">Prezzi Accessibili</h3>
-          <p>
-            Non importa la dimensione della tua organizzazione, il prezzo è
-            legato al prodotto finale che sarà sviluppato su misura.
-          </p>
+          <h3 class="text-uppercase">{{ t("priceSection.title") }}</h3>
+          <p>{{ t("priceSection.description") }}</p>
         </div>
       </div>
       <div class="space-60"></div>
       <div class="row">
         <div class="col-xs-12 col-sm-4 wow fadeInLeft">
           <div class="panel price-table text-center">
-            <h3 class="text-uppercase price-title">Creazione</h3>
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.creationTitle") }}
+            </h3>
             <hr />
             <div class="space-30"></div>
             <ul class="list-unstyled">
               <li>
-                <strong class="amount">€ <span class="big"> 1200</span></strong
-                >/anno *
+                <strong class="amount">{{
+                  t("priceSection.creationPrice")
+                }}</strong>
+                <span class="big"> 1200</span>
               </li>
-              <li>Creazione di App/PWA</li>
-              <li>Sito web e applicazione Android</li>
-              <li>Funzioni su misura</li>
-              <li>Assistenza prioritaria</li>
-              <li>Tempistica da 4 settimane</li>
+              <li>{{ t("priceSection.creationFeature1") }}</li>
+              <li>{{ t("priceSection.creationFeature2") }}</li>
+              <li>{{ t("priceSection.creationFeature3") }}</li>
+              <li>{{ t("priceSection.creationFeature4") }}</li>
+              <li>{{ t("priceSection.creationFeature5") }}</li>
             </ul>
             <div class="space-30"></div>
             <hr />
-            <a href="#contact" class="btn btn-link text-uppercase">Valutare</a>
+            <a href="#contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 wow flipInY">
           <div class="panel price-table active center text-center">
-            <h3 class="text-uppercase price-title">Cloud</h3>
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.cloudTitle") }}
+            </h3>
             <hr />
             <div class="space-30"></div>
             <ul class="list-unstyled">
               <li>
-                <strong class="amount">€ <span class="big">60</span></strong
-                >/mese *
+                <strong class="amount">{{
+                  t("priceSection.cloudPrice")
+                }}</strong>
+                /mese *
               </li>
-              <li>Applicazione interattiva</li>
-              <li>Funzioni online</li>
-              <li>Cloud economica</li>
-              <li>Migliore di AWS, G Cloud, Azure</li>
-              <li>Sicurezza del cloud</li>
+              <li>{{ t("priceSection.cloudFeature1") }}</li>
+              <li>{{ t("priceSection.cloudFeature2") }}</li>
+              <li>{{ t("priceSection.cloudFeature3") }}</li>
+              <li>{{ t("priceSection.cloudFeature4") }}</li>
+              <li>{{ t("priceSection.cloudFeature5") }}</li>
             </ul>
             <div class="space-30"></div>
             <hr />
-            <a href="#contact" class="btn btn-link text-uppercase">Valutare</a>
+            <a href="#contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 wow fadeInRight">
           <div class="panel price-table text-center">
-            <h3 class="text-uppercase price-title">Supporto</h3>
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.supportTitle") }}
+            </h3>
             <hr />
             <div class="space-30"></div>
             <ul class="list-unstyled">
               <li>
-                <strong class="amount"
-                  >€ <span class="big">Abbinare</span></strong
-                >*
+                <strong class="amount">{{
+                  t("priceSection.supportPrice")
+                }}</strong>
+                *
               </li>
-              <li>Supporto per la tua azienda</li>
-              <li>Sistema di ticket</li>
-              <li>Utenti e dipendenti rispettati</li>
-              <li>Assistenza su come utilizzare</li>
-              <li>Sicurezza nell'espansione</li>
+              <li>{{ t("priceSection.supportFeature1") }}</li>
+              <li>{{ t("priceSection.supportFeature2") }}</li>
+              <li>{{ t("priceSection.supportFeature3") }}</li>
+              <li>{{ t("priceSection.supportFeature4") }}</li>
+              <li>{{ t("priceSection.supportFeature5") }}</li>
             </ul>
             <div class="space-30"></div>
             <hr />
-            <a href="#contact" class="btn btn-link text-uppercase">Valutare</a>
+            <a href="#contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
           </div>
         </div>
-        <sub class="text-white">* a partire da</sub>
+        <sub class="text-white">{{ t("priceSection.footerNote") }}</sub>
       </div>
     </div>
     <div class="space-80"></div>
@@ -616,9 +616,12 @@
   <!-- <div id="contact"></div> -->
   <!-- <div id="maps"></div> -->
   <section class="relative fix" id="contact">
-    <!-- <img src="../assets/images/europe2.webp" width="100%" alt="" /> -->
+    <!-- <img src="../assets/images/europe2.webp" width="100%" alt="{{ t('contactSection.imageAlt') }}" /> -->
     <div class="section-bg overlay-bg fix">
-      <img src="../assets/images/europe2.webp" alt="" />
+      <img
+        src="../assets/images/europe2.webp"
+        alt="{{ t('contactSection.imageAlt') }}"
+      />
     </div>
     <div class="container">
       <div class="row">
@@ -626,7 +629,7 @@
         <div class="DDDoffset-top">
           <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="well well-lg">
-              <h3>Contatto</h3>
+              <h3>{{ t("contactSection.contactTitle") }}</h3>
               <div class="space-20"></div>
               <script
                 charset="utf-8"
@@ -644,13 +647,10 @@
           </div>
           <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="well well-lg">
-              <h3>Prenota 15 minuti gratis</h3>
+              <h3>{{ t("contactSection.bookFreeCallTitle") }}</h3>
               <div class="space-20"></div>
-              <p>
-                Pianifica una videochiamata gratuita di 15 minuti per la
-                presentazione del tuo progetto..
-              </p>
-              <p>Siamo situati a Milano, Italia.</p>
+              <p>{{ t("contactSection.bookFreeCallDescription") }}</p>
+              <p>{{ t("contactSection.location") }}</p>
 
               <div class="space-25"></div>
               <table class="table">
@@ -662,9 +662,9 @@
                       </div>
                     </td>
                     <td>
-                      <a href="callto:+59"
-                        >Assistenza prioritaria telefonica per i clienti</a
-                      >
+                      <a href="callto:+59">{{
+                        t("contactSection.phoneSupport")
+                      }}</a>
                     </td>
                   </tr>
                   <tr>
@@ -674,10 +674,9 @@
                       </div>
                     </td>
                     <td>
-                      <a href="mailto:francisco@f5sites.it"
-                        >Invia il contatto tramite il modulo e ti risponderemo
-                        via email para per confermare l'orario.</a
-                      >
+                      <a href="mailto:francisco@f5sites.it">{{
+                        t("contactSection.emailSupport")
+                      }}</a>
                     </td>
                   </tr>
                   <tr>
@@ -687,18 +686,24 @@
                       </div>
                     </td>
                     <td>
-                      <address>Milano, Italia</address>
+                      <address>{{ t("contactSection.address") }}</address>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <h2>🇧🇷🇺🇸🇮🇹🇪🇸</h2>
+              <div>
+                <app-language-selector
+                  class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
+                ></app-language-selector>
+              </div>
+              <!-- <h2>{{ t('contactSection.languageFlags') }}</h2> -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Map -->
   <!-- Footer-area -->
   <footer class="black-bg">
@@ -707,29 +712,33 @@
       <div class="row text-white wow fadeIn">
         <div class="col-xs-12 text-center">
           <div class="social-menu">
-            <a href="https://www.instagram.com/f5sites/"
-              ><span class="ti-instagram"></span
-            ></a>
-            <a href="https://web.facebook.com/f5sites/"
-              ><span class="ti-facebook"></span
-            ></a>
+            <a href="https://www.instagram.com/f5sites/">
+              <span class="ti-instagram"></span>
+            </a>
+            <a href="https://web.facebook.com/f5sites/">
+              <span class="ti-facebook"></span>
+            </a>
             <!--a href="#"><span class="ti-twitter-alt"></span></a-->
-            <a href="https://www.linkedin.com/company/627006/admin/"
-              ><span class="ti-linkedin"></span
-            ></a>
+            <a href="https://www.linkedin.com/company/627006/admin/">
+              <span class="ti-linkedin"></span>
+            </a>
             <!--a href="#"><span class="ti-pinterest-alt"></span></a-->
           </div>
           <div class="space-20"></div>
           <p>
-            2024 <a href="https://www.f5sites.com">F5 Sites</a> tutti i diritti
-            riservati. Pagina di
-            <a href="https://www.franciscomatelli.com.br">Francisco Matelli</a>
+            {{ t("footer.year") }}
+            <a href="https://www.f5sites.com">{{ t("footer.f5Sites") }}</a>
+            {{ t("footer.allRightsReserved") }}. {{ t("footer.pageOf") }}
+            <a href="https://www.franciscomatelli.com.br">{{
+              t("footer.franciscoMatelli")
+            }}</a>
           </p>
         </div>
       </div>
       <div class="space-20"></div>
     </div>
   </footer>
+
   <!-- Footer-area-->
   <!--Vendor JS-->
   <!-- <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>

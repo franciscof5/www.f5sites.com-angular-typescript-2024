@@ -1,19 +1,120 @@
 {
-  "title":"We create websites and applications<br />since 2005"
+  "title":"We create"
 ,
-  "header": {
-    "h1": "Creiamo siti web e applicazioni<br />dal 2005",
-    "h2": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "p": "Creare un'app, un sito web e un sistema per gestire e promuovere la tua attività è la chiave del successo. Con la digitalizzazione dell'economia, siamo tutti connessi. Ignorare questo significa lasciare spazio alla concorrenza. F5 Sites è un'azienda brasiliana appena arrivata in Italia, pronta a portare vantaggi competitivi alle aziende italiane a basso costo. Vuoi parlare di come digitalizzare la tua attività?",
-    "video_button": "Guarda il video",
-    "contact_button": "Contatto"
+  "menu": {
+    "home": "Home",
+    "features": "Funzionalità",
+    "clients": "Clienti",
+    "prices": "Prezzi",
+    "contact": "Contatto"
   },
-  "features": {
-    "react_title": "React",
-    "react_description": "Un framework completo per la creazione di applicazioni web moderne e facili da usare, integrato con API esterne e WordPress.",
-    "docker_title": "Docker",
-    "docker_description": "Soluzioni per mettere il tuo sito web e applicazioni in produzione in qualsiasi infrastruttura cloud.",
-    "restapi_title": "Rest API",
-    "restapi_description": "WordPress fornisce uno strato di interazione REST per facilitare il rapporto delle aziende con le loro applicazioni"
+  "header": {
+    "title": "Benvenuti",
+    "subtitle": "Creiamo siti web e applicazioni dal 2005",
+    "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
+    "description": "Creare un'app, un sito web e un sistema per gestire e promuovere la tua attività è la chiave del successo. Con la digitalizzazione dell'economia, siamo tutti connessi. Ignorare questo significa lasciare spazio alla concorrenza. F5 Sites è un'azienda brasiliana appena arrivata in Italia, pronta a portare vantaggi competitivi alle aziende italiane a basso costo. Vuoi parlare di come digitalizzare la tua attività?",
+    "watchVideo": "Guarda il video",
+    "contact": "Contatto"
+  },
+  "reactDockerWpSection": {
+    "react": {
+      "title": "React",
+      "description": "Un framework completo per la creazione di applicazioni web moderne e facili da usare, integrato con API esterne e WordPress."
+    },
+    "docker": {
+      "title": "Docker",
+      "description": "Soluzioni per mettere il tuo sito web e applicazioni in produzione in qualsiasi infrastruttura cloud."
+    },
+    "restApi": {
+      "title": "Rest API",
+      "description": "WordPress fornisce uno strato di interazione REST per facilitare il rapporto delle aziende con le loro applicazioni."
+    }
+  },
+  "clientSection": {
+    "title": "Clienti",
+    "description": "Di seguito i nostri principali clienti.",
+    "clients": {
+      "ftd": "FTD 🇧🇷",
+      "cogna": "Cogna 🇧🇷",
+      "ambev": "Ambev 🇧🇷",
+      "edocente": "E-Docente 🇧🇷"
+    }
+  },
+  "featureSection": {
+    "title": "Funzionalità",
+    "subtitle": "Tu decidi: noi facciamo.",
+    "robustProjectsTitle": "Progetti Robusti",
+    "robustProjectsDescription": "La qualità del codice si traduce in facilità di adattamento del prodotto alle esigenze dei nostri clienti",
+    "customTitle": "Su misura",
+    "customDescription": "Funzionalità create appositamente per il tuo business, fatte su misura",
+    "smartTitle": "Intelligente",
+    "smartDescription": "La capacità di un'applicazione di anticipare e prevedere l'utente",
+    "innovativeTitle": "Innovativo",
+    "innovativeDescription": "Qualità delle schermate più moderne per gli utenti più esigenti",
+    "pwaTitle": "PWA",
+    "pwaDescription": "È nativo e si trova nello store di Google e Apple, ma può anche essere accessibile dal browser",
+    "creativeDesignTitle": "Design Creativo",
+    "creativeDesignDescription": "Creazione di schermate esclusive e originali per il tuo progetto"
+  },
+  "questionSection": {
+    "lavaggioAppTitle": "LavaggioApp.it",
+    "lavaggioAppDescription": "Stiamo lanciando un servizio in abbonamento per l'autolavaggio. Sono costituiti da due applicazioni, una per il cliente e una per il partner, come Uber. Il nostro principale progetto tecnologico per il mercato italiano.",
+    "manualWashTitle": "Delivery de lavaggio manuale",
+    "manualWashDescription": "Il servizio di lavaggio a mano a domicilio è progettato per offrire comodità e qualità. Usiamo tecniche speciali per garantire la pulizia accurata di ogni capo. Ci occupiamo del ritiro e della consegna, tutto senza che tu debba uscire di casa.",
+    "downloadAndBookTitle": "Scarica e prenota",
+    "downloadAndBookDescription": "Scarica la nostra app e prenota il servizio in pochi clic. Con facilità, puoi programmare la tua consegna.",
+    "exclusiveAIForSectorTitle": "Creando un’IA esclusiva per il settore",
+    "exclusiveAIForSectorDescription": "Stiamo creando un’IA esclusiva per il settore della lavaggio, progettata per valutare con precisione la qualità del processo e assicurare risultati per ogni capo trattato.",
+    "madeInItalyTitle": "Made in Italy 🇮🇹",
+    "madeInItalyDescription": "Siamo immensamente orgogliosi di sviluppare un'app qui in Italia. Ogni linea di codice, ogni funzionalità è pensata e realizzata con la passione e la qualità che contraddistinguono il \"Made in Italy\" 🇮🇹. Stiamo creando qualcosa di unico, radicato nella nostra tradizione d'eccellenza, per offrire al mondo un prodotto innovativo e autenticamente italiano."
+  },
+  "videoSection": {
+    "discoverYouTubeChannel": "Scopri il nostro canale su YouTube"
+  },
+  "priceSection": {
+    "imageAlt": "Image background for price section",
+    "title": "Prezzi Accessibili",
+    "description": "Non importa la dimensione della tua organizzazione, il prezzo è legato al prodotto finale che sarà sviluppato su misura.",
+    "creationTitle": "Creazione",
+    "creationPrice": "€ 1200 ",
+    "creationFeature1": "Creazione di App/PWA",
+    "creationFeature2": "Sito web e applicazione Android",
+    "creationFeature3": "Funzioni su misura",
+    "creationFeature4": "Assistenza prioritaria",
+    "creationFeature5": "Tempistica da 4 settimane",
+    "cloudTitle": "Cloud",
+    "cloudPrice": "€ 60 <span class=\"big\">60</span>",
+    "cloudFeature1": "Applicazione interattiva",
+    "cloudFeature2": "Funzioni online",
+    "cloudFeature3": "Cloud economica",
+    "cloudFeature4": "Migliore di AWS, G Cloud, Azure",
+    "cloudFeature5": "Sicurezza del cloud",
+    "supportTitle": "Supporto",
+    "supportPrice": "€ Abbinare",
+    "supportFeature1": "Supporto per la tua azienda",
+    "supportFeature2": "Sistema di ticket",
+    "supportFeature3": "Utenti e dipendenti rispettati",
+    "supportFeature4": "Assistenza su come utilizzare",
+    "supportFeature5": "Sicurezza nell'espansione",
+    "evaluateButton": "Valutare",
+    "footerNote": "* a partire da"
+  },
+  "contactSection": {
+    "imageAlt": "Image background for contact section",
+    "contactTitle": "Contatto",
+    "bookFreeCallTitle": "Prenota 15 minuti gratis",
+    "bookFreeCallDescription": "Pianifica una videochiamata gratuita di 15 minuti per la presentazione del tuo progetto.",
+    "location": "Siamo situati a Milano, Italia.",
+    "phoneSupport": "Assistenza prioritaria telefonica per i clienti",
+    "emailSupport": "Invia il contatto tramite il modulo e ti risponderemo via email per confermare l'orario.",
+    "address": "Milano, Italia",
+    "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
+  },
+  "footer": {
+    "year": "2024",
+    "f5Sites": "F5 Sites",
+    "allRightsReserved": "tutti i diritti riservati",
+    "pageOf": "Pagina di",
+    "franciscoMatelli": "Francisco Matelli"
   }
 }

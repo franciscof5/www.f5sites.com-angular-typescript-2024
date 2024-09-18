@@ -30,11 +30,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TranslocoModule } from '@jsverse/transloco';
+import { LanguageSelectorModule } from './components/language-selector/language-selector.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, TranslocoModule],
+  imports: [CommonModule, RouterOutlet, TranslocoModule, LanguageSelectorModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
