@@ -15,28 +15,28 @@ export class LanguageSelectorComponent {
     Record<'imgUrl' | 'code' | 'name' | 'shorthand', string>
   > = [
     {
-      imgUrl: '/assets/images/flags/English.png',
+      imgUrl: '/assets/images/flags/us.svg',
       code: 'en',
       name: 'English',
       shorthand: 'EN',
     },
     {
-      imgUrl: '/assets/images/flags/Italian.png',
+      imgUrl: '/assets/images/flags/it.svg',
       code: 'it',
       name: 'Italian',
       shorthand: 'IT',
     },
     {
-      imgUrl: '/assets/images/flags/Persian.png',
+      imgUrl: '/assets/images/flags/br.svg',
       code: 'pt',
       name: 'Portuguese',
       shorthand: 'BR',
     },
     {
-      imgUrl: '/assets/images/flags/Persian.png',
-      code: 'sp',
+      imgUrl: '/assets/images/flags/es.svg',
+      code: 'es',
       name: 'Spanish',
-      shorthand: 'SP',
+      shorthand: 'ES',
     },
   ];
   public changeLanguage(languageCode: string): void {
