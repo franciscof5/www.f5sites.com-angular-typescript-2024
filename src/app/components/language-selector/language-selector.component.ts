@@ -40,6 +40,8 @@ export class LanguageSelectorComponent {
     },
   ];
   public changeLanguage(languageCode: string): void {
+    console.log(`Mudando idioma para: ${languageCode}`);
+
     this.translocoService.setActiveLang(languageCode);
     languageCode === 'fa'
       ? (document.body.style.direction = 'rtl')
