@@ -1,7 +1,7 @@
 <ng-container *transloco="let t; lang: 'en'">
   <!-- <div class="preloade">
-<span><i class="ti-mobile"></i></span>
-</div> -->
+  <span><i class="ti-mobile"></i></span>
+  </div> -->
 
   <!--Header-Area-->
   <header class="blue-bg relative fix" id="home">
@@ -46,8 +46,10 @@
             <li>
               <a href="#contact">{{ t("menu.contact") }}</a>
             </li>
-            <li>
+            <li style="padding: 10px 0;">
               <app-language-selector
+                [showTitle]="false"
+                [showButton]="false"
                 class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
               ></app-language-selector>
             </li>

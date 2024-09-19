@@ -1,10 +1,13 @@
-<div class="flex justify-center items-center">
+<div class="flex justify-center items-center" >
   <button
     *ngFor="let language of languagesList; index as i"
-    class="btn-primary flex flex-col items-center mx-5"
+    [class.btn-primary]="showButton"
+    [class.mr]="showButton"
+    [class.border0-bgnone]="!showButton"
+    class="flex flex-col items-center "
     (click)="changeLanguage(language.code)"
   >
     <img [src]="language.imgUrl" [alt]="language.name" />
-    <span class="text-xs mt-1"> {{ language.shorthand }} </span>
+    <span *ngIf="showTitle" class="text-xs mt-1"> {{ language.shorthand }} </span>
   </button>
 </div>
