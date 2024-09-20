@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-language-selector',
@@ -7,8 +8,12 @@ import { TranslocoService } from '@jsverse/transloco';
   styleUrls: ['./language-selector.component.scss'],
 })
 export class LanguageSelectorComponent {
-  constructor(private translocoService: TranslocoService) {}
-
+  // constructor(private translocoService: TranslocoService) {}
+  constructor(
+    private translocoService: TranslocoService,
+    private router: Router // Injeta o serviço de roteamento
+  ) { }
+  
   @Input() showTitle: boolean = true;
   @Input() showButton: boolean = true;
   public languagesList: Array<
@@ -39,6 +44,16 @@ export class LanguageSelectorComponent {
       shorthand: 'SP',
     },
   ];
+  setLang(lang: string) {
+    console.log(`setLang Mudando idioma para: ${lang}`);
+    this.translocoService.setActiveLang(lang);
+    // if (this.isBrowser()) {
+
+    // localStorage.setItem('lang', lang); // Salva o idioma selecionado no localStorage
+    // }
+    this.router.navigate([lang]);
+    // Navegação programática para uma rota específica
+  };
   public changeLanguage(languageCode: string): void {
     console.log(`changeLanguage Mudando idioma para: ${languageCode}`);
 

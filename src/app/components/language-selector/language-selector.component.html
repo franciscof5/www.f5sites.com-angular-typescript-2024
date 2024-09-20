@@ -5,9 +5,10 @@
     [class.mr]="showButton"
     [class.border0-bgnone]="!showButton"
     class="flex flex-col items-center "
-    (click)="changeLanguage(language.code)"
+    (click)="setLang(language.code)"
   >
     <img [src]="language.imgUrl" [alt]="language.name" />
     <span *ngIf="showTitle" class="text-xs mt-1"> {{ language.shorthand }} </span>
+    
   </button>
 </div>

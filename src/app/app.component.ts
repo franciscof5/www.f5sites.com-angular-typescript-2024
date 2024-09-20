@@ -16,15 +16,7 @@ export class AppComponent {
   constructor(
     private translocoService: TranslocoService,
     private router: Router // Injeta o serviço de roteamento
-  ) {
-    // Carrega o idioma salvo no localStorage ao iniciar o componente
-    // if (this.isBrowser()) {
-    // const savedLang = localStorage.getItem('lang');
-    // if (savedLang) {
-    // this.translocoService.setActiveLang(savedLang);
-    // }
-    // }
-  }
+  ) { }
 
   setLang(lang: string) {
     console.log(`setLang Mudando idioma para: ${lang}`);
