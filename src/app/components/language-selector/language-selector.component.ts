@@ -28,19 +28,19 @@ export class LanguageSelectorComponent {
     },
     {
       imgUrl: '/assets/images/flags/br.svg',
-      code: 'pt',
+      code: 'br',
       name: 'Portuguese',
       shorthand: 'BR',
     },
     {
-      imgUrl: '/assets/images/flags/es.svg',
-      code: 'es',
+      imgUrl: '/assets/images/flags/sp.svg',
+      code: 'sp',
       name: 'Spanish',
-      shorthand: 'ES',
+      shorthand: 'SP',
     },
   ];
   public changeLanguage(languageCode: string): void {
-    console.log(`Mudando idioma para: ${languageCode}`);
+    console.log(`changeLanguage Mudando idioma para: ${languageCode}`);
 
     this.translocoService.setActiveLang(languageCode);
     languageCode === 'fa'

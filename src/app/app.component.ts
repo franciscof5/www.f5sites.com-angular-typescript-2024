@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
 import { AppRoutingModule } from './app.routes'; // Importa o módulo de roteamento
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,39 +13,31 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   imports: [CommonModule, RouterModule, TranslocoModule, RouterOutlet], // Adicionando RouterOutlet
 })
 export class AppComponent {
-  constructor(private translocoService: TranslocoService) {}
+  constructor(
+    private translocoService: TranslocoService,
+    private router: Router // Injeta o serviço de roteamento
+  ) {
+    // Carrega o idioma salvo no localStorage ao iniciar o componente
+    // if (this.isBrowser()) {
+    // const savedLang = localStorage.getItem('lang');
+    // if (savedLang) {
+    // this.translocoService.setActiveLang(savedLang);
+    // }
+    // }
+  }
 
   setLang(lang: string) {
-    console.log(`Mudando idioma para: ${lang}`);
+    console.log(`setLang Mudando idioma para: ${lang}`);
     this.translocoService.setActiveLang(lang);
+    // if (this.isBrowser()) {
+
+    // localStorage.setItem('lang', lang); // Salva o idioma selecionado no localStorage
+    // }
+    this.router.navigate([lang]);
+    // Navegação programática para uma rota específica
+  }
+  // Função para verificar se o código está sendo executado no navegador
+  isBrowser(): boolean {
+    return typeof window !== 'undefined' && typeof localStorage !== 'undefined';
   }
 }
-
-// import { Component } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-// import { RouterOutlet } from '@angular/router';
-// import { TranslocoModule } from '@jsverse/transloco';
-// import { LanguageSelectorModule } from './components/language-selector/language-selector.module';
-
-// @Component({
-//   selector: 'app-root',
-//   standalone: true,
-//   imports: [CommonModule, RouterOutlet, TranslocoModule, LanguageSelectorModule],
-//   templateUrl: './app.component.html',
-//   styleUrl: './app.component.css'
-// })
-// export class AppComponent {
-//   // title = 'f5sites2';
-//   //   // Método que carrega o script main.js dinamicamente
-//   // private loadScript(url: string) {
-//   //   const script = document.createElement('script');
-//   //   script.src = url;
-//   //   script.async = true;
-//   //   document.body.appendChild(script);
-//   // }
-
-//   // ngAfterViewInit() {
-//   //   // Carrega o main.js após a view ser inicializada
-//   //   this.loadScript('assets/js/main.js');
-//   // }
-// }

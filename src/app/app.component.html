@@ -1,6 +1,8 @@
 <!-- app.component.html -->
 <nav style="position: absolute; z-index: 9999; margin-left: 100px;">
-  <a (click)="setLang('it')" [routerLink]="['/it']">Italiano</a>
-  <a (click)="setLang('en')" [routerLink]="['/en']">English</a>
+  <a (click)="setLang('it')">Italiano</a>
+  <a (click)="setLang('en')">USA</a>
+  <a (click)="setLang('br')">Brasil</a>
+  <a (click)="setLang('sp')">Spanol</a>
 </nav>
 <router-outlet></router-outlet>

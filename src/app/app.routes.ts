@@ -17,9 +17,21 @@ export const routes: Routes = [
     path: 'en',
     children: [
       { path: '', component: HomeComponent },
-      // { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'about', component: AboutComponent },
-      // { path: '**', redirectTo: '/home' },
+    ],
+  },
+  {
+    path: 'br',
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+    ],
+  },
+  {
+    path: 'sp',
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
     ],
   },
   { path: '**', redirectTo: 'en' }, // Redireciona para inglês por padrão
