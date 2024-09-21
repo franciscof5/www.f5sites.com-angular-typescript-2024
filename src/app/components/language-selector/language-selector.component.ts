@@ -38,10 +38,10 @@ export class LanguageSelectorComponent {
       shorthand: 'BR',
     },
     {
-      imgUrl: '/assets/images/flags/sp.svg',
-      code: 'sp',
+      imgUrl: '/assets/images/flags/es.svg',
+      code: 'es',
       name: 'Spanish',
-      shorthand: 'SP',
+      shorthand: 'ES',
     },
   ];
   setLang(lang: string) {

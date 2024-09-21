@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+// const currentPath = window.location.pathname; 
+// const language = currentPath.split('/')[1];
 
 export const routes: Routes = [
   {
@@ -28,7 +30,7 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'sp',
+    path: 'es',
     children: [
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
