@@ -1,4 +1,15 @@
-# F5sites2
+# F5sites
+
+@f5sites is a multi-language Angular platform for managing website content based on user location. It is also hosted as a Radicle repository. Check out the YouTube Angular tutorial
+
+See the Complete Angular no YouTube 
+https://www.youtube.com/@f5sites/
+
+# Radicle
+
+https://app.radicle.xyz/nodes/seed.radicle.garden/rad:z4be34Y37PBKwX789eCgvw8W1U1m
+
+# CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
