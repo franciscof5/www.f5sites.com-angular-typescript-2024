@@ -1,0 +1,121 @@
+{
+  "title": "We create",
+  "menu": {
+    "home": "Home",
+    "features": "Features",
+    "clients": "Clients",
+    "prices": "Prices",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Welcome",
+    "subtitle": "We create websites and applications since 2005",
+    "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
+    "description": "Creating an app, a website, and a system to manage and promote your business is the key to success. With the digitalization of the economy, we are all connected. Ignoring this means leaving space for competitors. F5 Sites is a Brazilian company just arrived in Italy, ready to bring competitive advantages to Italian businesses at a low cost. Want to discuss how to digitize your business?",
+    "watchVideo": "Watch the video",
+    "contact": "Contact"
+  },
+  "reactDockerWpSection": {
+    "react": {
+      "title": "React",
+      "description": "A complete framework for building modern, user-friendly web applications, integrated with external APIs and WordPress."
+    },
+    "docker": {
+      "title": "Docker",
+      "description": "Solutions for deploying your website and applications on any cloud infrastructure."
+    },
+    "restApi": {
+      "title": "Rest API",
+      "description": "WordPress provides a REST layer to facilitate the interaction between businesses and their applications."
+    }
+  },
+  "clientSection": {
+    "title": "Clients",
+    "description": "Here are our main clients.",
+    "clients": {
+      "ftd": "FTD 🇧🇷",
+      "cogna": "Cogna 🇧🇷",
+      "ambev": "Ambev 🇧🇷",
+      "edocente": "E-Docente 🇧🇷"
+    }
+  },
+  "featureSection": {
+    "title": "Features",
+    "subtitle": "You decide: we do.",
+    "robustProjectsTitle": "Robust Projects",
+    "robustProjectsDescription": "The quality of code translates into ease of adapting the product to our clients' needs.",
+    "customTitle": "Custom",
+    "customDescription": "Features created specifically for your business, tailor-made.",
+    "smartTitle": "Smart",
+    "smartDescription": "The ability of an application to anticipate and predict user needs.",
+    "innovativeTitle": "Innovative",
+    "innovativeDescription": "Modern screen quality for the most demanding users.",
+    "pwaTitle": "PWA",
+    "pwaDescription": "It is native and available in the Google and Apple stores but can also be accessed from the browser.",
+    "creativeDesignTitle": "Creative Design",
+    "creativeDesignDescription": "Creation of exclusive and original screens for your project."
+  },
+  "questionSection": {
+    "lavaggioAppTitle": "LavaggioApp.it",
+    "lavaggioAppDescription": "We are launching a subscription service for self-car wash. It consists of two apps, one for the customer and one for the partner, like Uber. Our main technological project for the Italian market.",
+    "manualWashTitle": "Manual Wash Delivery",
+    "manualWashDescription": "The hand wash service at home is designed to offer convenience and quality. We use special techniques to ensure thorough cleaning of each garment. We handle pick-up and delivery, all without you having to leave your home.",
+    "downloadAndBookTitle": "Download and Book",
+    "downloadAndBookDescription": "Download our app and book the service in just a few clicks. Easily schedule your delivery.",
+    "exclusiveAIForSectorTitle": "Creating Exclusive AI for the Sector",
+    "exclusiveAIForSectorDescription": "We are creating an exclusive AI for the car wash sector, designed to accurately assess the quality of the process and ensure results for each treated garment.",
+    "madeInItalyTitle": "Made in Italy 🇮🇹",
+    "madeInItalyDescription": "We are immensely proud to develop an app here in Italy. Every line of code, every feature is crafted with the passion and quality that define \"Made in Italy\" 🇮🇹. We are creating something unique, rooted in our tradition of excellence, to offer the world an innovative and authentically Italian product."
+  },
+  "videoSection": {
+    "discoverYouTubeChannel": "Discover our YouTube channel"
+  },
+  "priceSection": {
+    "imageAlt": "Image background for price section",
+    "title": "Affordable Prices",
+    "FIAT": "$",
+    "period": "project",
+    "description": "No matter the size of your organization, the price is tied to the final product developed for you.",
+    "F1Title": "WordPress Website",
+    "F1Price": "2500",
+    "F1Feature1": "Custom WordPress site creation",
+    "F1Feature2": "Tailored features",
+    "F1Feature3": "Priority support",
+    "F1Feature4": ".it domain and free hosting for the first year",
+    "F1Feature5": "Delivered in 4 weeks",
+    "F2Title": "Native App",
+    "F2Price": "6700",
+    "F2Feature1": "Interactive native app development",
+    "F2Feature2": "Online functionality",
+    "F2Feature3": "WordPress REST API integration",
+    "F2Feature4": "Affordable cloud or AWS, G Cloud, Azure",
+    "F2Feature5": "Android and iPhone app store pack",
+    "F3Title": "Website + App",
+    "F3Price": "8000",
+    "F3Feature1": "Complete website and Android app",
+    "F3Feature2": "Full package for digital presence",
+    "F3Feature3": "Enhanced security",
+    "F3Feature4": "Assistance with usage",
+    "F3Feature5": "Save $1339.52 with the package",
+    "evaluateButton": "Evaluate",
+    "footerNote": "*starting from"
+  },
+  "contactSection": {
+    "imageAlt": "Image background for contact section",
+    "contactTitle": "Contact",
+    "bookFreeCallTitle": "Book 15 minutes free",
+    "bookFreeCallDescription": "Schedule a free 15-minute video call to present your project.",
+    "location": "We are located in Milan, Italy.",
+    "phoneSupport": "Priority phone support for clients",
+    "emailSupport": "Send the contact through the form and we will reply via email to confirm the time.",
+    "address": "Milan, Italy",
+    "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
+  },
+  "footer": {
+    "year": "2024",
+    "f5Sites": "F5 Sites",
+    "allRightsReserved": "all rights reserved",
+    "pageOf": "Page of",
+    "franciscoMatelli": "Francisco Matelli"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/br",
+    "/br/about",
+    "/en",
+    "/en/about",
+    "/es",
+    "/es/about",
+    "/it",
+    "/it/about"
+  ]
+}

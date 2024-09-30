@@ -1,5 +1,5 @@
 {
-  "name": "f5sites2",
+  "name": "f5sites",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:f5sites2": "node dist/f5sites2/server/server.mjs"
+    "serve:ssr:f5sites": "node dist/f5sites/server/server.mjs"
   },
   "private": true,
   "dependencies": {

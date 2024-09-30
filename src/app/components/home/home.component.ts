@@ -10,7 +10,7 @@ import { LanguageSelectorModule } from '../language-selector/language-selector.m
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  title = 'f5sites2';
+  title = 'f5sites';
   language = "en";
   // Método que carrega o script main.js dinamicamente
   private loadScript(url: string) {

@@ -1,0 +1,121 @@
+{
+  "title":"Nosotros creamos",
+  "menu": {
+    "home": "Inicio",
+    "features": "Funcionalidades",
+    "clients": "Clientes",
+    "prices": "Precios",
+    "contact": "Contacto"
+  },
+  "header": {
+    "title": "Bienvenidos",
+    "subtitle": "Creamos sitios web y aplicaciones desde 2005",
+    "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
+    "description": "Crear una aplicación, un sitio web y un sistema para gestionar y promover tu negocio es la clave del éxito. Con la digitalización de la economía, estamos todos conectados. Ignorar esto significa dejar espacio para la competencia. F5 Sites es una empresa brasileña que acaba de llegar a Italia, lista para traer ventajas competitivas a las empresas italianas a bajo costo. ¿Quieres hablar de cómo digitalizar tu negocio?",
+    "watchVideo": "Mira el video",
+    "contact": "Contacto"
+  },
+  "reactDockerWpSection": {
+    "react": {
+      "title": "React",
+      "description": "Un framework completo para la creación de aplicaciones web modernas y fáciles de usar, integrado con APIs externas y WordPress."
+    },
+    "docker": {
+      "title": "Docker",
+      "description": "Soluciones para poner tu sitio web y aplicaciones en producción en cualquier infraestructura en la nube."
+    },
+    "restApi": {
+      "title": "Rest API",
+      "description": "WordPress proporciona una capa de interacción REST para facilitar la relación de las empresas con sus aplicaciones."
+    }
+  },
+  "clientSection": {
+    "title": "Clientes",
+    "description": "A continuación, nuestros principales clientes.",
+    "clients": {
+      "ftd": "FTD 🇧🇷",
+      "cogna": "Cogna 🇧🇷",
+      "ambev": "Ambev 🇧🇷",
+      "edocente": "E-Docente 🇧🇷"
+    }
+  },
+  "featureSection": {
+    "title": "Funcionalidades",
+    "subtitle": "Tú decides: nosotros hacemos.",
+    "robustProjectsTitle": "Proyectos Robustos",
+    "robustProjectsDescription": "La calidad del código se traduce en facilidad para adaptar el producto a las necesidades de nuestros clientes",
+    "customTitle": "A medida",
+    "customDescription": "Funcionalidades creadas especialmente para tu negocio, hechas a medida",
+    "smartTitle": "Inteligente",
+    "smartDescription": "La capacidad de una aplicación para anticipar y prever el comportamiento del usuario",
+    "innovativeTitle": "Innovador",
+    "innovativeDescription": "La calidad de las pantallas más modernas para los usuarios más exigentes",
+    "pwaTitle": "PWA",
+    "pwaDescription": "Es nativa y está en la tienda de Google y Apple, pero también puede ser accesible desde el navegador",
+    "creativeDesignTitle": "Diseño Creativo",
+    "creativeDesignDescription": "Creación de pantallas exclusivas y originales para tu proyecto"
+  },
+  "questionSection": {
+    "lavaggioAppTitle": "LavaggioApp.it",
+    "lavaggioAppDescription": "Estamos lanzando un servicio de suscripción para el lavado de autos. Se compone de dos aplicaciones, una para el cliente y otra para el socio, como Uber. Nuestro principal proyecto tecnológico para el mercado italiano.",
+    "manualWashTitle": "Lavado manual a domicilio",
+    "manualWashDescription": "El servicio de lavado manual a domicilio está diseñado para ofrecer comodidad y calidad. Usamos técnicas especiales para garantizar la limpieza detallada de cada prenda. Nos encargamos de la recogida y entrega, todo sin que tengas que salir de casa.",
+    "downloadAndBookTitle": "Descarga y reserva",
+    "downloadAndBookDescription": "Descarga nuestra aplicación y reserva el servicio en pocos clics. Con facilidad, puedes programar tu entrega.",
+    "exclusiveAIForSectorTitle": "Creando una IA exclusiva para el sector",
+    "exclusiveAIForSectorDescription": "Estamos creando una IA exclusiva para el sector del lavado, diseñada para evaluar con precisión la calidad del proceso y garantizar resultados en cada prenda tratada.",
+    "madeInItalyTitle": "Made in Italy 🇮🇹",
+    "madeInItalyDescription": "Estamos inmensamente orgullosos de desarrollar una aplicación aquí en Italia. Cada línea de código, cada funcionalidad está pensada y realizada con la pasión y la calidad que caracterizan al \"Made in Italy\" 🇮🇹. Estamos creando algo único, arraigado en nuestra tradición de excelencia, para ofrecer al mundo un producto innovador y auténticamente italiano."
+  },
+  "videoSection": {
+    "discoverYouTubeChannel": "Descubre nuestro canal en YouTube"
+  },
+  "priceSection": {
+    "imageAlt": "Imagen de fondo para la sección de precios",
+    "title": "Precios Accesibles",
+    "FIAT": "€",
+    "period": "proyecto",
+    "description": "No importa el tamaño de tu organización, el precio está vinculado al producto final que será desarrollado a medida.",
+    "F1Title": "Sitio WordPress",
+    "F1Price": "2200",
+    "F1Feature1": "Creación de un sitio WordPress personalizado",
+    "F1Feature2": "Funciones a medida",
+    "F1Feature3": "Soporte prioritario",
+    "F1Feature4": "Dominio .it y hosting gratuito el primer año",
+    "F1Feature5": "Entrega en 4 semanas",
+    "F2Title": "App Nativa",
+    "F2Price": "6000",
+    "F2Feature1": "Desarrollo de una app nativa interactiva",
+    "F2Feature2": "Funcionalidades online",
+    "F2Feature3": "Integración con la API REST de WordPress",
+    "F2Feature4": "Cloud económico o AWS, G Cloud, Azure",
+    "F2Feature5": "Paquete para las tiendas de apps Android e iPhone",
+    "F3Title": "Sitio + App",
+    "F3Price": "7200",
+    "F3Feature1": "Sitio web y app completa para Android",
+    "F3Feature2": "Paquete completo para presencia digital",
+    "F3Feature3": "Seguridad mejorada",
+    "F3Feature4": "Soporte sobre cómo usarlo",
+    "F3Feature5": "Ahorra €1200 con el paquete",
+    "evaluateButton": "Evaluar",
+    "footerNote": "* desde"
+  },
+  "contactSection": {
+    "imageAlt": "Imagen de fondo para la sección de contacto",
+    "contactTitle": "Contacto",
+    "bookFreeCallTitle": "Reserva 15 minutos gratis",
+    "bookFreeCallDescription": "Agenda una videollamada gratuita de 15 minutos para la presentación de tu proyecto.",
+    "location": "Estamos ubicados en Milán, Italia.",
+    "phoneSupport": "Soporte prioritario por teléfono para los clientes",
+    "emailSupport": "Envía el contacto a través del formulario y te responderemos por correo electrónico para confirmar la hora.",
+    "address": "Milán, Italia",
+    "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
+  },
+  "footer": {
+    "year": "2024",
+    "f5Sites": "F5 Sites",
+    "allRightsReserved": "todos los derechos reservados",
+    "pageOf": "Página de",
+    "franciscoMatelli": "Francisco Matelli"
+  }
+}
