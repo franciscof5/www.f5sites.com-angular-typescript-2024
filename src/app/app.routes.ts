@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { LanguageGuard } from './guards/language.guard';  // Import LanguageGuard
+import { LanguageGuard } from './language.guard';  // Import LanguageGuard
 
 export const routes: Routes = [
   {
