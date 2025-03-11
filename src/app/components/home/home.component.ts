@@ -14,16 +14,18 @@ export class HomeComponent {
   language = "en";
   // Método que carrega o script main.js dinamicamente
   private loadScript(url: string) {
+    console.log("Loading script:", url);
+  
     const script = document.createElement('script');
     script.src = url;
     script.async = true;
+    script.onload = () => console.log(`Script ${url} loaded successfully.`);
+    script.onerror = () => console.error(`Failed to load script ${url}.`);
     document.body.appendChild(script);
-    const path = window.location.pathname;
-    this.language = path.split('/')[1];
   }
-
   ngAfterViewInit() {
     // Carrega o main.js após a view ser inicializada
+    console.log("ngAfterViewInit")
     this.loadScript('assets/js/main.js');
   }
 }
