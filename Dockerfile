@@ -38,7 +38,7 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 RUN apk add nano
 
 # Exponha a porta padrão do NGINX
-EXPOSE 80
+# EXPOSE 80
 
 # Inicia o NGINX
 CMD ["nginx", "-g", "daemon off;"]
