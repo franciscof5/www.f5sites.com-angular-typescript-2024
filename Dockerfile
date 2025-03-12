@@ -35,6 +35,8 @@ COPY --from=build /app/dist/f5sites-angular /usr/share/nginx/html
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 
+RUN apk add nano
+
 # Exponha a porta padrão do NGINX
 EXPOSE 80
 
