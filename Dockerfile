@@ -33,6 +33,7 @@ RUN rm -rf ./*
 # Copia o build gerado na etapa anterior para o diretório correto no NGINX
 COPY --from=build /app/dist/f5sites-angular-nossr-typescript-2024 /usr/share/nginx/html
 
+COPY default.conf /etc/nginx/conf.d/default.conf
 
 # Exponha a porta padrão do NGINX
 EXPOSE 80
