@@ -30,7 +30,7 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push f5sites-angular:latest  # Envia a imagem para o Docker Hub
+          docker push f5sites/f5sites-angular:latest  # Envia a imagem para o Docker Hub
 
       - name: Deploy (opcional)
         run: |
