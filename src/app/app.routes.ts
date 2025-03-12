@@ -2,45 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-// const currentPath = window.location.pathname; 
-// const language = currentPath.split('/')[1];
+import { LanguageGuard } from './language.guard';  // Import LanguageGuard
 
 export const routes: Routes = [
   {
-    path: 'it',
-    children: [
-      { path: '', component: HomeComponent },
-      // { path: '', redirectTo: '/home', pathMatch: 'full' },
-      { path: 'about', component: AboutComponent },
-      // { path: '**', redirectTo: '/home' },
-    ],
-  },
-  {
-    path: 'en',
+    path: ':lang', // Dynamic language part
+    canActivate: [LanguageGuard], // Add LanguageGuard here
     children: [
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
     ],
   },
-  {
-    path: 'br',
-    children: [
-      { path: '', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
-    ],
-  },
-  {
-    path: 'es',
-    children: [
-      { path: '', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
-    ],
-  },
-  { path: '**', redirectTo: 'en' }, // Redireciona para inglês por padrão
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
-  // { path: 'home', component: HomeComponent },
-  // { path: 'about', component: AboutComponent },
-  // { path: '**', redirectTo: '/home' }
+  { path: '**', redirectTo: 'en' }, // Default redirect to English
 ];
 
 @NgModule({

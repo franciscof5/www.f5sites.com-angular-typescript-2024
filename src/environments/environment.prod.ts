@@ -1,5 +1,5 @@
 export const environment = {
-    production: false,
+    production: true,
     baseUrl: 'https://www.f5sites.com',
-    // baseUrl: 'http://localhost:4200'
+    apiUrl: 'https://www.f5sites.com',
   };
