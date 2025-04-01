@@ -55,6 +55,13 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "host": "0.0.0.0",
+            "port": 4200,
+            "poll": 1000,
+            "publicHost": "localhost:4200",
+            "allowedHosts": ["www.f5sites.com", "f5sites.com", "localhost"]
+          },
           "configurations": {
             "production": {
               "buildTarget": "f5sites-angular:build:production"
