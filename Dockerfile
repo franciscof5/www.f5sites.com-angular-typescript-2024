@@ -28,7 +28,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Copia o build gerado na etapa anterior para o diretório correto no NGINX
-COPY --from=build /app/dist/f5sites-angular/browser /usr/share/nginx/html
+COPY --from=build /app/dist/f5sites-angular /usr/share/nginx/html
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 
