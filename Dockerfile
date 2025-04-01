@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copie o package.json e o package-lock.json para instalar dependências
 COPY package.json ./
-COPY package-lock.json ./
+##COPY package-lock.json ./
 
 # Instale as dependências do Node.js
 RUN npm install
