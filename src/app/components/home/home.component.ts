@@ -27,8 +27,12 @@ export class HomeComponent {
     // Carrega o main.js após a view ser inicializada
     console.log("ngAfterViewInit")
     if (typeof window !== 'undefined') {
-      this.loadScript('assets/js/main.js');
-      this.loadScript('assets/js/plugins.js');
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          this.loadScript('assets/js/main.js');
+          this.loadScript('assets/js/plugins.js');
+        }, 60);
+      });
     }
   }
 }
