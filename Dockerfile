@@ -3,16 +3,18 @@ FROM node:18-alpine AS build
 
 WORKDIR /app
 
-# 1. Primeiro copia apenas os arquivos necessários para instalação de dependências
-COPY package.json .
+# Copie o package.json e o package-lock.json para instalar dependências
+COPY package.json ./
+##COPY package-lock.json ./
 
-# 2. Instala as dependências (incluindo devDependencies para o build)
-RUN npm ci
+# Instale as dependências do Node.js
+RUN npm install
 
-# 3. Copia o restante dos arquivos
+# Copie todos os arquivos do app Angular (do contexto definido no docker-compose)
 COPY . .
 
-# 4. Build da aplicação com configuração de produção
+# Realiza o build da aplicação Angular
+# RUN npm run build
 RUN npm run build -- --configuration=production
 
 # Etapa 2: Preparação para produção com NGINX
@@ -23,11 +25,16 @@ WORKDIR /usr/share/nginx/html
 # Remove os arquivos padrão do NGINX
 RUN rm -rf ./*
 
-# Copia o build gerado
+# Copia o build gerado na etapa anterior para o diretório correto no NGINX
 COPY --from=build /app/dist/f5sites-angular /usr/share/nginx/html
 
-# Configuração do NGINX
 COPY default.conf /etc/nginx/conf.d/default.conf
+
+RUN apk add nano
+
+# Exponha a porta padrão do NGINX
+# EXPOSE 80
 
 # Inicia o NGINX
 CMD ["nginx", "-g", "daemon off;"]
+
