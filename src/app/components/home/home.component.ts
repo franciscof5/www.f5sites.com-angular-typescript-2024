@@ -26,6 +26,9 @@ export class HomeComponent {
   ngAfterViewInit() {
     // Carrega o main.js após a view ser inicializada
     console.log("ngAfterViewInit")
-    this.loadScript('assets/js/main.js');
+    if (typeof window !== 'undefined') {
+      this.loadScript('assets/js/main.js');
+      this.loadScript('assets/js/plugins.js');
+    }
   }
 }
