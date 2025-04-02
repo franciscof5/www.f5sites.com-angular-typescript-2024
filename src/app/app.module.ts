@@ -10,8 +10,8 @@ import { TranslocoRootModule } from './transloco.module';
     AppRoutingModule,
     TranslocoRootModule
   ],
-  providers: [],
-  bootstrap: []
+  bootstrap: [],
+  providers: [GtmService],
   // declarações, providers, bootstrap, etc.
 })
 export class AppModule { }
