@@ -65,7 +65,7 @@
         loop: true,
         margin: 0,
         dots: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 4000,
         smartSpeed: 1000,
         mouseDrag: true,

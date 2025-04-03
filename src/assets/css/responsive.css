@@ -1,6 +1,15 @@
 /* Medium Layout: 1280px. */
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .single_screen_slide {
+        padding: 20px 36px 22px 38px;
+        margin-top: 42px;
+    }
+    .owl-carousel .owl-item {
+        width: 222px;
+        margin-right: 0;
+    }
+}
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
