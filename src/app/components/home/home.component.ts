@@ -1,17 +1,28 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
 import { TranslocoModule } from '@jsverse/transloco';
+import { RouterModule, RouterLink } from '@angular/router'; // Add RouterLink
 import { LanguageSelectorModule } from '../language-selector/language-selector.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TranslocoModule, LanguageSelectorModule],
+  imports: [
+    TranslocoModule, 
+    LanguageSelectorModule,
+    RouterLink,
+    RouterModule
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  constructor(public translocoService: TranslocoService) {} 
   title = 'f5sites';
   language = "en";
+  get currentLang(): string {
+    return this.translocoService.getActiveLang();
+  }
   // Método que carrega o script main.js dinamicamente
   private loadScript(url: string) {
     console.log("Loading script:", url);

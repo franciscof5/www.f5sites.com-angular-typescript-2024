@@ -47,11 +47,17 @@ export class LanguageSelectorComponent {
   setLang(lang: string) {
     console.log(`setLang Mudando idioma para: ${lang}`);
     this.translocoService.setActiveLang(lang);
-    // if (this.isBrowser()) {
+    // Obtém o idioma atual da rota
+    const currentLang = this.router.url.split('/')[1]; // Primeiro segmento da URL
 
+    // Substitui apenas o idioma na URL mantendo o restante da rota
+    const newUrl = this.router.url.replace(`/${currentLang}`, `/${lang}`);
+
+    this.router.navigateByUrl(newUrl, { replaceUrl: true });
+    // if (this.isBrowser()) {
     // localStorage.setItem('lang', lang); // Salva o idioma selecionado no localStorage
     // }
-    this.router.navigate([lang]);
+    // this.router.navigate([lang]);
     // Navegação programática para uma rota específica
   };
   public changeLanguage(languageCode: string): void {
