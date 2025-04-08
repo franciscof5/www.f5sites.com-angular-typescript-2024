@@ -2,6 +2,7 @@
   "title":"Nós criamos",
   "menu": {
     "home": "Início",
+    "products": "Produtos",
     "features": "Funcionalidades",
     "clients": "Clientes",
     "prices": "Preços",
@@ -14,6 +15,14 @@
     "description": "Criar um aplicativo, um site e um sistema para gerenciar e promover o seu negócio é a chave para o sucesso. Com a digitalização da economia, estamos todos conectados. Ignorar isso significa abrir espaço para a concorrência. A F5 Sites é uma empresa brasileira recém-chegada à Itália, pronta para trazer vantagens competitivas para as empresas italianas a baixo custo. Quer conversar sobre como digitalizar seu negócio?",
     "watchVideo": "Assista ao vídeo",
     "contact": "Contato"
+  },
+  "products": {
+    "title": "Produtos F5 Sites",
+    "subtitle": "Lançamos e desenvolvemos nossos produtos.",
+    "projectimer": "Gestão de tempo para equipes",
+    "pomodoros": "Timer individual de código aberto",
+    "lavaggioapp": "App de delivery lavagem de carro na Itália",
+    "timelapse": "Acelere vídeos de desenvolvimento"
   },
   "reactDockerWpSection": {
     "react": {

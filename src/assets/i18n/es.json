@@ -2,6 +2,7 @@
   "title":"Nosotros creamos",
   "menu": {
     "home": "Inicio",
+    "products": "Productos",
     "features": "Funcionalidades",
     "clients": "Clientes",
     "prices": "Precios",
@@ -14,6 +15,14 @@
     "description": "Crear una aplicación, un sitio web y un sistema para gestionar y promover tu negocio es la clave del éxito. Con la digitalización de la economía, estamos todos conectados. Ignorar esto significa dejar espacio para la competencia. F5 Sites es una empresa brasileña que acaba de llegar a Italia, lista para traer ventajas competitivas a las empresas italianas a bajo costo. ¿Quieres hablar de cómo digitalizar tu negocio?",
     "watchVideo": "Mira el video",
     "contact": "Contacto"
+  },
+  "products": {
+    "title": "Productos F5 Sites",
+    "subtitle": "Lanzamos y desarrollamos nuestros productos.",
+    "projectimer": "Gestión del tiempo para equipos",
+    "pomodoros": "Temporizador individual de código abierto",
+    "lavaggioapp": "App de lavado de autos a domicilio in Italia",
+    "timelapse": "Acelera videos de desarrollo en vivo"
   },
   "reactDockerWpSection": {
     "react": {
