@@ -1,4 +1,36 @@
     "use strict";
+        // $(function() {
+        //     var RSS_URL = "https://conteudo.franciscomatelli.com.br/cat/f5-sites/feed/";    
+        //     fetch(RSS_URL)
+        //     .then(response => response.text())
+        //     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        //     .then(data => {
+        //         console.log(data);
+        //         const items = data.querySelectorAll("item");//.slice(0, 6);
+        //         let html = ``;
+        //         $("#products-container").html("");
+        //         items.forEach((el, index) => {
+        //             if(index>5)
+        //                 return;
+        //             $("#products-container").append(`
+
+        //             <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.2s" style="min-height:400px">
+        //             <div class="panel text-center single-blog">
+        //                 <img src="${el.querySelector("link").innerHTML}/image/large.png" class="img-full" alt="">
+        //                 <div class="padding-20">
+        //                     <div class="space-10"></div>
+        //                     <a href="${el.querySelector("link").innerHTML}"><h3>${el.querySelector("title").innerHTML}</h3></a>
+        //                     <div class="space-15"></div>
+        //                     <p>${el.querySelector("title").innerHTML}</p>
+        //                     <div class="space-20"></div>
+        //                 </div>
+        //             </div>`);
+        //          });
+
+        //     })
+        // })
+        
+
     $(".carousel-inner .item:first-child").addClass("active");
     /* Mobile menu click then remove
     ==========================*/
@@ -65,7 +97,7 @@
         loop: true,
         margin: 0,
         dots: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 4000,
         smartSpeed: 1000,
         mouseDrag: true,

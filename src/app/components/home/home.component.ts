@@ -1,29 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
 import { TranslocoModule } from '@jsverse/transloco';
-import { RouterModule, RouterLink } from '@angular/router'; // Add RouterLink
+import { RouterModule, RouterLink } from '@angular/router';
 import { LanguageSelectorModule } from '../language-selector/language-selector.module';
+import { LeadFormComponent } from '../form_espocrm/lead-form.component';
+import { FormsModule } from '@angular/forms'; // Adicionado para ngModel
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    TranslocoModule, 
+  imports: [ // Correção: "imports" (não "declarations") em componentes standalone
+    TranslocoModule,
     LanguageSelectorModule,
     RouterLink,
-    RouterModule
+    RouterModule,
+    LeadFormComponent, // Componentes standalone são importados aqui
+    FormsModule // Necessário se LeadFormComponent usar ngModel
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit { // Implementa AfterViewInit
   constructor(public translocoService: TranslocoService) {} 
+  
   title = 'f5sites';
   language = "en";
+
   get currentLang(): string {
     return this.translocoService.getActiveLang();
   }
-  // Método que carrega o script main.js dinamicamente
+
   private loadScript(url: string) {
     console.log("Loading script:", url);
   
@@ -34,9 +40,9 @@ export class HomeComponent {
     script.onerror = () => console.error(`Failed to load script ${url}.`);
     document.body.appendChild(script);
   }
+
   ngAfterViewInit() {
-    // Carrega o main.js após a view ser inicializada
-    console.log("ngAfterViewInit")
+    console.log("ngAfterViewInit");
     if (typeof window !== 'undefined') {
       requestAnimationFrame(() => {
         setTimeout(() => {

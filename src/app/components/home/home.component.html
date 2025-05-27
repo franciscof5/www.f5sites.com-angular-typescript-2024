@@ -1,761 +1,1016 @@
-<ng-container *transloco="let t;">
-    <!-- <div class="preloade">
+<ng-container *transloco="let t">
+  <!-- <div class="preloade">
     <span><i class="ti-mobile"></i></span>
     </div> -->
-  
-    <!--Header-Area-->
-    <header class="blue-bg relative fix" id="home">
-      <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
-      <!--Mainmenu-->
-      <nav
-        class="navbar navbar-default mainmenu-area navbar-fixed-top affix"
-        data-spy=""
-        data-offset-top="60"
-      >
-        <div class="container">
-          <div class="navbar-header">
-            <button
-              type="button"
-              data-toggle="collapse"
-              class="navbar-toggle"
-              data-target="#mainmenu"
-            >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">
-              <img src="../assets/images/logo.png" alt="" />
-              <!--h2 class="text-white logo-text">appro</h2-->
-            </a>
-          </div>
-          <div class="collapse navbar-collapse navbar-right" id="mainmenu">
-            <ul class="nav navbar-nav">
-              <li>
-                <a [routerLink]="['/', currentLang]" fragment="home">{{ t("menu.home") }}</a>
-              </li>
-              <li>
-                <a [routerLink]="['/', currentLang]" fragment="client">{{ t("menu.clients") }}</a>
-              </li>
-              <li>
-                <a [routerLink]="['/', currentLang]" fragment="feature">{{ t("menu.features") }}</a>
-              </li>
-              <li>
-                <a [routerLink]="['/', currentLang]" fragment="price">{{ t("menu.prices") }}</a>
-              </li>
-              <li>
-                <a [routerLink]="['/', currentLang]" fragment="contact">{{ t("menu.contact") }}</a>
-              </li>
-              
-              <li style="padding: 10px 0;">
-                <app-language-selector
-                  [showTitle]="false"
-                  [showButton]="false"
-                  class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
-                ></app-language-selector>
-              </li>
-            </ul>
-          </div>
+
+  <!--Header-Area-->
+  <header class="blue-bg relative fix" id="home">
+    <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
+    <!--Mainmenu-->
+    <nav
+      class="navbar navbar-default mainmenu-area navbar-fixed-top affix"
+      data-spy=""
+      data-offset-top="60"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            data-toggle="collapse"
+            class="navbar-toggle"
+            data-target="#mainmenu"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            <img src="../assets/images/logo.png" alt="" />
+            <!--h2 class="text-white logo-text">appro</h2-->
+          </a>
         </div>
-      </nav>
-      <!--Mainmenu/-->
-      <div class="space-100"></div>
-      <div class="space-20 hidden-xs"></div>
-      <!--Header-Text-->
-      <div class="container text-white">
-        <div class="row">
-          <div class="col-xs-12 col-md-8">
-            <div class="space-100"></div>
-  
-            <!-- <p>{{ t("header.title") }}</p> -->
-  
-            <h1>{{ t("header.subtitle") }}</h1>
-            <div>
+        <div class="collapse navbar-collapse navbar-right" id="mainmenu">
+          <ul class="nav navbar-nav">
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="home">{{
+                t("menu.home")
+              }}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="products">{{
+                t("menu.products")
+              }}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="client">{{
+                t("menu.clients")
+              }}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="feature">{{
+                t("menu.features")
+              }}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="price">{{
+                t("menu.prices")
+              }}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="contact">{{
+                t("menu.contact")
+              }}</a>
+            </li>
+
+            <li style="padding: 10px 0">
               <app-language-selector
+                [showTitle]="false"
+                [showButton]="false"
                 class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
               ></app-language-selector>
-            </div>
-            <p style="font-size: 18px">
-              {{ t("header.description") }}
-            </p>
-            <div class="space-50"></div>
-            <a
-              href="https://www.youtube.com/watch?v=ysWq4pA2TBA"
-              class="btn btn-icon video-popup btn-warning"
-              style="padding: 12px 28px 12px 50px"
-              ><span class="ti-control-play" style="top: 2px; left: 2px"></span
-              >{{ t("header.watchVideo") }}</a
-            >
-            <a
-              href="#contact"
-              class="btn btn-warning"
-              style="padding: 12px 22px 12px 22px"
-              >{{ t("header.contact") }}</a
-            >
-          </div>
-          <div class="hidden-xs hidden-sm col-md-4">
-            <div class="home_screen_slide">
-              <div class="single_screen_slide wow fadeInRight">
-                <div class="item">
-                  <img src="../assets/images/screen/screen1.jpg" alt="" />
-                </div>
-                <div class="item">
-                  <img src="../assets/images/screen/screen2.jpg" alt="" />
-                </div>
-                <div class="item">
-                  <img src="../assets/images/screen/screen3.jpg" alt="" />
-                </div>
-                <div class="item">
-                  <img src="../assets/images/screen/screen4.jpg" alt="" />
-                </div>
-                <div class="item">
-                  <img src="../assets/images/screen/screen5.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="home_screen_nav">
-              <span class="ti-angle-left testi_prev"></span>
-              <span class="ti-angle-right testi_next"></span>
-            </div>
-          </div>
-        </div>
-        <div class="space-80"></div>
-      </div>
-      <!--Header-Text/-->
-    </header>
-    <!--Header-Area/-->
-  
-    <!--React Docker WP-Area-->
-    <section>
-      <div class="space-80"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="well well-hover text-center">
-              <p class="md-icon" style="font-size: 50px">
-                <span class="ti-mobile"></span>
-              </p>
-              <div class="space-2"></div>
-              <h5 class="text-uppercase" style="font-size: 22px">
-                {{ t("reactDockerWpSection.react.title") }}
-              </h5>
-              <p>{{ t("reactDockerWpSection.react.description") }}</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="well well-hover text-center">
-              <p class="md-icon" style="font-size: 50px">
-                <span class="ti-cloud-up"></span>
-              </p>
-              <div class="space-2"></div>
-              <h5 class="text-uppercase" style="font-size: 22px">
-                {{ t("reactDockerWpSection.docker.title") }}
-              </h5>
-              <p>{{ t("reactDockerWpSection.docker.description") }}</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="well well-hover text-center">
-              <p class="md-icon" style="font-size: 50px">
-                <span class="ti-wordpress"></span>
-              </p>
-              <div class="space-2"></div>
-              <h5 class="text-uppercase" style="font-size: 22px">
-                {{ t("reactDockerWpSection.restApi.title") }}
-              </h5>
-              <p>{{ t("reactDockerWpSection.restApi.description") }}</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!--React Docker WP-Area-->
-  
-    <!--Client-Section -->
-    <section class="gray-bg" id="client">
-      <div class="space-80"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-            <h3 class="text-uppercase">{{ t("clientSection.title") }}</h3>
-            <p>{{ t("clientSection.description") }}</p>
+    </nav>
+    <!--Mainmenu/-->
+    <div class="space-100"></div>
+    <div class="space-20 hidden-xs"></div>
+    <!--Header-Text-->
+    <div class="container text-white">
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <div class="space-100"></div>
+
+          <!-- <p>{{ t("header.title") }}</p> -->
+
+          <h1>{{ t("header.subtitle") }}</h1>
+          <div>
+            <app-language-selector
+              class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
+            ></app-language-selector>
           </div>
-        </div>
-        <div class="space-60"></div>
-        <div class="row">
-          <a href="https://ftd.com.br" alt="FTD" target="_blank">
-            <div
-              class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-              data-wow-delay="0.2s"
-            >
-              <div class="single-team relative panel fix">
-                <img src="../assets/images/client/FTD-logo.png" alt="" />
-                <div class="team_details text-center">
-                  <h5 class="text-uppercase">
-                    {{ t("clientSection.clients.ftd") }}
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://cogna.com.br" alt="cogna" target="_blank">
-            <div
-              class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-              data-wow-delay="0.4s"
-            >
-              <div class="single-team relative panel fix">
-                <img src="../assets/images/client/cogna--600.png" alt="" />
-                <div class="team_details text-center">
-                  <h5 class="text-uppercase">
-                    {{ t("clientSection.clients.cogna") }}
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://www.ambev.com.br" alt="Ambev" target="_blank">
-            <div
-              class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-              data-wow-delay="0.6s"
-            >
-              <div class="single-team relative panel fix">
-                <img
-                  src="../assets/images/client/ambev-logo-3-47191638.png"
-                  alt=""
-                />
-                <div class="team_details text-center">
-                  <h5 class="text-uppercase">
-                    {{ t("clientSection.clients.ambev") }}
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://www.edocente.com.br/" alt="edocente" target="_blank">
-            <div
-              class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-              data-wow-delay="0.8s"
-            >
-              <div class="single-team relative panel fix">
-                <img src="../assets/images/client/edocente_logo.png" alt="" />
-                <div class="team_details text-center">
-                  <h5 class="text-uppercase">
-                    {{ t("clientSection.clients.edocente") }}
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="space-80"></div>
-    </section>
-    <!--Client-Section/-->
-  
-    <!--Feature-Section-->
-    <section class="fix">
-      <!--div class="space-60"></div-->
-      <div class="container" id="feature">
-        <div class="space-60"></div>
-        <div class="row wow fadeInUp">
-          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-            <h3 class="text-uppercase">{{ t("featureSection.title") }}</h3>
-            <p>{{ t("featureSection.subtitle") }}</p>
-          </div>
-        </div>
-        <div class="space-20"></div>
-        <div class="row feature-area">
-          <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft">
-            <div class="space-30"></div>
-            <a href="#feature1" data-toggle="tab">
-              <div class="media single-feature">
-                <div class="media-body text-right" style="width: 90%">
-                  <h5>{{ t("featureSection.robustProjectsTitle") }}</h5>
-                  <p>{{ t("featureSection.robustProjectsDescription") }}</p>
-                </div>
-                <div class="media-right">
-                  <div class="border-icon">
-                    <span class="ti-light-bulb"></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <div class="space-30"></div>
-            <a href="#feature2" data-toggle="tab">
-              <div class="media single-feature">
-                <div class="media-body text-right" style="width: 90%">
-                  <h5>{{ t("featureSection.customTitle") }}</h5>
-                  <p>{{ t("featureSection.customDescription") }}</p>
-                </div>
-                <div class="media-right">
-                  <div class="border-icon">
-                    <span class="ti-cup"></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <div class="space-30"></div>
-            <a href="#feature3" data-toggle="tab">
-              <div class="media single-feature">
-                <div class="media-body text-right" style="width: 90%">
-                  <h5>{{ t("featureSection.smartTitle") }}</h5>
-                  <p>{{ t("featureSection.smartDescription") }}</p>
-                </div>
-                <div class="media-right">
-                  <div class="border-icon">
-                    <span class="ti-comments"></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <div class="space-30"></div>
-          </div>
-          <div class="col-md-4 text-center fix wow fadeIn">
-            <div class="relative">
-              <img
-                src="../assets/images/lavaggioapp-sample-2024-08-20at19.40.53-ezgif.com-resize-small.gif"
-                alt=""
-                style="
-                  min-width: 230px;
-                  margin-bottom: 20px;
-                  border: 4px solid;
-                  border-radius: 15px;
-                "
-              />
-            </div>
-          </div>
-          <div
-            class="hidden-xs hidden-sm col-xs-12 col-sm-6 col-md-4 wow fadeInRight"
-          >
-            <div class="space-30"></div>
-            <a href="#feature4" data-toggle="tab">
-              <div class="media single-feature">
-                <div class="media-left">
-                  <div class="border-icon">
-                    <span class="ti-eye"></span>
-                  </div>
-                </div>
-                <div class="media-body">
-                  <h5>{{ t("featureSection.innovativeTitle") }}</h5>
-                  <p>{{ t("featureSection.innovativeDescription") }}</p>
-                </div>
-              </div>
-            </a>
-            <div class="space-30"></div>
-            <a href="#feature5" data-toggle="tab">
-              <div class="media single-feature">
-                <div class="media-left">
-                  <div class="border-icon">
-                    <span class="ti-shine"></span>
-                  </div>
-                </div>
-                <div class="media-body">
-                  <h5>{{ t("featureSection.pwaTitle") }}</h5>
-                  <p>{{ t("featureSection.pwaDescription") }}</p>
-                </div>
-              </div>
-            </a>
-            <div class="space-30"></div>
-            <a href="#feature6" data-toggle="tab">
-              <div class="media single-feature">
-                <div class="media-left">
-                  <div class="border-icon">
-                    <span class="ti-layout-slider"></span>
-                  </div>
-                </div>
-                <div class="media-body">
-                  <h5>{{ t("featureSection.creativeDesignTitle") }}</h5>
-                  <p>{{ t("featureSection.creativeDesignDescription") }}</p>
-                </div>
-              </div>
-            </a>
-            <div class="space-30"></div>
-          </div>
-        </div>
-        <div class="space-40"></div>
-      </div>
-    </section>
-    <!--Feature-Section-->
-  
-    <hr />
-    <!--Question-section-->
-    <section class="fix">
-      <div class="space-40"></div>
-      <div class="container">
-        <div class="row wow fadeInUp">
-          <a href="https://www.lavaggioapp.it/" target="_blank">
-            <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-              <h3 class="text-uppercase">
-                {{ t("questionSection.lavaggioAppTitle") }}
-              </h3>
-              <p>{{ t("questionSection.lavaggioAppDescription") }}</p>
-            </div>
-          </a>
-        </div>
-        <div class="space-60"></div>
-        <div class="row">
-          <div class="col-xs-12 col-md-6 wow fadeInUp">
-            <div class="space-60"></div>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapse1"
-                      >{{ t("questionSection.manualWashTitle") }}</a
-                    >
-                  </h4>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    {{ t("questionSection.manualWashDescription") }}
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapse2"
-                      >{{ t("questionSection.downloadAndBookTitle") }}</a
-                    >
-                  </h4>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    {{ t("questionSection.downloadAndBookDescription") }}
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapse3"
-                      >{{ t("questionSection.exclusiveAIForSectorTitle") }}</a
-                    >
-                  </h4>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    {{ t("questionSection.exclusiveAIForSectorDescription") }}
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href="#collapse4"
-                      >{{ t("questionSection.madeInItalyTitle") }}</a
-                    >
-                  </h4>
-                </div>
-                <div id="collapse4" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    {{ t("questionSection.madeInItalyDescription") }}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="hidden-xs hidden-sm col-md-5 col-md-offset-1 wow fadeInRight"
-          >
-            <a href="https://www.lavaggioapp.it/" target="_blank">
-              <img
-                src="../assets/images/lavami-perfavore.jpg"
-                alt=""
-                style="border-radius: 20px"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="space-80"></div>
-    </section>
-    <!--Question-section/-->
-  
-    <!-- <hr /> -->
-  
-    <!--Video-Section-->
-    <section class="section-video relative fix">
-      <a href="https://www.youtube.com/watch?v=ysWq4pA2TBA" target="_blank">
-        <div class="section-bg overlay-bg alpha"></div>
-        <video class="ivideo" id="cvideo">
-          <source
-            src="http://intimissibd.com/video/background-video.webm"
-            type="video/webm"
-          />
-        </video>
-        <div class="section-video-text text-center">
-          <button type="button" id="vbutton" class="video-button">
-            <span class="ti-control-play"></span>
-          </button>
+          <p style="font-size: 18px">
+            {{ t("header.description") }}
+          </p>
           <div class="space-50"></div>
-          <h2 class="text-white">
-            {{ t("videoSection.discoverYouTubeChannel") }}
-          </h2>
+          <a
+            href="https://www.youtube.com/watch?v=ysWq4pA2TBA"
+            class="btn btn-icon video-popup btn-warning"
+            style="padding: 12px 28px 12px 50px"
+            ><span class="ti-control-play" style="top: 2px; left: 2px"></span
+            >{{ t("header.watchVideo") }}</a
+          >
+          <a
+            [routerLink]="['/', currentLang]"
+            fragment="contact"
+            class="btn btn-warning"
+            style="padding: 12px 22px 12px 22px"
+          >
+            {{ t("header.contact") }}
+          </a>
         </div>
-      </a>
-    </section>
-    <!--Video-Section/-->
-  
-    <!--Price-section-->
-    <section class="relative fix" id="price">
-      <div class="section-bg overlay-bg fix">
-        <img
-          src="../assets/images/bg2.jpg"
-          alt="{{ t('priceSection.imageAlt') }}"
-        />
-      </div>
-      <div class="space-80"></div>
-      <div class="container">
-        <div class="row wow fadeInUp">
-          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white">
-            <h3 class="text-uppercase">{{ t("priceSection.title") }}</h3>
-            <p>{{ t("priceSection.description") }}</p>
-          </div>
-        </div>
-        <div class="space-60"></div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 wow fadeInLeft">
-            <div class="panel price-table text-center">
-              <h3 class="text-uppercase price-title">
-                {{ t("priceSection.F1Title") }}
-              </h3>
-              <hr />
-              <div class="space-30"></div>
-              <ul class="list-unstyled">
-                <li>
-                  {{ t("priceSection.FIAT") }}
-                  <span class="big"><strong class="amount">{{
-                    t("priceSection.F1Price")
-                  }}</strong></span> / {{ t("priceSection.period") }}
-                </li>
-                <li>{{ t("priceSection.F1Feature1") }}</li>
-                <li>{{ t("priceSection.F1Feature2") }}</li>
-                <li>{{ t("priceSection.F1Feature3") }}</li>
-                <li>{{ t("priceSection.F1Feature4") }}</li>
-                <li>{{ t("priceSection.F1Feature5") }}</li>
-              </ul>
-              <div class="space-30"></div>
-              <hr />
-              <a href="#contact" class="btn btn-link text-uppercase">{{
-                t("priceSection.evaluateButton")
-              }}</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 wow flipInY">
-            <div class="panel price-table active center text-center">
-              <h3 class="text-uppercase price-title">
-                {{ t("priceSection.F2Title") }}
-              </h3>
-              <hr />
-              <div class="space-30"></div>
-              <ul class="list-unstyled">
-                <li>
-                  {{ t("priceSection.FIAT") }}
-                  <span class="big"><strong class="amount">{{
-                    t("priceSection.F2Price")
-                  }}</strong></span> / {{ t("priceSection.period") }}
-                </li>
-                <li>{{ t("priceSection.F2Feature1") }}</li>
-                <li>{{ t("priceSection.F2Feature2") }}</li>
-                <li>{{ t("priceSection.F2Feature3") }}</li>
-                <li>{{ t("priceSection.F2Feature4") }}</li>
-                <li>{{ t("priceSection.F2Feature5") }}</li>
-              </ul>
-              <div class="space-30"></div>
-              <hr />
-              <a href="#contact" class="btn btn-link text-uppercase">{{
-                t("priceSection.evaluateButton")
-              }}</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 wow fadeInRight">
-            <div class="panel price-table text-center">
-              <h3 class="text-uppercase price-title">
-                {{ t("priceSection.F3Title") }}
-              </h3>
-              <hr />
-              <div class="space-30"></div>
-              <ul class="list-unstyled">
-                <li>
-                  {{ t("priceSection.FIAT") }}
-                  <span class="big"><strong class="amount">{{
-                    t("priceSection.F3Price")
-                  }}</strong></span> / {{ t("priceSection.period") }}
-                </li>
-                <li>{{ t("priceSection.F3Feature1") }}</li>
-                <li>{{ t("priceSection.F3Feature2") }}</li>
-                <li>{{ t("priceSection.F3Feature3") }}</li>
-                <li>{{ t("priceSection.F3Feature4") }}</li>
-                <li>{{ t("priceSection.F3Feature5") }}</li>
-              </ul>
-              <div class="space-30"></div>
-              <hr />
-              <a href="#contact" class="btn btn-link text-uppercase">{{
-                t("priceSection.evaluateButton")
-              }}</a>
-            </div>
-          </div>
-          <sub class="text-white">{{ t("priceSection.footerNote") }}</sub>
-        </div>
-      </div>
-      <div class="space-80"></div>
-    </section>
-    <!-- Price-section/-->
-  
-    <!--Map-->
-    <!-- <div id="contact"></div> -->
-    <!-- <div id="maps"></div> -->
-    <section class="relative fix" id="contact">
-      <!-- <img src="../assets/images/europe2.webp" width="100%" alt="{{ t('contactSection.imageAlt') }}" /> -->
-      <div class="section-bg overlay-bg fix">
-        <img
-          src="../assets/images/europe2.webp"
-          alt="{{ t('contactSection.imageAlt') }}"
-        />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="space-40"></div>
-          <div class="DDDoffset-top">
-            <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="well well-lg">
-                <h3>{{ t("contactSection.contactTitle") }}</h3>
-                <div class="space-20"></div>
-                <script
-                  charset="utf-8"
-                  type="text/javascript"
-                  src="//js-eu1.hsforms.net/forms/embed/v2.js"
-                ></script>
-                <script>
-                  hbspt.forms.create({
-                    region: "eu1",
-                    portalId: "145294488",
-                    formId: "d648a8ae-fd17-42a4-a02b-b4e2241734d3",
-                  });
-                </script>
+        <div class="hidden-xs hidden-sm col-md-4">
+          <div class="home_screen_slide">
+            <div class="single_screen_slide wow fadeInRight">
+              <div class="item">
+                <img src="../assets/images/screen/screen1.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen2.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen3.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen4.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../assets/images/screen/screen5.jpg" alt="" />
               </div>
             </div>
-            <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-              <div class="well well-lg">
-                <h3>{{ t("contactSection.bookFreeCallTitle") }}</h3>
-                <div class="space-20"></div>
-                <p>{{ t("contactSection.bookFreeCallDescription") }}</p>
-                <p>{{ t("contactSection.location") }}</p>
-  
-                <div class="space-25"></div>
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="border-icon sm">
-                          <span class="ti-headphone"></span>
-                        </div>
-                      </td>
-                      <td>
-                        <a href="callto:+59">{{
-                          t("contactSection.phoneSupport")
-                        }}</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="border-icon sm">
-                          <span class="ti-email"></span>
-                        </div>
-                      </td>
-                      <td>
-                        <a href="mailto:francisco@f5sites.it">{{
-                          t("contactSection.emailSupport")
-                        }}</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="border-icon sm">
-                          <span class="ti-location-pin"></span>
-                        </div>
-                      </td>
-                      <td>
-                        <address>{{ t("contactSection.address") }}</address>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div>
-                  <app-language-selector
-                    class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
-                  ></app-language-selector>
+          </div>
+          <div class="home_screen_nav">
+            <span class="ti-angle-left testi_prev"></span>
+            <span class="ti-angle-right testi_next"></span>
+          </div>
+        </div>
+      </div>
+      <div class="space-80"></div>
+    </div>
+    <!--Header-Text/-->
+  </header>
+  <!--Header-Area/-->
+  <!--Team-Section-->
+  <section id="products">
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h3 class="text-uppercase">{{ t("products.title") }}</h3>
+          <p>{{ t("products.subtitle") }}</p>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.2s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/projectimer.png" alt="" style="margin-top: -30px;
+  margin-bottom: 30px;" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">Projectimer.com</h5>
+              <p>{{ t("products.projectimer") }}</p>
+              <div class="social-menu">
+                <hr />
+                <a href="https://www.projectimer.com"><span class="ti-link"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.4s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/pomodoros.jpg" alt="" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">Pomodoros.com.br</h5>
+              <p>{{ t("products.pomodoros") }}</p>
+              <div class="social-menu">
+                <hr />
+                <a href="https://www.pomodoros.com.br"><span class="ti-link"></span></a>
+                <a href="https://github.com/franciscof5/www.pomodoros.com.br-javascript-wp-theme-2025"><span class="ti-github"></span></a>
+                <a href="https://github.com/franciscof5/www.pomodoros.com.br-expo-react-native-typescript-2024"><span class="ti-github"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.8s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/lavaggioapp.png" alt="" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">LavaggioApp.it</h5>
+              <p>{{ t("products.lavaggioapp") }}</p>
+              <div class="social-menu">
+                <hr />
+                <a href="https://www.lavaggioapp.it"><span class="ti-link"></span></a>
+                <a href="https://github.com/franciscof5/www.lavaggioapp.it-wp-plugin-2024"><span class="ti-github"></span></a>
+                <a href="https://github.com/franciscof5/www.lavaggioapp.it-client-wordpress-expo-react-native-typescript-2024"><span class="ti-github"></span></a>
+                <a href="https://github.com/franciscof5/www.lavaggioapp.it-partner-wordpress-expo-react-native-typescript-2024"><span class="ti-github"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.6s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/timelapse-screencast.jpg" alt="" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">Timelapse Screencast</h5>
+              <p>{{ t("products.timelapse") }}</p>
+              <div class="social-menu">
+                <hr />
+                <a href="https://www.youtube.com/watch?v=FKsUZQaRFhw&list=PLaDi9Slr7U7UKBOn4T18qC4XUF4xvB6a1"><span class="ti-youtube"></span></a>
+                <a href="https://github.com/franciscof5/timelapse-screencast-auto-vertical-video-recorder-python-2025"><span class="ti-github"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.8s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/crm.png" alt="" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">CRM</h5>
+              <p>Creative Director</p>
+              <div class="social-menu">
+                <hr />
+                <a href="#"><span class="ti-facebook"></span></a>
+                <a href="#"><span class="ti-twitter-alt"></span></a>
+                <a href="#"><span class="ti-linkedin"></span></a>
+                <a href="#"><span class="ti-pinterest-alt"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.8s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/team4.jpg" alt="" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">Vamos Longe</h5>
+              <p>Creative Director</p>
+              <div class="social-menu">
+                <hr />
+                <a href="#"><span class="ti-facebook"></span></a>
+                <a href="#"><span class="ti-twitter-alt"></span></a>
+                <a href="#"><span class="ti-linkedin"></span></a>
+                <a href="#"><span class="ti-pinterest-alt"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.8s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/team4.jpg" alt="" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">Lojas do Mago</h5>
+              <p>Creative Director</p>
+              <div class="social-menu">
+                <hr />
+                <a href="#"><span class="ti-facebook"></span></a>
+                <a href="#"><span class="ti-twitter-alt"></span></a>
+                <a href="#"><span class="ti-linkedin"></span></a>
+                <a href="#"><span class="ti-pinterest-alt"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+          data-wow-delay="0.8s"
+        >
+          <div class="single-team relative panel fix">
+            <img src="../assets/images/products/team4.jpg" alt="" />
+            <div class="team_details text-center">
+              <h5 class="text-uppercase">Francisco Matelli</h5>
+              <p>Creative Director</p>
+              <div class="social-menu">
+                <hr />
+                <a href="#"><span class="ti-facebook"></span></a>
+                <a href="#"><span class="ti-twitter-alt"></span></a>
+                <a href="#"><span class="ti-linkedin"></span></a>
+                <a href="#"><span class="ti-pinterest-alt"></span></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="space-80"></div>
+  </section>
+  <!--Team-Section/-->
+  <!-- <section id="products">
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h3 class="text-uppercase">F5 Sites Products</h3>
+          <p>We launch and develop our products.</p>
+        </div>
+      </div>
+      <div class="space-60"></div>
+        <div class="row" id="products-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="panel text-center single-blog">
+                <img src="images/blog/blog1.jpg" class="img-full" alt="">
+                <div class="padding-20">
+                    <div class="space-10"></div>
+                    <a href=""><h3>Pomodoros</h3></a>
+                    <div class="space-15"></div>
+                    <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimve...</p>
+                    <div class="space-20"></div>
                 </div>
-                <!-- <h2>{{ t('contactSection.languageFlags') }}</h2> -->
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="panel text-center single-blog">
+                <img src="images/blog/blog1.jpg" class="img-full" alt="">
+                <div class="padding-20">
+                    <div class="space-10"></div>
+                    <a href=""><h3>Projectimer</h3></a>
+                    <div class="space-15"></div>
+                    <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimve...</p>
+                    <div class="space-20"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="panel text-center single-blog">
+                <img src="images/blog/blog2.jpg" class="img-full" alt="">
+                <div class="padding-20">
+                    <div class="space-10"></div>
+                    <a href=""><h3>Timelapse Screencast</h3></a>
+                    <div class="space-15"></div>
+                    <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimve...</p>
+                    <div class="space-20"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="panel text-center single-blog">
+                <img src="images/blog/blog3.jpg" class="img-full" alt="">
+                <div class="padding-20">
+                    
+                    <div class="space-10"></div>
+                    <a href="blog-details-left-sidebar.html"><h3>Beautiful Place for your Great Journey</h3></a>
+                    <div class="space-15"></div>
+                    <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimve...</p>
+                    <div class="space-20"></div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+  </section> -->
+
+  <!--React Docker WP-Area-->
+  <section class="section-video relative fix">
+    <div class="section-bg overlay-bg alpha"></div>
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="well well-hover text-center">
+            <p class="md-icon" style="font-size: 50px">
+              <span class="ti-mobile"></span>
+            </p>
+            <div class="space-2"></div>
+            <h5 class="text-uppercase" style="font-size: 22px">
+              {{ t("reactDockerWpSection.react.title") }}
+            </h5>
+            <p>{{ t("reactDockerWpSection.react.description") }}</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="well well-hover text-center">
+            <p class="md-icon" style="font-size: 50px">
+              <span class="ti-cloud-up"></span>
+            </p>
+            <div class="space-2"></div>
+            <h5 class="text-uppercase" style="font-size: 22px">
+              {{ t("reactDockerWpSection.docker.title") }}
+            </h5>
+            <p>{{ t("reactDockerWpSection.docker.description") }}</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="well well-hover text-center">
+            <p class="md-icon" style="font-size: 50px">
+              <span class="ti-wordpress"></span>
+            </p>
+            <div class="space-2"></div>
+            <h5 class="text-uppercase" style="font-size: 22px">
+              {{ t("reactDockerWpSection.restApi.title") }}
+            </h5>
+            <p>{{ t("reactDockerWpSection.restApi.description") }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space-60"></div>
+  </section>
+  <!--React Docker WP-Area-->
+
+  <!--Client-Section -->
+  <section class="gray-bg" id="client">
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h3 class="text-uppercase">{{ t("clientSection.title") }}</h3>
+          <p>{{ t("clientSection.description") }}</p>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <a href="https://ftd.com.br" alt="FTD" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="single-team relative panel fix">
+              <img src="../assets/images/client/FTD-logo.png" alt="" />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.ftd") }}
+                </h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://cogna.com.br" alt="cogna" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="single-team relative panel fix">
+              <img src="../assets/images/client/cogna--600.png" alt="" />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.cogna") }}
+                </h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.ambev.com.br" alt="Ambev" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="single-team relative panel fix">
+              <img
+                src="../assets/images/client/ambev-logo-3-47191638.png"
+                alt=""
+              />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.ambev") }}
+                </h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.edocente.com.br/" alt="edocente" target="_blank">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="single-team relative panel fix">
+              <img src="../assets/images/client/edocente_logo.png" alt="" />
+              <div class="team_details text-center">
+                <h5 class="text-uppercase">
+                  {{ t("clientSection.clients.edocente") }}
+                </h5>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="space-80"></div>
+  </section>
+  <!--Client-Section/-->
+
+  <!--Feature-Section-->
+  <section class="fix">
+    <!--div class="space-60"></div-->
+    <div class="container" id="feature">
+      <div class="space-60"></div>
+      <div class="row wow fadeInUp">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h3 class="text-uppercase">{{ t("featureSection.title") }}</h3>
+          <p>{{ t("featureSection.subtitle") }}</p>
+        </div>
+      </div>
+      <div class="space-20"></div>
+      <div class="row feature-area">
+        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft">
+          <div class="space-30"></div>
+          <a href="#feature1" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-body text-right" style="width: 90%">
+                <h5>{{ t("featureSection.robustProjectsTitle") }}</h5>
+                <p>{{ t("featureSection.robustProjectsDescription") }}</p>
+              </div>
+              <div class="media-right">
+                <div class="border-icon">
+                  <span class="ti-light-bulb"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature2" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-body text-right" style="width: 90%">
+                <h5>{{ t("featureSection.customTitle") }}</h5>
+                <p>{{ t("featureSection.customDescription") }}</p>
+              </div>
+              <div class="media-right">
+                <div class="border-icon">
+                  <span class="ti-cup"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature3" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-body text-right" style="width: 90%">
+                <h5>{{ t("featureSection.smartTitle") }}</h5>
+                <p>{{ t("featureSection.smartDescription") }}</p>
+              </div>
+              <div class="media-right">
+                <div class="border-icon">
+                  <span class="ti-comments"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+        </div>
+        <div class="col-md-4 text-center fix wow fadeIn">
+          <div class="relative">
+            <img
+              src="../assets/images/lavaggioapp-sample-2024-08-20at19.40.53-ezgif.com-resize-small.gif"
+              alt=""
+              style="
+                min-width: 230px;
+                margin-bottom: 20px;
+                border: 4px solid;
+                border-radius: 15px;
+              "
+            />
+          </div>
+        </div>
+        <div
+          class="hidden-xs hidden-sm col-xs-12 col-sm-6 col-md-4 wow fadeInRight"
+        >
+          <div class="space-30"></div>
+          <a href="#feature4" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-left">
+                <div class="border-icon">
+                  <span class="ti-eye"></span>
+                </div>
+              </div>
+              <div class="media-body">
+                <h5>{{ t("featureSection.innovativeTitle") }}</h5>
+                <p>{{ t("featureSection.innovativeDescription") }}</p>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature5" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-left">
+                <div class="border-icon">
+                  <span class="ti-shine"></span>
+                </div>
+              </div>
+              <div class="media-body">
+                <h5>{{ t("featureSection.pwaTitle") }}</h5>
+                <p>{{ t("featureSection.pwaDescription") }}</p>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+          <a href="#feature6" data-toggle="tab">
+            <div class="media single-feature">
+              <div class="media-left">
+                <div class="border-icon">
+                  <span class="ti-layout-slider"></span>
+                </div>
+              </div>
+              <div class="media-body">
+                <h5>{{ t("featureSection.creativeDesignTitle") }}</h5>
+                <p>{{ t("featureSection.creativeDesignDescription") }}</p>
+              </div>
+            </div>
+          </a>
+          <div class="space-30"></div>
+        </div>
+      </div>
+      <div class="space-40"></div>
+    </div>
+  </section>
+  <!--Feature-Section-->
+
+  <hr />
+  <!--Question-section-->
+  <section class="fix">
+    <div class="space-40"></div>
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <a href="https://www.lavaggioapp.it/" target="_blank">
+          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+            <h3 class="text-uppercase">
+              {{ t("questionSection.lavaggioAppTitle") }}
+            </h3>
+            <p>{{ t("questionSection.lavaggioAppDescription") }}</p>
+          </div>
+        </a>
+      </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 wow fadeInUp">
+          <div class="space-60"></div>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse1"
+                    >{{ t("questionSection.manualWashTitle") }}</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  {{ t("questionSection.manualWashDescription") }}
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse2"
+                    >{{ t("questionSection.downloadAndBookTitle") }}</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  {{ t("questionSection.downloadAndBookDescription") }}
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse3"
+                    >{{ t("questionSection.exclusiveAIForSectorTitle") }}</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  {{ t("questionSection.exclusiveAIForSectorDescription") }}
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse4"
+                    >{{ t("questionSection.madeInItalyTitle") }}</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  {{ t("questionSection.madeInItalyDescription") }}
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div
+          class="hidden-xs hidden-sm col-md-5 col-md-offset-1 wow fadeInRight"
+        >
+          <a href="https://www.lavaggioapp.it/" target="_blank">
+            <img
+              src="../assets/images/lavami-perfavore.jpg"
+              alt=""
+              style="border-radius: 20px"
+            />
+          </a>
+        </div>
       </div>
-    </section>
-  
-    <!-- Map -->
-    <!-- Footer-area -->
-    <footer class="black-bg">
-      <div class="container">
-        <div class="space-80"></div>
-        <div class="row text-white wow fadeIn">
-          <div class="col-xs-12 text-center">
-            <div class="social-menu">
-              <a href="https://www.instagram.com/f5sites/">
-                <span class="ti-instagram"></span>
-              </a>
-              <a href="https://web.facebook.com/f5sites/">
-                <span class="ti-facebook"></span>
-              </a>
-              <!--a href="#"><span class="ti-twitter-alt"></span></a-->
-              <a href="https://www.linkedin.com/company/627006/admin/">
-                <span class="ti-linkedin"></span>
-              </a>
-              <!--a href="#"><span class="ti-pinterest-alt"></span></a-->
-            </div>
-            <div class="space-20"></div>
-            <p>
-              {{ t("footer.year") }}
-              <a href="https://www.f5sites.com">{{ t("footer.f5Sites") }}</a>
-              {{ t("footer.allRightsReserved") }}. {{ t("footer.pageOf") }}
-              <a href="https://www.franciscomatelli.com.br">{{
-                t("footer.franciscoMatelli")
-              }}</a>
-            </p>
+    </div>
+    <div class="space-80"></div>
+  </section>
+  <!--Question-section/-->
+
+  <!-- <hr /> -->
+
+  <!--Video-Section-->
+  <section class="section-video relative fix">
+    <a href="https://www.youtube.com/watch?v=ysWq4pA2TBA" target="_blank">
+      <div class="section-bg overlay-bg alpha"></div>
+      <video class="ivideo" id="cvideo">
+        <source
+          src="http://intimissibd.com/video/background-video.webm"
+          type="video/webm"
+        />
+      </video>
+      <div class="section-video-text text-center">
+        <button type="button" id="vbutton" class="video-button">
+          <span class="ti-control-play"></span>
+        </button>
+        <div class="space-50"></div>
+        <h2 class="text-white">
+          {{ t("videoSection.discoverYouTubeChannel") }}
+        </h2>
+      </div>
+    </a>
+  </section>
+  <!--Video-Section/-->
+
+  <!--Price-section-->
+  <section class="relative fix" id="price">
+    <div class="section-bg overlay-bg fix">
+      <img
+        src="../assets/images/bg2.jpg"
+        alt="{{ t('priceSection.imageAlt') }}"
+      />
+    </div>
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white">
+          <h3 class="text-uppercase">{{ t("priceSection.title") }}</h3>
+          <p>{{ t("priceSection.description") }}</p>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 wow fadeInLeft">
+          <div class="panel price-table text-center">
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.F1Title") }}
+            </h3>
+            <hr />
+            <div class="space-30"></div>
+            <ul class="list-unstyled">
+              <li>
+                {{ t("priceSection.FIAT") }}
+                <span class="big"
+                  ><strong class="amount">{{
+                    t("priceSection.F1Price")
+                  }}</strong></span
+                > <!--
+                / {{ t("priceSection.period") }} -->
+              </li>
+              <li>{{ t("priceSection.F1Feature1") }}</li>
+              <li>{{ t("priceSection.F1Feature2") }}</li>
+              <li>{{ t("priceSection.F1Feature3") }}</li>
+              <li>{{ t("priceSection.F1Feature4") }}</li>
+              <li>{{ t("priceSection.F1Feature5") }}</li>
+            </ul>
+            <div class="space-30"></div>
+            <hr />
+            <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
           </div>
         </div>
-        <div class="space-20"></div>
+        <div class="col-xs-12 col-sm-4 wow flipInY">
+          <div class="panel price-table active center text-center">
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.F2Title") }}
+            </h3>
+            <hr />
+            <div class="space-30"></div>
+            <ul class="list-unstyled">
+              <li>
+                {{ t("priceSection.FIAT") }}
+                <span class="big"
+                  ><strong class="amount">{{
+                    t("priceSection.F2Price")
+                  }}</strong></span
+                ><!--
+                / {{ t("priceSection.period") }} -->
+              </li>
+              <li>{{ t("priceSection.F2Feature1") }}</li>
+              <li>{{ t("priceSection.F2Feature2") }}</li>
+              <li>{{ t("priceSection.F2Feature3") }}</li>
+              <li>{{ t("priceSection.F2Feature4") }}</li>
+              <li>{{ t("priceSection.F2Feature5") }}</li>
+            </ul>
+            <div class="space-30"></div>
+            <hr />
+            <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 wow fadeInRight">
+          <div class="panel price-table text-center">
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.F3Title") }}
+            </h3>
+            <hr />
+            <div class="space-30"></div>
+            <ul class="list-unstyled">
+              <li>
+                {{ t("priceSection.FIAT") }}
+                <span class="big"
+                  ><strong class="amount">{{
+                    t("priceSection.F3Price")
+                  }}</strong></span
+                ><!--
+                / {{ t("priceSection.period") }} -->
+              </li>
+              <li>{{ t("priceSection.F3Feature1") }}</li>
+              <li>{{ t("priceSection.F3Feature2") }}</li>
+              <li>{{ t("priceSection.F3Feature3") }}</li>
+              <li>{{ t("priceSection.F3Feature4") }}</li>
+              <li>{{ t("priceSection.F3Feature5") }}</li>
+            </ul>
+            <div class="space-30"></div>
+            <hr />
+            <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
+          </div>
+        </div>
+        <sub class="text-white">{{ t("priceSection.footerNote") }}</sub>
       </div>
-    </footer>
-  
-    <!-- Footer-area-->
-    <!--Vendor JS-->
-    <!-- <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    </div>
+    <div class="space-80"></div>
+  </section>
+  <!-- Price-section/-->
+
+  <!--Map-->
+  <!-- <div id="contact"></div> -->
+  <!-- <div id="maps"></div> -->
+  <section class="relative fix" id="contact">
+    <!-- <img src="../assets/images/europe2.webp" width="100%" alt="{{ t('contactSection.imageAlt') }}" /> -->
+    <div class="section-bg overlay-bg fix">
+      <img
+        src="../assets/images/europe2.webp"
+        alt="{{ t('contactSection.imageAlt') }}"
+      />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="space-40"></div>
+        <div class="DDDoffset-top">
+          <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="well well-lg">
+              <h3>{{ t("contactSection.contactTitle") }}</h3>
+              <!-- <p>{{ currentLang }}</p> -->
+              <div class="space-20"></div>
+              <!-- Formulário de Captura -->
+              <app-lead-form></app-lead-form>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="well well-lg">
+              <h3>{{ t("contactSection.bookFreeCallTitle") }}</h3>
+              <div class="space-20"></div>
+              <p>{{ t("contactSection.bookFreeCallDescription") }}</p>
+              <p>{{ t("contactSection.location") }}</p>
+
+              <div class="space-25"></div>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="border-icon sm">
+                        <span class="ti-headphone"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="callto:+59">{{
+                        t("contactSection.phoneSupport")
+                      }}</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="border-icon sm">
+                        <span class="ti-email"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="mailto:francisco@f5sites.it">{{
+                        t("contactSection.emailSupport")
+                      }}</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="border-icon sm">
+                        <span class="ti-location-pin"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <address>{{ t("contactSection.address") }}</address>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                <app-language-selector
+                  class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
+                ></app-language-selector>
+              </div>
+              <!-- <h2>{{ t('contactSection.languageFlags') }}</h2> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <!-- Footer-area -->
+  <footer class="black-bg">
+    <div class="container">
+      <div class="space-80"></div>
+      <div class="row text-white wow fadeIn">
+        <div class="col-xs-12 text-center">
+          <div class="social-menu">
+            <a href="https://www.instagram.com/f5sites/">
+              <span class="ti-instagram"></span>
+            </a>
+            <a href="https://web.facebook.com/f5sites/">
+              <span class="ti-facebook"></span>
+            </a>
+            <!--a href="#"><span class="ti-twitter-alt"></span></a-->
+            <a href="https://www.linkedin.com/company/627006/admin/">
+              <span class="ti-linkedin"></span>
+            </a>
+            <!--a href="#"><span class="ti-pinterest-alt"></span></a-->
+          </div>
+          <div class="space-20"></div>
+          <p>
+            {{ t("footer.year") }}
+            <a href="https://www.f5sites.com">{{ t("footer.f5Sites") }}</a>
+            {{ t("footer.allRightsReserved") }}. {{ t("footer.pageOf") }}
+            <a href="https://www.franciscomatelli.com.br">{{
+              t("footer.franciscoMatelli")
+            }}</a>
+          </p>
+        </div>
+      </div>
+      <div class="space-20"></div>
+    </div>
+  </footer>
+
+  <!-- Footer-area-->
+  <!--Vendor JS-->
+  <!-- <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/scrollUp.min.js"></script>
     <script src="../assets/js/magnific-popup.min.js"></script>
     <script src="../assets/js/ripples-min.js"></script> -->
-    <!-- <script src="../assets/js/contact-form.js"></script> -->
-    <!-- <script src="../assets/js/spectragram.min.js"></script>
+  <!-- <script src="../assets/js/contact-form.js"></script> -->
+  <!-- <script src="../assets/js/spectragram.min.js"></script>
     <script src="../assets/js/ajaxchimp.js"></script>
     <script src="../assets/js/wow.min.js"></script>
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script> -->
-  </ng-container>
-  
+</ng-container>
