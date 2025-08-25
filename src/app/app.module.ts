@@ -12,11 +12,13 @@ import { LeadFormComponent } from './components/form_espocrm/lead-form.component
 // Services
 // import { EspoCrmService } from './services/espocrm.service';
 import { GtmService } from './services/gtm.service'; // Ajuste o caminho se necessário
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeadFormComponent // Certifique-se que o componente está declarado
+    LeadFormComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

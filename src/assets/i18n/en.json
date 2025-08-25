@@ -126,5 +126,13 @@
     "allRightsReserved": "all rights reserved",
     "pageOf": "Page of",
     "franciscoMatelli": "Francisco Matelli"
+  },
+  "about": {
+    "title": "About Our Company",
+    "content": "We are a team of passionate developers creating amazing web experiences.",
+    "team": "Our Team",
+    "teamDescription": "Meet our talented team of developers and designers.",
+    "mission": "Our Mission", 
+    "missionDescription": "Delivering high-quality web solutions that drive business growth."
   }
 }

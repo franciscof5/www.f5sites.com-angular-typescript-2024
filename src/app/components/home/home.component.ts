@@ -48,7 +48,7 @@ export class HomeComponent implements AfterViewInit { // Implementa AfterViewIni
         setTimeout(() => {
           this.loadScript('assets/js/main.js');
           this.loadScript('assets/js/plugins.js');
-        }, 60);
+        }, 600);
       });
     }
   }
