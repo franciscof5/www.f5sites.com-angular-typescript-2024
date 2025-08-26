@@ -62,6 +62,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     './assets/js/spectragram.min.js',
     './assets/js/ajaxchimp.js',
     './assets/js/wow.min.js',
+    // './assets/js/main.js',
     './assets/js/plugins.js'
   ];
   

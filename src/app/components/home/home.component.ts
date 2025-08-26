@@ -47,8 +47,12 @@ export class HomeComponent implements AfterViewInit { // Implementa AfterViewIni
       requestAnimationFrame(() => {
         setTimeout(() => {
           this.loadScript('assets/js/main.js');
-          this.loadScript('assets/js/plugins.js');
+          // this.loadScript('assets/js/plugins.js');
         }, 600);
+        setTimeout(() => {
+          // this.loadScript('assets/js/main.js');
+          this.loadScript('assets/js/plugins.js');
+        }, 900);
       });
     }
   }
