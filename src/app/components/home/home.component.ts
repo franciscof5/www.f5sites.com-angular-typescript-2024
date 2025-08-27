@@ -5,6 +5,7 @@ import { RouterModule, RouterLink } from '@angular/router';
 import { LanguageSelectorModule } from '../language-selector/language-selector.module';
 import { LeadFormComponent } from '../form_espocrm/lead-form.component';
 import { FormsModule } from '@angular/forms'; // Adicionado para ngModel
+import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component'
 
 @Component({
@@ -17,7 +18,8 @@ import { FooterComponent } from '../footer/footer.component'
     RouterModule,
     LeadFormComponent, 
     FormsModule,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

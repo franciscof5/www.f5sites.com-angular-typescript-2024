@@ -3,12 +3,13 @@ import { TranslocoService } from '@jsverse/transloco';
 import { TranslocoModule } from '@jsverse/transloco';
 import { RouterModule, RouterLink } from '@angular/router'; // Add RouterLink
 import { FooterComponent } from '../footer/footer.component'
-
+import { NavbarComponent } from '../navbar/navbar.component';
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
