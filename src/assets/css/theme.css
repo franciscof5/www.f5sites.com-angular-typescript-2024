@@ -268,13 +268,15 @@ Angle-background
 .social-menu a {
     color: #50d1c0;
     display: inline-block;
-    height: 35px;
+    height: 55px;
     line-height: 2.8;
-    width: 35px;
+    width: 55px;
     border-radius: 50%;
     box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0);
     background-color: #ffffff;
     margin: 0 5px;
+    font-size: 32px;
+    line-height: 1.8;
 }
 
 .social-menu a:hover {
