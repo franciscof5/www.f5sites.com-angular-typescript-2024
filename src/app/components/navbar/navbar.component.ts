@@ -20,6 +20,11 @@ import { RouterModule, RouterLink } from '@angular/router'; // Add RouterLink
 export class NavbarComponent {
   constructor(private translocoService: TranslocoService) {}
 
+  language = "en";
+
+  get currentLang(): string {
+    return this.translocoService.getActiveLang();
+  }
   // método usado no template para tradução
   t = this.translocoService.translate.bind(this.translocoService);
 }
