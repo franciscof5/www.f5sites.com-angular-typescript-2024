@@ -1,12 +1,18 @@
 // footer.component.ts
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
+import { Component } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
+import { TranslocoModule } from '@jsverse/transloco';
+import { RouterModule, RouterLink } from '@angular/router'; // Add RouterLink
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, TranslocoModule],
+  imports: [
+    TranslocoModule,
+    RouterLink,
+    RouterModule,
+  ],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })

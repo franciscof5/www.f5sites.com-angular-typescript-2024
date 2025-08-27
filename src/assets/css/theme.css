@@ -268,14 +268,14 @@ Angle-background
 .social-menu a {
     color: #50d1c0;
     display: inline-block;
-    height: 55px;
+    height: 45px;
     line-height: 2.8;
-    width: 55px;
-    border-radius: 50%;
+    width: 45px;
+    border-radius: 8%;
     box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0);
     background-color: #ffffff;
     margin: 0 5px;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.8;
 }
 
