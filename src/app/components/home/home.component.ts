@@ -5,6 +5,7 @@ import { RouterModule, RouterLink } from '@angular/router';
 import { LanguageSelectorModule } from '../language-selector/language-selector.module';
 import { LeadFormComponent } from '../form_espocrm/lead-form.component';
 import { FormsModule } from '@angular/forms'; // Adicionado para ngModel
+import { FooterComponent } from '../footer/footer.component'
 
 @Component({
   selector: 'app-home',
@@ -14,8 +15,9 @@ import { FormsModule } from '@angular/forms'; // Adicionado para ngModel
     LanguageSelectorModule,
     RouterLink,
     RouterModule,
-    LeadFormComponent, // Componentes standalone são importados aqui
-    FormsModule // Necessário se LeadFormComponent usar ngModel
+    LeadFormComponent, 
+    FormsModule,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -43,17 +45,17 @@ export class HomeComponent implements AfterViewInit { // Implementa AfterViewIni
 
   ngAfterViewInit() {
     console.log("ngAfterViewInit");
-    if (typeof window !== 'undefined') {
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          this.loadScript('assets/js/main.js');
-          // this.loadScript('assets/js/plugins.js');
-        }, 600);
-        setTimeout(() => {
-          // this.loadScript('assets/js/main.js');
-          this.loadScript('assets/js/plugins.js');
-        }, 900);
-      });
-    }
+    // if (typeof window !== 'undefined') {
+    //   requestAnimationFrame(() => {
+    //     setTimeout(() => {
+    //       this.loadScript('assets/js/main.js');
+    //       // this.loadScript('assets/js/plugins.js');
+    //     }, 600);
+    //     setTimeout(() => {
+    //       // this.loadScript('assets/js/main.js');
+    //       this.loadScript('assets/js/plugins.js');
+    //     }, 900);
+    //   });
+    // }
   }
 }

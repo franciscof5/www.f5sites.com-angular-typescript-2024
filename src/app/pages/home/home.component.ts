@@ -1,0 +1,71 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent {
+  currentLang: string = 'en'; // exemplo, você pode ajustar dinamicamente
+}
+
+// // import { Component, AfterViewInit } from '@angular/core';
+// // import { TranslocoService } from '@jsverse/transloco';
+// // import { TranslocoModule } from '@jsverse/transloco';
+// // import { RouterModule, RouterLink } from '@angular/router';
+// // import { LanguageSelectorModule } from '../../components/language-selector/language-selector.module';
+// // import { LeadFormComponent } from '../../components/form_espocrm/lead-form.component';
+// // import { FormsModule } from '@angular/forms'; // Adicionado para ngModel
+// import { Component } from '@angular/core';
+// import { CommonModule } from '@angular/common';
+// @Component({
+//   selector: 'app-home',
+//   // standalone: true,
+//   // imports: [ // Correção: "imports" (não "declarations") em componentes standalone
+//   //   TranslocoModule,
+//   //   LanguageSelectorModule,
+//   //   RouterLink,
+//   //   RouterModule,
+//   //   LeadFormComponent, // Componentes standalone são importados aqui
+//   //   FormsModule // Necessário se LeadFormComponent usar ngModel
+//   // ],
+//   templateUrl: './home.component.html',
+//   styleUrl: './home.component.css'
+// })
+// export class HomeComponent implements AfterViewInit { // Implementa AfterViewInit
+//   constructor(public translocoService: TranslocoService) {} 
+  
+//   title = 'f5sites';
+//   language = "en";
+
+//   get currentLang(): string {
+//     return this.translocoService.getActiveLang();
+//   }
+
+//   private loadScript(url: string) {
+//     console.log("Loading script:", url);
+  
+//     const script = document.createElement('script');
+//     script.src = url;
+//     script.async = true;
+//     script.onload = () => console.log(`Script ${url} loaded successfully.`);
+//     script.onerror = () => console.error(`Failed to load script ${url}.`);
+//     document.body.appendChild(script);
+//   }
+
+//   ngAfterViewInit() {
+//     console.log("ngAfterViewInit");
+//     if (typeof window !== 'undefined') {
+//       requestAnimationFrame(() => {
+//         setTimeout(() => {
+//           this.loadScript('assets/js/main.js');
+//           // this.loadScript('assets/js/plugins.js');
+//         }, 600);
+//         setTimeout(() => {
+//           // this.loadScript('assets/js/main.js');
+//           this.loadScript('assets/js/plugins.js');
+//         }, 900);
+//       });
+//     }
+//   }
+// }

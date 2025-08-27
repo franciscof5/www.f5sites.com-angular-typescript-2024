@@ -6,73 +6,7 @@
   <!--Header-Area-->
   <header class="blue-bg relative fix" id="home">
     <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
-    <!--Mainmenu-->
-    <nav
-      class="navbar navbar-default mainmenu-area navbar-fixed-top affix"
-      data-spy=""
-      data-offset-top="60">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            data-toggle="collapse"
-            class="navbar-toggle"
-            data-target="#mainmenu"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand">
-            <img src="../assets/images/f5sites-logo-silom-inverted-100.png" alt="" />
-            <!--h2 class="text-white logo-text">appro</h2-->
-          </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right" id="mainmenu">
-          <ul class="nav navbar-nav">
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="home">{{
-                t("menu.home")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="products">{{
-                t("menu.products")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="client">{{
-                t("menu.clients")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="feature">{{
-                t("menu.features")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="price">{{
-                t("menu.prices")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="contact">{{
-                t("menu.contact")
-              }}</a>
-            </li>
-
-            <li style="padding: 10px 0">
-              <app-language-selector
-                [showTitle]="false"
-                [showButton]="false"
-                class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
-              ></app-language-selector>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--Mainmenu/-->
+    <!-- <app-navbar></app-navbar> -->
     <div class="space-100"></div>
     <div class="space-20 hidden-xs"></div>
     <!--Header-Text-->
@@ -85,9 +19,9 @@
 
           <h1>{{ t("header.subtitle") }}</h1>
           <div>
-            <app-language-selector
+            <!-- <app-language-selector
               class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
-            ></app-language-selector>
+            ></app-language-selector> -->
           </div>
           <p style="font-size: 18px">
             {{ t("header.description") }}
@@ -901,7 +835,7 @@
               <!-- <p>{{ currentLang }}</p> -->
               <div class="space-20"></div>
               <!-- Formulário de Captura -->
-              <app-lead-form></app-lead-form>
+              <!-- <app-lead-form></app-lead-form> -->
             </div>
           </div>
           <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -951,9 +885,9 @@
                 </tbody>
               </table>
               <div>
-                <app-language-selector
+                <!-- <app-language-selector
                   class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
-                ></app-language-selector>
+                ></app-language-selector> -->
               </div>
               <!-- <h2>{{ t('contactSection.languageFlags') }}</h2> -->
             </div>
@@ -965,6 +899,36 @@
 
   <!-- Map -->
   <!-- Footer-area -->
-  
-  <app-footer></app-footer>
+  <footer class="black-bg">
+    <div class="container">
+      <div class="space-80"></div>
+      <div class="row text-white wow fadeIn">
+        <div class="col-xs-12 text-center">
+          <div class="social-menu">
+            <a href="https://www.instagram.com/f5sites/">
+              <span class="ti-instagram"></span>
+            </a>
+            <a href="https://web.facebook.com/f5sites/">
+              <span class="ti-facebook"></span>
+            </a>
+            <!--a href="#"><span class="ti-twitter-alt"></span></a-->
+            <a href="https://www.linkedin.com/company/627006/admin/">
+              <span class="ti-linkedin"></span>
+            </a>
+            <!--a href="#"><span class="ti-pinterest-alt"></span></a-->
+          </div>
+          <div class="space-20"></div>
+          <p>
+            {{ t("footer.year") }}
+            <a href="https://www.f5sites.com">{{ t("footer.f5Sites") }}</a>
+            {{ t("footer.allRightsReserved") }}. {{ t("footer.pageOf") }}
+            <a href="https://www.franciscomatelli.com.br">{{
+              t("footer.franciscoMatelli")
+            }}</a>
+          </p>
+        </div>
+      </div>
+      <div class="space-20"></div>
+    </div>
+  </footer>
 </ng-container>
