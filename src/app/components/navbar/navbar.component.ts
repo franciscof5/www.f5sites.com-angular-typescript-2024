@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TranslocoService } from '@jsverse/transloco';
 import { TranslocoModule } from '@jsverse/transloco';
 import { RouterModule, RouterLink } from '@angular/router'; // Add RouterLink
+import { LanguageSelectorModule } from '../language-selector/language-selector.module';
 
 @Component({
   selector: 'app-navbar',
@@ -13,6 +14,7 @@ import { RouterModule, RouterLink } from '@angular/router'; // Add RouterLink
     TranslocoModule,
     RouterLink,
     RouterModule,
+    LanguageSelectorModule
   ],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
