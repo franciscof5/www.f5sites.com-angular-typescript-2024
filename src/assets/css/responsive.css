@@ -22,6 +22,9 @@
     .space-mobile-100 {
         height: 0;
     }
+    .mainmenu-top-item {
+        margin: 14px 7px;
+    }
 }
 
 
@@ -61,7 +64,7 @@
     }
     .mainmenu-area .navbar-toggle:focus .icon-bar,
     .mainmenu-area .navbar-toggle:hover .icon-bar {
-        background-color: #50d1c0;
+        background-color: #03659C;
     }
     .well.well-lg {
         padding: 30px;
@@ -80,7 +83,7 @@
         text-align: center;
     }
     .space-100 {
-        height: 40px;
+        height: 60px;
     }
     .space-mobile-100 {
         height: 100px;

@@ -136,7 +136,7 @@
         /* Scroll to top
         ===================*/
         $.scrollUp({
-            scrollText: '<span class="ti-rocket"></span>',
+            scrollText: '<span class="fa-solid fa-up-long"></span>',
             easingType: 'linear',
             scrollSpeed: 900,
             animation: 'fade'

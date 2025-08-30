@@ -22,44 +22,50 @@
         </div>
         <div class="collapse navbar-collapse navbar-right" id="mainmenu">
           <ul class="nav navbar-nav">
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="home">{{
-                t("menu.home")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="feature">{{
-                t("menu.features")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="products">{{
-                t("menu.products")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="client">{{
-                t("menu.clients")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="price">{{
-                t("menu.prices")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="contact">{{
-                t("menu.contact")
-              }}</a>
-            </li>
-
-            <li style="padding: 10px 0">
+            <li class="mainmenu-top-item">
               <app-language-selector
                 [showTitle]="false"
                 [showButton]="false"
                 class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
               ></app-language-selector>
             </li>
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="home">{{
+                t("menu.item1")
+              }}</a>
+            </li>
+            <!-- <li>
+              <a [routerLink]="['/', currentLang]" fragment="products">{{
+                t("menu.item2")
+              }}</a>
+            </li> -->
+            <!-- <li>
+              <a [routerLink]="['/', currentLang]" fragment="feature">{{
+                t("menu.features")
+              }}</a>
+            </li> -->
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="blobs">{{
+                t("menu.item3")
+              }}</a>
+            </li>
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="client">{{
+                t("menu.item4")
+              }}</a>
+            </li>
+            <!-- <li>
+              <a [routerLink]="['/', currentLang]" fragment="price">{{
+                t("menu.prices")
+              }}</a>
+            </li> -->
+            <li>
+              <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-warning acontact mainmenu-top-item">{{
+                t("menu.item5")
+              }}</a>
+            </li>
+
+            
           </ul>
         </div>
       </div>

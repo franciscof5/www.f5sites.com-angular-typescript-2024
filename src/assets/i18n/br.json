@@ -1,12 +1,11 @@
 {
   "title":"Nós criamos",
   "menu": {
-    "home": "Venda Online",
-    "products": "Produtos",
-    "features": "Pacote de Vídeos",
-    "clients": "Clientes",
-    "prices": "Preços",
-    "contact": "Contato"
+    "item1": "Vendas Insanas",
+    "item2": "2",
+    "item3": "Produtos",
+    "item4": "Clientes",
+    "item5": "Contato"
   },
   "header": {
     "title": "Francisco Matelli: criador do curso Vendedor Insano e CEO da F5 Sites e Cursos",
