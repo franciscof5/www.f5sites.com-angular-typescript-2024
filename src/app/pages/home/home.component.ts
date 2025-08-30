@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
+import { TranslocoModule } from '@jsverse/transloco';
+import { RouterModule, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +9,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  currentLang: string = 'en'; // exemplo, você pode ajustar dinamicamente
+  language = "en";
+
+  get currentLang(): string {
+    return this.translocoService.getActiveLang();
+  }
+
 }
 
 // // import { Component, AfterViewInit } from '@angular/core';

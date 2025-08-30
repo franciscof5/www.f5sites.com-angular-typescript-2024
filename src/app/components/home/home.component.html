@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <ng-container *transloco="let t">
   <!-- <div class="preloade">
     <span><i class="ti-mobile"></i></span>
@@ -6,46 +7,46 @@
   <!--Header-Area-->
   <header class="blue-bg relative fix" id="home">
     <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
-    <!--Mainmenu-->
-    <app-navbar></app-navbar>
-    <!--Mainmenu/-->
+    <!-- <app-navbar></app-navbar> -->
     <div class="space-100"></div>
     <div class="space-20 hidden-xs"></div>
     <!--Header-Text-->
     <div class="container text-white">
       <div class="row">
-        <div class="col-xs-12 col-md-8">
-          <div class="space-100"></div>
+        <div class="col-xs-12 text-center">
+          
+          <h1 class="text-center">{{ t("header.subtitle") }}</h1>
+          <p class="text-center" style="font-size: 22px">
+            {{ t("header.description") }}
+          </p>
+          <div class="space-20"></div>
+          <iframe width="1120" height="630" src="https://www.youtube.com/embed/n4xbmq-5rzk?si=U4PZzScJ6yuUFqD3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p class="text-center">{{ t("header.title") }}</p>
 
-          <!-- <p>{{ t("header.title") }}</p> -->
-
-          <h1>{{ t("header.subtitle") }}</h1>
-          <div>
+          <!-- <div>
             <app-language-selector
               class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
             ></app-language-selector>
-          </div>
-          <p style="font-size: 18px">
-            {{ t("header.description") }}
-          </p>
+          </div> -->
+          <!-- <p [innerHTML]="'description' | transloco" style="font-size: 22px"></p> -->
           <div class="space-50"></div>
-          <a
-            href="https://www.youtube.com/watch?v=ysWq4pA2TBA"
+          <!-- <a
+            href="https://www.youtube.com/@f5sites"
             class="btn btn-icon video-popup btn-warning"
             style="padding: 12px 28px 12px 50px"
             ><span class="ti-control-play" style="top: 2px; left: 2px"></span
             >{{ t("header.watchVideo") }}</a
-          >
+          > -->
           <a
             [routerLink]="['/', currentLang]"
             fragment="contact"
-            class="btn btn-warning"
+            class="btn btn-warning text-uppercase"
             style="padding: 12px 22px 12px 22px; margin-left:6px;"
           >
             {{ t("header.contact") }}
           </a>
         </div>
-        <div class="hidden-xs hidden-sm col-md-4">
+        <!-- <div class="hidden-xs hidden-sm col-md-4">
           <div class="home_screen_slide">
             <div class="single_screen_slide wow fadeInRight">
               <div class="item">
@@ -69,7 +70,7 @@
             <span class="ti-angle-left testi_prev"></span>
             <span class="ti-angle-right testi_next"></span>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="space-80"></div>
     </div>
@@ -314,7 +315,7 @@
     </div>
   </section> -->
 
-  <!--React Docker WP-Area-->
+  <!--Blobs-->
   <section class="section-video relative fix">
     <div class="section-bg overlay-bg alpha"></div>
     <div class="space-80"></div>
@@ -327,9 +328,9 @@
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
-              {{ t("reactDockerWpSection.react.title") }}
+              {{ t("sectionBlobs.blob1.title") }}
             </h5>
-            <p>{{ t("reactDockerWpSection.react.description") }}</p>
+            <p>{{ t("sectionBlobs.blob1.description") }}</p>
           </div>
         </div>
         <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
@@ -339,9 +340,9 @@
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
-              {{ t("reactDockerWpSection.docker.title") }}
+              {{ t("sectionBlobs.blob2.title") }}
             </h5>
-            <p>{{ t("reactDockerWpSection.docker.description") }}</p>
+            <p>{{ t("sectionBlobs.blob2.description") }}</p>
           </div>
         </div>
         <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
@@ -351,9 +352,9 @@
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
-              {{ t("reactDockerWpSection.restApi.title") }}
+              {{ t("sectionBlobs.blob3.title") }}
             </h5>
-            <p>{{ t("reactDockerWpSection.restApi.description") }}</p>
+            <p>{{ t("sectionBlobs.blob3.description") }}</p>
           </div>
         </div>
       </div>
@@ -837,7 +838,7 @@
               <!-- <p>{{ currentLang }}</p> -->
               <div class="space-20"></div>
               <!-- Formulário de Captura -->
-              <app-lead-form></app-lead-form>
+              <!-- <app-lead-form></app-lead-form> -->
             </div>
           </div>
           <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -887,9 +888,9 @@
                 </tbody>
               </table>
               <div>
-                <app-language-selector
+                <!-- <app-language-selector
                   class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
-                ></app-language-selector>
+                ></app-language-selector> -->
               </div>
               <!-- <h2>{{ t('contactSection.languageFlags') }}</h2> -->
             </div>
@@ -901,6 +902,36 @@
 
   <!-- Map -->
   <!-- Footer-area -->
-  
-  <app-footer></app-footer>
+  <footer class="black-bg">
+    <div class="container">
+      <div class="space-80"></div>
+      <div class="row text-white wow fadeIn">
+        <div class="col-xs-12 text-center">
+          <div class="social-menu">
+            <a href="https://www.instagram.com/f5sites/">
+              <span class="ti-instagram"></span>
+            </a>
+            <a href="https://web.facebook.com/f5sites/">
+              <span class="ti-facebook"></span>
+            </a>
+            <!--a href="#"><span class="ti-twitter-alt"></span></a-->
+            <a href="https://www.linkedin.com/company/627006/admin/">
+              <span class="ti-linkedin"></span>
+            </a>
+            <!--a href="#"><span class="ti-pinterest-alt"></span></a-->
+          </div>
+          <div class="space-20"></div>
+          <p>
+            {{ t("footer.year") }}
+            <a href="https://www.f5sites.com">{{ t("footer.f5Sites") }}</a>
+            {{ t("footer.allRightsReserved") }}. {{ t("footer.pageOf") }}
+            <a href="https://www.franciscomatelli.com.br">{{
+              t("footer.franciscoMatelli")
+            }}</a>
+          </p>
+        </div>
+      </div>
+      <div class="space-20"></div>
+    </div>
+  </footer>
 </ng-container>

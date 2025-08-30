@@ -1,20 +1,20 @@
 {
   "title":"Nós criamos",
   "menu": {
-    "home": "Início",
+    "home": "Venda Online",
     "products": "Produtos",
-    "features": "Funcionalidades",
+    "features": "Pacote de Vídeos",
     "clients": "Clientes",
     "prices": "Preços",
     "contact": "Contato"
   },
   "header": {
-    "title": "Bem-vindos",
-    "subtitle": "Criamos sites e aplicativos desde 2005",
+    "title": "Francisco Matelli: criador do curso Vendedor Insano e CEO da F5 Sites e Cursos",
+    "subtitle": "Vendas Insanas!!!",
     "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Criar um aplicativo, um site e um sistema para gerenciar e promover o seu negócio é a chave para o sucesso. Com a digitalização da economia, estamos todos conectados. Ignorar isso significa abrir espaço para a concorrência. A F5 Sites é uma empresa brasileira recém-chegada à Itália, pronta para trazer vantagens competitivas para as empresas italianas a baixo custo. Quer conversar sobre como digitalizar seu negócio?",
-    "watchVideo": "Assista ao vídeo",
-    "contact": "Contato"
+    "description": "Nosso fórmula nada secreta: vídeos diários + robô atendimento + site que vende!",
+    "watchVideo": "F5 Sites no YouTube",
+    "contact": "Agenda uma Call"
   },
   "products": {
     "title": "Produtos F5 Sites",
@@ -24,18 +24,18 @@
     "lavaggioapp": "App de delivery lavagem de carro na Itália",
     "timelapse": "Acelere vídeos de desenvolvimento"
   },
-  "reactDockerWpSection": {
-    "react": {
-      "title": "React",
-      "description": "Um framework completo para a criação de aplicações web modernas e fáceis de usar, integrado com APIs externas e WordPress."
+  "sectionBlobs": {
+    "blob1": {
+      "title": "Vídeos Diários",
+      "description": "Nossa exclusiva ferramenta com IA vai editar e publicar vídeos virais todos os dias na suas redes sociais."
     },
-    "docker": {
-      "title": "Docker",
-      "description": "Soluções para colocar seu site e aplicativos em produção em qualquer infraestrutura de nuvem."
+    "blob2": {
+      "title": "Robô WhatsApp",
+      "description": "Nosso robô de atendimento plugado no WhatsApp vai garantir o primeiro atendimento 24h e depois redirecionar para sua equipe."
     },
-    "restApi": {
-      "title": "Rest API",
-      "description": "O WordPress fornece uma camada de interação REST para facilitar a relação das empresas com suas aplicações."
+    "blob3": {
+      "title": "Site que vende",
+      "description": "Um site com botão de compra e checkout confiável vende muito! Vender pela internet é muito fácil e seguro!"
     }
   },
   "clientSection": {

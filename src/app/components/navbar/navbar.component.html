@@ -28,6 +28,11 @@
               }}</a>
             </li>
             <li>
+              <a [routerLink]="['/', currentLang]" fragment="feature">{{
+                t("menu.features")
+              }}</a>
+            </li>
+            <li>
               <a [routerLink]="['/', currentLang]" fragment="products">{{
                 t("menu.products")
               }}</a>
@@ -35,11 +40,6 @@
             <li>
               <a [routerLink]="['/', currentLang]" fragment="client">{{
                 t("menu.clients")
-              }}</a>
-            </li>
-            <li>
-              <a [routerLink]="['/', currentLang]" fragment="feature">{{
-                t("menu.features")
               }}</a>
             </li>
             <li>
