@@ -1,46 +1,45 @@
 {
   "title": "We create",
   "menu": {
-    "home": "Home",
-    "products": "Products",
-    "features": "Features",
-    "clients": "Clients",
-    "prices": "Prices",
-    "contact": "Contact"
+    "item1": "Insane Sales",
+    "item2": "2",
+    "item3": "Products",
+    "item4": "Clients",
+    "item5": "Contact"
   },
   "header": {
-    "title": "Welcome",
-    "subtitle": "We provide technology since 2005",
+    "title": "Francisco Matelli: creator of the Insane Seller course and CEO of F5 Sites and Courses",
+    "subtitle": "Insane Sales!!!",
     "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Creating an app, a website, and a system to manage and promote your business is the key to success. With the digitalization of the economy, we are all connected. Ignoring this means leaving space for competitors. F5 Sites is a Brazilian company just arrived in Italy, ready to bring competitive advantages to Italian businesses at a low cost. Want to discuss how to digitize your business?",
-    "watchVideo": "Watch the video",
-    "contact": "Contact"
+    "description": "Our not-so-secret formula: daily videos + chatbot + website that sells!",
+    "watchVideo": "F5 Sites on YouTube",
+    "contact": "Schedule a Call"
   },
   "products": {
-    "title":"F5 Sites Products",
+    "title": "F5 Sites Products",
     "subtitle": "We launch and develop our products.",
-    "projectimer": "Time managements for teams",
-    "pomodoros": "Open source individual timmer",
-    "lavaggioapp": "Car wash delivery app for Italy market",
-    "timelapse": "Accelerate live development videos"
+    "projectimer": "Team time management",
+    "pomodoros": "Open-source individual timer",
+    "lavaggioapp": "Car wash delivery app in Italy",
+    "timelapse": "Speed up development videos"
   },
-  "reactDockerWpSection": {
-    "react": {
-      "title": "React",
-      "description": "A complete framework for building modern, user-friendly web applications, integrated with external APIs and WordPress."
+  "sectionBlobs": {
+    "blob1": {
+      "title": "Daily Videos",
+      "description": "Our exclusive AI-powered tool will edit and publish viral videos every day on your social networks."
     },
-    "docker": {
-      "title": "Docker",
-      "description": "Solutions for deploying your website and applications on any cloud infrastructure."
+    "blob2": {
+      "title": "WhatsApp Bot",
+      "description": "Our bot connected to WhatsApp will provide first support 24/7 and then redirect to your team."
     },
-    "restApi": {
-      "title": "Rest API",
-      "description": "WordPress provides a REST layer to facilitate the interaction between businesses and their applications."
+    "blob3": {
+      "title": "Website that sells",
+      "description": "A website with a buy button and reliable checkout sells a lot! Selling online is very easy and safe!"
     }
   },
   "clientSection": {
     "title": "Clients",
-    "description": "Here are our main clients.",
+    "description": "Below are our main clients.",
     "clients": {
       "ftd": "FTD 🇧🇷",
       "cogna": "Cogna 🇧🇷",
@@ -50,31 +49,31 @@
   },
   "featureSection": {
     "title": "Features",
-    "subtitle": "You decide: we do.",
+    "subtitle": "You decide: we make it happen.",
     "robustProjectsTitle": "Robust Projects",
-    "robustProjectsDescription": "The quality of code translates into ease of adapting the product to our clients' needs.",
-    "customTitle": "Custom",
-    "customDescription": "Features created specifically for your business, tailor-made.",
+    "robustProjectsDescription": "The quality of the code translates into adaptability of the product to our clients’ needs",
+    "customTitle": "Tailored",
+    "customDescription": "Features created especially for your business, custom-made",
     "smartTitle": "Smart",
-    "smartDescription": "The ability of an application to anticipate and predict user needs.",
+    "smartDescription": "The ability of an application to anticipate and predict user behavior",
     "innovativeTitle": "Innovative",
-    "innovativeDescription": "Modern screen quality for the most demanding users.",
+    "innovativeDescription": "Top-quality modern screens for the most demanding users",
     "pwaTitle": "PWA",
-    "pwaDescription": "It is native and available in the Google and Apple stores but can also be accessed from the browser.",
+    "pwaDescription": "It’s native and available on Google and Apple stores, but can also be accessed via browser",
     "creativeDesignTitle": "Creative Design",
-    "creativeDesignDescription": "Creation of exclusive and original screens for your project."
+    "creativeDesignDescription": "Creation of exclusive and original screens for your project"
   },
   "questionSection": {
     "lavaggioAppTitle": "LavaggioApp.it",
-    "lavaggioAppDescription": "We are launching a subscription service for self-car wash. It consists of two apps, one for the customer and one for the partner, like Uber. Our main technological project for the Italian market.",
-    "manualWashTitle": "Manual Wash Delivery",
-    "manualWashDescription": "The hand wash service at home is designed to offer convenience and quality. We use special techniques to ensure thorough cleaning of each garment. We handle pick-up and delivery, all without you having to leave your home.",
-    "downloadAndBookTitle": "Download and Book",
-    "downloadAndBookDescription": "Download our app and book the service in just a few clicks. Easily schedule your delivery.",
-    "exclusiveAIForSectorTitle": "Creating Exclusive AI for the Sector",
-    "exclusiveAIForSectorDescription": "We are creating an exclusive AI for the car wash sector, designed to accurately assess the quality of the process and ensure results for each treated garment.",
+    "lavaggioAppDescription": "We are launching a subscription service for car washing. It consists of two apps, one for the client and one for the partner, like Uber. Our main technology project for the Italian market.",
+    "manualWashTitle": "Manual car wash delivery",
+    "manualWashDescription": "The home manual wash service was designed to offer convenience and quality. We use special techniques to ensure detailed cleaning of every part. We take care of pick-up and delivery, all without you having to leave home.",
+    "downloadAndBookTitle": "Download and book",
+    "downloadAndBookDescription": "Download our app and book the service in a few clicks. Easily schedule your delivery.",
+    "exclusiveAIForSectorTitle": "Creating an exclusive AI for the sector",
+    "exclusiveAIForSectorDescription": "We are creating an exclusive AI for the washing sector, designed to accurately assess process quality and guarantee results for each treated item.",
     "madeInItalyTitle": "Made in Italy 🇮🇹",
-    "madeInItalyDescription": "We are immensely proud to develop an app here in Italy. Every line of code, every feature is crafted with the passion and quality that define \"Made in Italy\" 🇮🇹. We are creating something unique, rooted in our tradition of excellence, to offer the world an innovative and authentically Italian product."
+    "madeInItalyDescription": "We are very proud to develop an app here in Italy. Every line of code, every feature is designed and implemented with the passion and quality that characterize \"Made in Italy\" 🇮🇹. We are creating something unique, rooted in our tradition of excellence, to offer the world an innovative and authentically Italian product."
   },
   "videoSection": {
     "discoverYouTubeChannel": "Discover our YouTube channel"
@@ -88,36 +87,36 @@
     "F1Title": "Budget",
     "F1Price": "0",
     "F1Feature1": "Briefing meeting",
-    "F1Feature2": "Custom features",
-    "F1Feature3": "Infrastructure scaling",
+    "F1Feature2": "Tailored features",
+    "F1Feature3": "Scale infrastructure",
     "F1Feature4": "Initial scope definition",
     "F1Feature5": "Timeline estimate",
-    "F2Title": "Daily Rate",
+    "F2Title": "Daily",
     "F2Price": "250",
-    "F2Feature1": "Prior scheduling",
+    "F2Feature1": "Pre-scheduled",
     "F2Feature2": "Solution-focused work",
     "F2Feature3": "Technological development",
-    "F2Feature4": "Custom features",
-    "F2Feature5": "Customer service and savings",
-    "F3Title": "Project",
+    "F2Feature4": "Tailored features",
+    "F2Feature5": "Customer support and savings",
+    "F3Title": "Contract",
     "F3Price": "20,000",
     "F3Feature1": "Complete projects",
     "F3Feature2": "Multifunctional team",
     "F3Feature3": "From idea to project",
-    "F3Feature4": "Complete infrastructure",
+    "F3Feature4": "Full infrastructure",
     "F3Feature5": "Package with support and training",
     "evaluateButton": "Hire",
     "footerNote": "*starting from"
   },
   "contactSection": {
-    "imageAlt": "Image background for contact section",
+    "imageAlt": "Background image for contact section",
     "contactTitle": "Contact",
     "bookFreeCallTitle": "Book 15 minutes free",
     "bookFreeCallDescription": "Schedule a free 15-minute video call to present your project.",
-    "location": "We are located in Milan, Italy.",
+    "location": "We are located in São Paulo, SP.",
     "phoneSupport": "Priority phone support for clients",
-    "emailSupport": "Send the contact through the form and we will reply via email to confirm the time.",
-    "address": "Global Partner",
+    "emailSupport": "Send your contact through the form and we will reply by email to confirm the time.",
+    "address": "Global partner",
     "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
   },
   "footer": {
@@ -126,13 +125,5 @@
     "allRightsReserved": "all rights reserved",
     "pageOf": "Page of",
     "franciscoMatelli": "Francisco Matelli"
-  },
-  "about": {
-    "title": "About Our Company",
-    "content": "We are a team of passionate developers creating amazing web experiences.",
-    "team": "Our Team",
-    "teamDescription": "Meet our talented team of developers and designers.",
-    "mission": "Our Mission", 
-    "missionDescription": "Delivering high-quality web solutions that drive business growth."
   }
 }

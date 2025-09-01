@@ -1,47 +1,45 @@
 {
-  "title":"We create"
-,
+  "title": "Creiamo",
   "menu": {
-    "home": "Home",
-    "products": "Prodotti",
-    "features": "Funzionalità",
-    "clients": "Clienti",
-    "prices": "Prezzi",
-    "contact": "Contatto"
+    "item1": "Vendite Pazze",
+    "item2": "2",
+    "item3": "Prodotti",
+    "item4": "Clienti",
+    "item5": "Contatto"
   },
   "header": {
-    "title": "Benvenuti",
-    "subtitle": "Creiamo siti web e applicazioni dal 2005",
+    "title": "Francisco Matelli: creatore del corso Venditore Pazzo e CEO di F5 Sites e Corsi",
+    "subtitle": "Vendite Pazze!!!",
     "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Creare un'app, un sito web e un sistema per gestire e promuovere la tua attività è la chiave del successo. Con la digitalizzazione dell'economia, siamo tutti connessi. Ignorare questo significa lasciare spazio alla concorrenza. F5 Sites è un'azienda brasiliana appena arrivata in Italia, pronta a portare vantaggi competitivi alle aziende italiane a basso costo. Vuoi parlare di come digitalizzare la tua attività?",
-    "watchVideo": "Guarda il video",
-    "contact": "Contatto"
+    "description": "La nostra formula non segreta: video quotidiani + bot di assistenza + sito che vende!",
+    "watchVideo": "F5 Sites su YouTube",
+    "contact": "Prenota una Call"
   },
   "products": {
     "title": "Prodotti F5 Sites",
     "subtitle": "Lanciamo e sviluppiamo i nostri prodotti.",
-    "projectimer": "App di gestione del tempo per team",
+    "projectimer": "Gestione del tempo per i team",
     "pomodoros": "Timer individuale open source",
-    "lavaggioapp": "Lavaggio auto a domicilio per il mercato italiano",
-    "timelapse": "Accelera i video di sviluppo live"
+    "lavaggioapp": "App di consegna lavaggio auto in Italia",
+    "timelapse": "Accelera video di sviluppo"
   },
-  "reactDockerWpSection": {
-    "react": {
-      "title": "React",
-      "description": "Un framework completo per la creazione di applicazioni web moderne e facili da usare, integrato con API esterne e WordPress."
+  "sectionBlobs": {
+    "blob1": {
+      "title": "Video quotidiani",
+      "description": "Il nostro esclusivo strumento con IA modificherà e pubblicherà video virali ogni giorno sui tuoi social network."
     },
-    "docker": {
-      "title": "Docker",
-      "description": "Soluzioni per mettere il tuo sito web e applicazioni in produzione in qualsiasi infrastruttura cloud."
+    "blob2": {
+      "title": "Bot WhatsApp",
+      "description": "Il nostro bot collegato a WhatsApp garantirà la prima assistenza 24 ore su 24 e poi reindirizzerà al tuo team."
     },
-    "restApi": {
-      "title": "Rest API",
-      "description": "WordPress fornisce uno strato di interazione REST per facilitare il rapporto delle aziende con le loro applicazioni."
+    "blob3": {
+      "title": "Sito che vende",
+      "description": "Un sito con pulsante di acquisto e checkout affidabile vende molto! Vendere online è molto facile e sicuro!"
     }
   },
   "clientSection": {
     "title": "Clienti",
-    "description": "Di seguito i nostri principali clienti.",
+    "description": "Qui sotto i nostri principali clienti.",
     "clients": {
       "ftd": "FTD 🇧🇷",
       "cogna": "Cogna 🇧🇷",
@@ -51,74 +49,74 @@
   },
   "featureSection": {
     "title": "Funzionalità",
-    "subtitle": "Tu decidi: noi facciamo.",
+    "subtitle": "Tu decidi: noi realizziamo.",
     "robustProjectsTitle": "Progetti Robusti",
     "robustProjectsDescription": "La qualità del codice si traduce in facilità di adattamento del prodotto alle esigenze dei nostri clienti",
     "customTitle": "Su misura",
-    "customDescription": "Funzionalità create appositamente per il tuo business, fatte su misura",
+    "customDescription": "Funzionalità create appositamente per la tua azienda",
     "smartTitle": "Intelligente",
-    "smartDescription": "La capacità di un'applicazione di anticipare e prevedere l'utente",
+    "smartDescription": "La capacità di un’applicazione di anticipare e prevedere il comportamento dell’utente",
     "innovativeTitle": "Innovativo",
-    "innovativeDescription": "Qualità delle schermate più moderne per gli utenti più esigenti",
+    "innovativeDescription": "Qualità degli schermi più moderni per gli utenti più esigenti",
     "pwaTitle": "PWA",
-    "pwaDescription": "È nativo e si trova nello store di Google e Apple, ma può anche essere accessibile dal browser",
+    "pwaDescription": "È nativo e disponibile negli store di Google e Apple, ma può essere accessibile anche tramite browser",
     "creativeDesignTitle": "Design Creativo",
     "creativeDesignDescription": "Creazione di schermate esclusive e originali per il tuo progetto"
   },
   "questionSection": {
     "lavaggioAppTitle": "LavaggioApp.it",
-    "lavaggioAppDescription": "Stiamo lanciando un servizio in abbonamento per l'autolavaggio. Sono costituiti da due applicazioni, una per il cliente e una per il partner, come Uber. Il nostro principale progetto tecnologico per il mercato italiano.",
-    "manualWashTitle": "Delivery de lavaggio manuale",
-    "manualWashDescription": "Il servizio di lavaggio a mano a domicilio è progettato per offrire comodità e qualità. Usiamo tecniche speciali per garantire la pulizia accurata di ogni capo. Ci occupiamo del ritiro e della consegna, tutto senza che tu debba uscire di casa.",
+    "lavaggioAppDescription": "Stiamo lanciando un servizio in abbonamento per il lavaggio auto. È composto da due app, una per il cliente e l’altra per il partner, come Uber. Il nostro principale progetto tecnologico per il mercato italiano.",
+    "manualWashTitle": "Lavaggio manuale a domicilio",
+    "manualWashDescription": "Il servizio di lavaggio manuale a domicilio è stato progettato per offrire comodità e qualità. Usiamo tecniche speciali per garantire una pulizia dettagliata di ogni parte. Ci occupiamo del ritiro e della consegna, tutto senza che tu debba uscire di casa.",
     "downloadAndBookTitle": "Scarica e prenota",
-    "downloadAndBookDescription": "Scarica la nostra app e prenota il servizio in pochi clic. Con facilità, puoi programmare la tua consegna.",
+    "downloadAndBookDescription": "Scarica la nostra app e prenota il servizio in pochi clic. Facilmente puoi programmare la tua consegna.",
     "exclusiveAIForSectorTitle": "Creando un’IA esclusiva per il settore",
-    "exclusiveAIForSectorDescription": "Stiamo creando un’IA esclusiva per il settore della lavaggio, progettata per valutare con precisione la qualità del processo e assicurare risultati per ogni capo trattato.",
+    "exclusiveAIForSectorDescription": "Stiamo creando un’IA esclusiva per il settore del lavaggio, progettata per valutare con precisione la qualità del processo e garantire risultati per ogni elemento trattato.",
     "madeInItalyTitle": "Made in Italy 🇮🇹",
-    "madeInItalyDescription": "Siamo immensamente orgogliosi di sviluppare un'app qui in Italia. Ogni linea di codice, ogni funzionalità è pensata e realizzata con la passione e la qualità che contraddistinguono il \"Made in Italy\" 🇮🇹. Stiamo creando qualcosa di unico, radicato nella nostra tradizione d'eccellenza, per offrire al mondo un prodotto innovativo e autenticamente italiano."
+    "madeInItalyDescription": "Siamo molto orgogliosi di sviluppare un’app qui in Italia. Ogni riga di codice, ogni funzionalità è pensata e realizzata con la passione e la qualità che caratterizzano il \"Made in Italy\" 🇮🇹. Stiamo creando qualcosa di unico, radicato nella nostra tradizione di eccellenza, per offrire al mondo un prodotto innovativo e autenticamente italiano."
   },
   "videoSection": {
-    "discoverYouTubeChannel": "Scopri il nostro canale su YouTube"
+    "discoverYouTubeChannel": "Scopri il nostro canale YouTube"
   },
   "priceSection": {
     "imageAlt": "Immagine di sfondo per la sezione prezzi",
     "title": "Prezzi",
     "FIAT": "€",
     "period": ".",
-    "description": "Servizi di prima qualità con grande risparmio per il cliente.",
+    "description": "Servizi di alta qualità con grande risparmio per il cliente.",
     "F1Title": "Preventivo",
     "F1Price": "0",
     "F1Feature1": "Riunione di briefing",
-    "F1Feature2": "Funzionalità personalizzate",
+    "F1Feature2": "Funzionalità su misura",
     "F1Feature3": "Dimensionamento infrastruttura",
-    "F1Feature4": "Definizione iniziale del progetto",
+    "F1Feature4": "Definizione dell’ambito iniziale",
     "F1Feature5": "Stima dei tempi",
-    "F2Title": "Tariffa Giornaliera",
+    "F2Title": "Giornaliero",
     "F2Price": "250",
-    "F2Feature1": "Pianificazione preventiva",
-    "F2Feature2": "Lavoro orientato alla soluzione",
+    "F2Feature1": "Programmazione anticipata",
+    "F2Feature2": "Lavoro focalizzato sulla soluzione",
     "F2Feature3": "Sviluppo tecnologico",
-    "F2Feature4": "Funzionalità personalizzate",
-    "F2Feature5": "Servizio clienti e risparmio",
-    "F3Title": "Progetto",
+    "F2Feature4": "Funzionalità su misura",
+    "F2Feature5": "Assistenza e risparmio per il cliente",
+    "F3Title": "Appalto",
     "F3Price": "20.000",
     "F3Feature1": "Progetti completi",
     "F3Feature2": "Team multifunzionale",
-    "F3Feature3": "Dall'idea al progetto",
+    "F3Feature3": "Dall’idea al progetto",
     "F3Feature4": "Infrastruttura completa",
     "F3Feature5": "Pacchetto con supporto e formazione",
     "evaluateButton": "Assumi",
     "footerNote": "*a partire da"
   },
   "contactSection": {
-    "imageAlt": "Image background for contact section",
+    "imageAlt": "Immagine di sfondo per la sezione contatti",
     "contactTitle": "Contatto",
     "bookFreeCallTitle": "Prenota 15 minuti gratis",
-    "bookFreeCallDescription": "Pianifica una videochiamata gratuita di 15 minuti per la presentazione del tuo progetto.",
-    "location": "Siamo situati a Milano, Italia.",
-    "phoneSupport": "Assistenza prioritaria telefonica per i clienti",
-    "emailSupport": "Invia il contatto tramite il modulo e ti risponderemo via email per confermare l'orario.",
-    "address": "Global Partner",
+    "bookFreeCallDescription": "Prenota una videoconferenza gratuita di 15 minuti per presentare il tuo progetto.",
+    "location": "Siamo a San Paolo, SP.",
+    "phoneSupport": "Supporto prioritario telefonico per i clienti",
+    "emailSupport": "Invia il contatto tramite il modulo e risponderemo via e-mail per confermare l’orario.",
+    "address": "Partner globale",
     "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
   },
   "footer": {

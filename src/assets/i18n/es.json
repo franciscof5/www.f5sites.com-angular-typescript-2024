@@ -1,46 +1,45 @@
 {
-  "title":"Nosotros creamos",
+  "title": "Creamos",
   "menu": {
-    "home": "Inicio",
-    "products": "Productos",
-    "features": "Funcionalidades",
-    "clients": "Clientes",
-    "prices": "Precios",
-    "contact": "Contacto"
+    "item1": "Ventas Insanas",
+    "item2": "2",
+    "item3": "Productos",
+    "item4": "Clientes",
+    "item5": "Contacto"
   },
   "header": {
-    "title": "Bienvenidos",
-    "subtitle": "Creamos sitios web y aplicaciones desde 2005",
+    "title": "Francisco Matelli: creador del curso Vendedor Insano y CEO de F5 Sites y Cursos",
+    "subtitle": "¡¡¡Ventas Insanas!!!",
     "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Crear una aplicación, un sitio web y un sistema para gestionar y promover tu negocio es la clave del éxito. Con la digitalización de la economía, estamos todos conectados. Ignorar esto significa dejar espacio para la competencia. F5 Sites es una empresa brasileña que acaba de llegar a Italia, lista para traer ventajas competitivas a las empresas italianas a bajo costo. ¿Quieres hablar de cómo digitalizar tu negocio?",
-    "watchVideo": "Mira el video",
-    "contact": "Contacto"
+    "description": "Nuestra fórmula no tan secreta: videos diarios + bot de atención + ¡sitio que vende!",
+    "watchVideo": "F5 Sites en YouTube",
+    "contact": "Agenda una llamada"
   },
   "products": {
     "title": "Productos F5 Sites",
     "subtitle": "Lanzamos y desarrollamos nuestros productos.",
-    "projectimer": "Gestión del tiempo para equipos",
+    "projectimer": "Gestión de tiempo para equipos",
     "pomodoros": "Temporizador individual de código abierto",
-    "lavaggioapp": "App de lavado de autos a domicilio in Italia",
-    "timelapse": "Acelera videos de desarrollo en vivo"
+    "lavaggioapp": "App de lavado de autos a domicilio en Italia",
+    "timelapse": "Acelera videos de desarrollo"
   },
-  "reactDockerWpSection": {
-    "react": {
-      "title": "React",
-      "description": "Un framework completo para la creación de aplicaciones web modernas y fáciles de usar, integrado con APIs externas y WordPress."
+  "sectionBlobs": {
+    "blob1": {
+      "title": "Videos diarios",
+      "description": "Nuestra exclusiva herramienta con IA editará y publicará videos virales todos los días en tus redes sociales."
     },
-    "docker": {
-      "title": "Docker",
-      "description": "Soluciones para poner tu sitio web y aplicaciones en producción en cualquier infraestructura en la nube."
+    "blob2": {
+      "title": "Bot de WhatsApp",
+      "description": "Nuestro bot conectado a WhatsApp garantizará la primera atención 24h y luego redirigirá a tu equipo."
     },
-    "restApi": {
-      "title": "Rest API",
-      "description": "WordPress proporciona una capa de interacción REST para facilitar la relación de las empresas con sus aplicaciones."
+    "blob3": {
+      "title": "Sitio que vende",
+      "description": "¡Un sitio con botón de compra y checkout confiable vende mucho! ¡Vender por internet es muy fácil y seguro!"
     }
   },
   "clientSection": {
     "title": "Clientes",
-    "description": "A continuación, nuestros principales clientes.",
+    "description": "A continuación están nuestros principales clientes.",
     "clients": {
       "ftd": "FTD 🇧🇷",
       "cogna": "Cogna 🇧🇷",
@@ -50,31 +49,31 @@
   },
   "featureSection": {
     "title": "Funcionalidades",
-    "subtitle": "Tú decides: nosotros hacemos.",
+    "subtitle": "Tú decides: nosotros lo hacemos.",
     "robustProjectsTitle": "Proyectos Robustos",
-    "robustProjectsDescription": "La calidad del código se traduce en facilidad para adaptar el producto a las necesidades de nuestros clientes",
+    "robustProjectsDescription": "La calidad del código se traduce en facilidad de adaptación del producto a las necesidades de nuestros clientes",
     "customTitle": "A medida",
-    "customDescription": "Funcionalidades creadas especialmente para tu negocio, hechas a medida",
+    "customDescription": "Funcionalidades creadas especialmente para tu negocio",
     "smartTitle": "Inteligente",
-    "smartDescription": "La capacidad de una aplicación para anticipar y prever el comportamiento del usuario",
+    "smartDescription": "La capacidad de una aplicación para anticipar y predecir el comportamiento del usuario",
     "innovativeTitle": "Innovador",
-    "innovativeDescription": "La calidad de las pantallas más modernas para los usuarios más exigentes",
+    "innovativeDescription": "Calidad de las pantallas más modernas para los usuarios más exigentes",
     "pwaTitle": "PWA",
-    "pwaDescription": "Es nativa y está en la tienda de Google y Apple, pero también puede ser accesible desde el navegador",
+    "pwaDescription": "Es nativo y está disponible en la tienda de Google y Apple, pero también se puede acceder por navegador",
     "creativeDesignTitle": "Diseño Creativo",
     "creativeDesignDescription": "Creación de pantallas exclusivas y originales para tu proyecto"
   },
   "questionSection": {
     "lavaggioAppTitle": "LavaggioApp.it",
-    "lavaggioAppDescription": "Estamos lanzando un servicio de suscripción para el lavado de autos. Se compone de dos aplicaciones, una para el cliente y otra para el socio, como Uber. Nuestro principal proyecto tecnológico para el mercado italiano.",
+    "lavaggioAppDescription": "Estamos lanzando un servicio de suscripción para lavado de autos. Se compone de dos aplicaciones, una para el cliente y otra para el socio, como Uber. Nuestro principal proyecto tecnológico para el mercado italiano.",
     "manualWashTitle": "Lavado manual a domicilio",
-    "manualWashDescription": "El servicio de lavado manual a domicilio está diseñado para ofrecer comodidad y calidad. Usamos técnicas especiales para garantizar la limpieza detallada de cada prenda. Nos encargamos de la recogida y entrega, todo sin que tengas que salir de casa.",
-    "downloadAndBookTitle": "Descarga y reserva",
-    "downloadAndBookDescription": "Descarga nuestra aplicación y reserva el servicio en pocos clics. Con facilidad, puedes programar tu entrega.",
+    "manualWashDescription": "El servicio de lavado manual a domicilio fue diseñado para ofrecer conveniencia y calidad. Usamos técnicas especiales para garantizar la limpieza detallada de cada parte. Nos encargamos de la recogida y entrega, todo sin que tengas que salir de casa.",
+    "downloadAndBookTitle": "Descarga y agenda",
+    "downloadAndBookDescription": "Descarga nuestra aplicación y agenda el servicio en pocos clics. Con facilidad puedes programar tu entrega.",
     "exclusiveAIForSectorTitle": "Creando una IA exclusiva para el sector",
-    "exclusiveAIForSectorDescription": "Estamos creando una IA exclusiva para el sector del lavado, diseñada para evaluar con precisión la calidad del proceso y garantizar resultados en cada prenda tratada.",
+    "exclusiveAIForSectorDescription": "Estamos creando una IA exclusiva para el sector de lavado, diseñada para evaluar con precisión la calidad del proceso y garantizar resultados para cada artículo tratado.",
     "madeInItalyTitle": "Made in Italy 🇮🇹",
-    "madeInItalyDescription": "Estamos inmensamente orgullosos de desarrollar una aplicación aquí en Italia. Cada línea de código, cada funcionalidad está pensada y realizada con la pasión y la calidad que caracterizan al \"Made in Italy\" 🇮🇹. Estamos creando algo único, arraigado en nuestra tradición de excelencia, para ofrecer al mundo un producto innovador y auténticamente italiano."
+    "madeInItalyDescription": "Estamos muy orgullosos de desarrollar una aplicación aquí en Italia. Cada línea de código, cada funcionalidad es pensada y realizada con la pasión y calidad que caracterizan el \"Made in Italy\" 🇮🇹. Estamos creando algo único, enraizado en nuestra tradición de excelencia, para ofrecer al mundo un producto innovador y auténticamente italiano."
   },
   "videoSection": {
     "discoverYouTubeChannel": "Descubre nuestro canal en YouTube"
@@ -88,18 +87,18 @@
     "F1Title": "Presupuesto",
     "F1Price": "0",
     "F1Feature1": "Reunión de briefing",
-    "F1Feature2": "Funcionalidades personalizadas",
-    "F1Feature3": "Escalado de infraestructura",
-    "F1Feature4": "Definición inicial del alcance",
+    "F1Feature2": "Funcionalidades a medida",
+    "F1Feature3": "Dimensionar infraestructura",
+    "F1Feature4": "Definición de alcance inicial",
     "F1Feature5": "Estimación de plazos",
-    "F2Title": "Tarifa Diaria",
+    "F2Title": "Diaria",
     "F2Price": "250",
     "F2Feature1": "Agendamiento previo",
-    "F2Feature2": "Trabajo enfocado en soluciones",
+    "F2Feature2": "Trabajo enfocado en solución",
     "F2Feature3": "Desarrollo tecnológico",
-    "F2Feature4": "Funcionalidades personalizadas",
-    "F2Feature5": "Atención al cliente y ahorro",
-    "F3Title": "Proyecto",
+    "F2Feature4": "Funcionalidades a medida",
+    "F2Feature5": "Atención y economía para el cliente",
+    "F3Title": "Contrato",
     "F3Price": "20.000",
     "F3Feature1": "Proyectos completos",
     "F3Feature2": "Equipo multifuncional",
@@ -112,12 +111,12 @@
   "contactSection": {
     "imageAlt": "Imagen de fondo para la sección de contacto",
     "contactTitle": "Contacto",
-    "bookFreeCallTitle": "Reserva 15 minutos gratis",
+    "bookFreeCallTitle": "Agenda 15 minutos gratis",
     "bookFreeCallDescription": "Agenda una videollamada gratuita de 15 minutos para la presentación de tu proyecto.",
-    "location": "Estamos ubicados en Milán, Italia.",
-    "phoneSupport": "Soporte prioritario por teléfono para los clientes",
-    "emailSupport": "Envía el contacto a través del formulario y te responderemos por correo electrónico para confirmar la hora.",
-    "address": "Global Partner",
+    "location": "Estamos ubicados en São Paulo, SP.",
+    "phoneSupport": "Soporte prioritario por teléfono para clientes",
+    "emailSupport": "Envíanos el contacto a través del formulario y responderemos por correo electrónico para confirmar el horario.",
+    "address": "Socio global",
     "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
   },
   "footer": {
