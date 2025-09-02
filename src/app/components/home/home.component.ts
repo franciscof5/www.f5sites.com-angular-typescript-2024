@@ -1,4 +1,4 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
 import { TranslocoModule } from '@jsverse/transloco';
 import { RouterModule, RouterLink } from '@angular/router';
@@ -25,24 +25,14 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  currentLang: string = 'en';
+  constructor(public translocoService: TranslocoService) {} 
+  title = 'f5sites';
+  language = "en";
 
-  constructor(
-    private transloco: TranslocoService,
-    private cdr: ChangeDetectorRef
-  ) {
-    // define o idioma atual ao iniciar
-    this.currentLang = this.transloco.getActiveLang();
-
-    // observa mudanças de idioma
-    this.transloco.langChanges$.subscribe(lang => {
-      console.log('Idioma mudou para:', lang);
-      this.currentLang = lang;
-      this.cdr.detectChanges(); // força atualização da view
-    });
+  get currentLang(): string {
+    return this.translocoService.getActiveLang();
   }
-
-  getCurrentLang(): string {
-    return this.currentLang;
+  ngAfterViewInit() {
+    console.log("ngAfterViewInit"); 
   }
 }
