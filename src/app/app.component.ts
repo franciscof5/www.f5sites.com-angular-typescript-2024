@@ -78,10 +78,25 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     if (environment.production) {
       this.loadGtmScript();
     }
-    
     this.loadCSSFiles();
+    setTimeout(() => {
+      this.checkGtmStatus();
+    }, 3000);
   }
-
+  private checkGtmStatus() {
+    console.log("checkGtmStatus()")
+    if ((window as any).google_tag_manager) {
+      console.log('✅ GTM carregado:', (window as any).google_tag_manager);
+    } else {
+      console.warn('⚠️ GTM não detectado na window');
+    }
+    
+    if ((window as any).dataLayer) {
+      console.log('✅ DataLayer disponível:', (window as any).dataLayer);
+    } else {
+      console.warn('⚠️ DataLayer não encontrado');
+    }
+  }
   ngAfterViewInit() {
     this.loadScripts();
   }
@@ -94,7 +109,13 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   private loadGtmScript() {
     console.log('Carregando Google Tag Manager...');
     
+    // Primeiro, verifique se já existe para evitar duplicação
+    if (this.document.getElementById('gtm-script')) {
+      return;
+    }
+
     const script = this.renderer.createElement('script');
+    script.id = 'gtm-script';
     script.innerHTML = `
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -103,9 +124,16 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       })(window,document,'script','dataLayer','GTM-TPCMBN7C');
     `;
     
-    // Adiciona eventos para debug
-    script.onload = () => console.log('✅ Google Tag Manager carregado com sucesso');
-    script.onerror = (e: ErrorEvent) => console.error('❌ Erro ao carregar Google Tag Manager', e);
+    script.onload = () => {
+      console.log('✅ Google Tag Manager carregado com sucesso');
+      // Força o push de um evento para testar
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      (window as any).dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    };
+    
+    script.onerror = (e: ErrorEvent) => {
+      console.error('❌ Erro ao carregar Google Tag Manager', e);
+    };
     
     this.renderer.appendChild(this.document.head, script);
   }
