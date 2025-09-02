@@ -2,7 +2,6 @@
 import { Component, OnInit, AfterViewInit, OnDestroy, Renderer2, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
-import { AppRoutingModule } from './app.routes';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { environment } from '../environments/environment';
 import { DOCUMENT } from '@angular/common';
@@ -14,23 +13,21 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./app.component.css'],
   imports: [CommonModule, RouterModule, TranslocoModule, RouterOutlet],
   template: `
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-77PYB5Z9BC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-77PYB5Z9BC');
-  </script>
-  
-  <!-- Tela de carregamento -->
-  @if (!resourcesLoaded) {
-    <div class="loading-screen">
-      <div class="spinner"></div>
-      <p>Carregando F5 Sites...</p>
-    </div>
-  }
-  <router-outlet></router-outlet>
+    <!-- Tela de carregamento -->
+    @if (!resourcesLoaded) {
+      <div class="loading-screen">
+        <div class="spinner"></div>
+        <p>Carregando F5 Sites...</p>
+      </div>
+    }
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPCMBN7C"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    
+    <router-outlet></router-outlet>
   `
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
@@ -62,7 +59,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     './assets/js/spectragram.min.js',
     './assets/js/ajaxchimp.js',
     './assets/js/wow.min.js',
-    // './assets/js/main.js',
     './assets/js/plugins.js'
   ];
   
@@ -77,9 +73,12 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   ) { }
 
   ngOnInit() {
+    console.log('Environment production:', environment.production);
+    
     if (environment.production) {
       this.loadGtmScript();
     }
+    
     this.loadCSSFiles();
   }
 
@@ -93,15 +92,22 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private loadGtmScript() {
-    const script = document.createElement('script');
+    console.log('Carregando Google Tag Manager...');
+    
+    const script = this.renderer.createElement('script');
     script.innerHTML = `
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','${environment.gtmId}');
+      'https://www.googletagmanager.com/gtm.js?id=GTM-TPCMBN7C';f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TPCMBN7C');
     `;
-    document.head.appendChild(script);
+    
+    // Adiciona eventos para debug
+    script.onload = () => console.log('✅ Google Tag Manager carregado com sucesso');
+    script.onerror = (e: ErrorEvent) => console.error('❌ Erro ao carregar Google Tag Manager', e);
+    
+    this.renderer.appendChild(this.document.head, script);
   }
 
   // Carrega arquivos CSS de forma assíncrona
@@ -115,9 +121,13 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       link.onload = () => {
         loadedCount++;
         if (loadedCount === this.cssFiles.length) {
-          console.log('Todos os arquivos CSS foram carregados');
+          console.log('✅ Todos os arquivos CSS foram carregados');
         }
       };
+      link.onerror = (e: ErrorEvent) => {
+        console.error(`❌ Erro ao carregar CSS: ${cssFile}`, e);
+      };
+      
       this.renderer.appendChild(this.document.head, link);
       this.loadedStyles.push(link);
     });
@@ -130,7 +140,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private loadScriptSequentially(index: number) {
     if (index >= this.jsFiles.length) {
-      console.log('Todos os scripts foram carregados');
+      console.log('✅ Todos os scripts foram carregados');
       this.resourcesLoaded = true;
       this.initPlugins();
       return;
@@ -140,11 +150,11 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     script.src = this.jsFiles[index];
     script.async = false;
     script.onload = () => {
-      console.log(`Script carregado: ${this.jsFiles[index]}`);
+      console.log(`✅ Script carregado: ${this.jsFiles[index]}`);
       this.loadScriptSequentially(index + 1);
     };
-    script.onerror = () => {
-      console.error(`Erro ao carregar script: ${this.jsFiles[index]}`);
+    script.onerror = (e: ErrorEvent) => {
+      console.error(`❌ Erro ao carregar script: ${this.jsFiles[index]}`, e);
       this.loadScriptSequentially(index + 1);
     };
 
@@ -156,34 +166,49 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   private initPlugins() {
     // Aguarda um breve momento para garantir que tudo está carregado
     setTimeout(() => {
-      if (typeof (window as any).WOW === 'function') {
-        new (window as any).WOW().init();
+      try {
+        if (typeof (window as any).WOW === 'function') {
+          new (window as any).WOW().init();
+          console.log('✅ WOW.js inicializado');
+        }
+        
+        this.initMagnificPopup();
+        this.initOwlCarousel();
+        
+        console.log('✅ Todos os recursos do site foram carregados e inicializados');
+      } catch (error) {
+        console.error('❌ Erro ao inicializar plugins:', error);
       }
-      
-      this.initMagnificPopup();
-      this.initOwlCarousel();
-      
-      console.log('Todos os recursos do site foram carregados e inicializados');
-    }, 300);
+    }, 500);
   }
 
   private initMagnificPopup() {
-    if (typeof (window as any).jQuery !== 'undefined' && 
-        (window as any).jQuery.fn.magnificPopup) {
-      // Inicialize o Magnific Popup aqui se necessário
-      console.log('Magnific Popup disponível');
+    try {
+      if (typeof (window as any).jQuery !== 'undefined' && 
+          (window as any).jQuery.fn.magnificPopup) {
+        console.log('✅ Magnific Popup disponível');
+        // Inicialize o Magnific Popup aqui se necessário
+        // Exemplo: $( '.popup' ).magnificPopup({ type: 'image' });
+      }
+    } catch (error) {
+      console.error('❌ Erro ao inicializar Magnific Popup:', error);
     }
   }
 
   private initOwlCarousel() {
-    if (typeof (window as any).jQuery !== 'undefined' && 
-        (window as any).jQuery.fn.owlCarousel) {
-      // Inicialize o Owl Carousel aqui se necessário
-      console.log('Owl Carousel disponível');
+    try {
+      if (typeof (window as any).jQuery !== 'undefined' && 
+          (window as any).jQuery.fn.owlCarousel) {
+        console.log('✅ Owl Carousel disponível');
+        // Inicialize o Owl Carousel aqui se necessário
+        // Exemplo: $(".owl-carousel").owlCarousel();
+      }
+    } catch (error) {
+      console.error('❌ Erro ao inicializar Owl Carousel:', error);
     }
   }
 
-  private removeElements(elements: any[]) {
+  private removeElements(elements: HTMLElement[]) {
     elements.forEach(element => {
       if (element && element.parentNode) {
         element.parentNode.removeChild(element);
@@ -192,7 +217,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   setLang(lang: string) {
-    console.log(`setLang Mudando idioma para: ${lang}`);
+    console.log(`🌐 Mudando idioma para: ${lang}`);
     this.translocoService.setActiveLang(lang);
     this.router.navigate([lang]);
   }
