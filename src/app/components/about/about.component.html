@@ -1,4 +1,83 @@
 <app-navbar></app-navbar>
-<p>about works!</p>
-<p>LANG: {{currentLang}}</p>
+<ng-container *transloco="let t">
+    <section class="relative fix" id="contact">
+        <!-- <img src="../assets/images/europe2.webp" width="100%" alt="{{ t('contactSection.imageAlt') }}" /> -->
+        <div class="section-bg overlay-bg fix">
+        <img
+            src="../assets/images/europe2.webp"
+            alt="{{ t('contactSection.imageAlt') }}"
+        />
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="space-40"></div>
+            <div class="DDDoffset-top">
+            <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="well well-lg">
+                <h3>{{ t("contactSection.contactTitle") }}</h3>
+                <!-- <p>{{ currentLang }}</p> -->
+                <div class="space-20"></div>
+                <!-- Formulário de Captura -->
+                <app-lead-form></app-lead-form>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="well well-lg">
+                <h3>{{ t("contactSection.bookFreeCallTitle") }}</h3>
+                <div class="space-20"></div>
+                <p>{{ t("contactSection.bookFreeCallDescription") }}</p>
+                <p>{{ t("contactSection.location") }}</p>
+
+                <div class="space-25"></div>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>
+                        <div class="border-icon sm">
+                            <span class="ti-headphone"></span>
+                        </div>
+                        </td>
+                        <td>
+                        <a href="callto:+59">{{
+                            t("contactSection.phoneSupport")
+                        }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div class="border-icon sm">
+                            <span class="ti-email"></span>
+                        </div>
+                        </td>
+                        <td>
+                        <a href="mailto:francisco@f5sites.it">{{
+                            t("contactSection.emailSupport")
+                        }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div class="border-icon sm">
+                            <span class="ti-location-pin"></span>
+                        </div>
+                        </td>
+                        <td>
+                        <address>{{ t("contactSection.address") }}</address>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <!-- <app-language-selector
+                    class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
+                    ></app-language-selector> -->
+                </div>
+                <!-- <h2>{{ t('contactSection.languageFlags') }}</h2> -->
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</ng-container>
 <app-footer></app-footer>

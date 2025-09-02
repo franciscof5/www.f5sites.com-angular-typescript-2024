@@ -14,23 +14,23 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./app.component.css'],
   imports: [CommonModule, RouterModule, TranslocoModule, RouterOutlet],
   template: `
-    <!-- Noscript fallback apenas em produção -->
-    @if (environment.production) {
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
-      </noscript>
-    }
-    
-    <!-- Tela de carregamento -->
-    @if (!resourcesLoaded) {
-      <div class="loading-screen">
-        <div class="spinner"></div>
-        <p>Carregando F5 Sites...</p>
-      </div>
-    }
-    
-    <router-outlet></router-outlet>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-77PYB5Z9BC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-77PYB5Z9BC');
+  </script>
+  
+  <!-- Tela de carregamento -->
+  @if (!resourcesLoaded) {
+    <div class="loading-screen">
+      <div class="spinner"></div>
+      <p>Carregando F5 Sites...</p>
+    </div>
+  }
+  <router-outlet></router-outlet>
   `
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
