@@ -1,9 +1,8 @@
-// app.component.ts
-import { Component, OnInit, AfterViewInit, OnDestroy, Renderer2, Inject } from '@angular/core';
+// app.component.ts - VERSÃO SIMPLIFICADA
+import { Component, AfterViewInit, Renderer2, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
-import { environment } from '../environments/environment';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -21,16 +20,10 @@ import { DOCUMENT } from '@angular/common';
       </div>
     }
     
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPCMBN7C"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    
     <router-outlet></router-outlet>
   `
 })
-export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
+export class AppComponent implements AfterViewInit {
   resourcesLoaded = false;
   
   // Lista de CSS para carregar
@@ -66,37 +59,14 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   private loadedScripts: HTMLScriptElement[] = [];
 
   constructor(
-    private translocoService: TranslocoService,
-    private router: Router,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document
   ) { }
 
   ngOnInit() {
-    console.log('Environment production:', environment.production);
-    
-    if (environment.production) {
-      this.loadGtmScript();
-    }
     this.loadCSSFiles();
-    setTimeout(() => {
-      this.checkGtmStatus();
-    }, 3000);
   }
-  private checkGtmStatus() {
-    console.log("checkGtmStatus()")
-    if ((window as any).google_tag_manager) {
-      console.log('✅ GTM carregado:', (window as any).google_tag_manager);
-    } else {
-      console.warn('⚠️ GTM não detectado na window');
-    }
-    
-    if ((window as any).dataLayer) {
-      console.log('✅ DataLayer disponível:', (window as any).dataLayer);
-    } else {
-      console.warn('⚠️ DataLayer não encontrado');
-    }
-  }
+
   ngAfterViewInit() {
     this.loadScripts();
   }
@@ -104,38 +74,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnDestroy() {
     this.removeElements(this.loadedStyles);
     this.removeElements(this.loadedScripts);
-  }
-
-  private loadGtmScript() {
-    console.log('Carregando Google Tag Manager...');
-    
-    // Primeiro, verifique se já existe para evitar duplicação
-    if (this.document.getElementById('gtm-script')) {
-      return;
-    }
-
-    const script = this.renderer.createElement('script');
-    script.id = 'gtm-script';
-    script.innerHTML = `
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id=GTM-TPCMBN7C';f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-TPCMBN7C');
-    `;
-    
-    script.onload = () => {
-      console.log('✅ Google Tag Manager carregado com sucesso');
-      // Força o push de um evento para testar
-      (window as any).dataLayer = (window as any).dataLayer || [];
-      (window as any).dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-    };
-    
-    script.onerror = (e: ErrorEvent) => {
-      console.error('❌ Erro ao carregar Google Tag Manager', e);
-    };
-    
-    this.renderer.appendChild(this.document.head, script);
   }
 
   // Carrega arquivos CSS de forma assíncrona
@@ -192,7 +130,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   // Inicializa plugins que dependem dos scripts carregados
   private initPlugins() {
-    // Aguarda um breve momento para garantir que tudo está carregado
     setTimeout(() => {
       try {
         if (typeof (window as any).WOW === 'function') {
@@ -215,8 +152,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       if (typeof (window as any).jQuery !== 'undefined' && 
           (window as any).jQuery.fn.magnificPopup) {
         console.log('✅ Magnific Popup disponível');
-        // Inicialize o Magnific Popup aqui se necessário
-        // Exemplo: $( '.popup' ).magnificPopup({ type: 'image' });
       }
     } catch (error) {
       console.error('❌ Erro ao inicializar Magnific Popup:', error);
@@ -228,8 +163,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       if (typeof (window as any).jQuery !== 'undefined' && 
           (window as any).jQuery.fn.owlCarousel) {
         console.log('✅ Owl Carousel disponível');
-        // Inicialize o Owl Carousel aqui se necessário
-        // Exemplo: $(".owl-carousel").owlCarousel();
       }
     } catch (error) {
       console.error('❌ Erro ao inicializar Owl Carousel:', error);
@@ -242,15 +175,5 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         element.parentNode.removeChild(element);
       }
     });
-  }
-
-  setLang(lang: string) {
-    console.log(`🌐 Mudando idioma para: ${lang}`);
-    this.translocoService.setActiveLang(lang);
-    this.router.navigate([lang]);
-  }
-
-  isBrowser(): boolean {
-    return typeof window !== 'undefined' && typeof localStorage !== 'undefined';
   }
 }
