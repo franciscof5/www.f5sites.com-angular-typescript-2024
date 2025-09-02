@@ -1,7 +1,6 @@
 <app-navbar></app-navbar>
 
 <ng-container *transloco="let t">
-
   <!--Header-Area-->
   <header class="blue-bg relative fix" id="home">
     <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
@@ -56,10 +55,6 @@
               </iframe>
             </div>
           </div>
-
-
-
-
           <p class="text-center" style="font-size: 22px">{{ t("header.title") }}</p>
           <div class="space-50"></div>
           <a
@@ -77,15 +72,6 @@
                   padding-right: 5px;"></i> {{ t("header.contact") }}
           </a>
         </div>
-        <div>
-          <p>ASDASDASDASDAS</p>
-          <!-- <button (click)="debugVideo()" class="btn btn-info">
-            Debug Video (Console)
-          </button>
-          <button (click)="testTranslations()" class="btn btn-warning ms-2">
-            Test Translations
-          </button> -->
-        </div>
       </div>
       <div class="space-80"></div>
     </div>
@@ -95,7 +81,6 @@
 
   <!--Blobs-->
   <section class="section-video relative fix" id="blobs">
-    
     <div class="section-bg overlay-bg alpha"></div>
     <div class="space-80"></div>
     <div class="container">
@@ -314,16 +299,15 @@
                 </tbody>
               </table>
               <div>
-                <!-- <app-language-selector
+                <app-language-selector
                   class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
-                ></app-language-selector> -->
+                ></app-language-selector>
               </div>
-              <!-- <h2>{{ t('contactSection.languageFlags') }}</h2> -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <app-footer></app-footer>
 </ng-container>
+<app-footer></app-footer>

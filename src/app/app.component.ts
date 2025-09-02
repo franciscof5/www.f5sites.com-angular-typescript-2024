@@ -12,14 +12,6 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./app.component.css'],
   imports: [CommonModule, RouterModule, TranslocoModule, RouterOutlet],
   template: `
-    <!-- Tela de carregamento -->
-    @if (!resourcesLoaded) {
-      <div class="loading-screen">
-        <div class="spinner"></div>
-        <p>Carregando F5 Sites...</p>
-      </div>
-    }
-    
     <router-outlet></router-outlet>
   `
 })
