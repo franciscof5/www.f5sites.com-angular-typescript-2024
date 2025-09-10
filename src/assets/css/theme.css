@@ -334,6 +334,11 @@ Angle-background
     line-height: 1
 }
 
+.medium {
+    font-size: 22px;
+    line-height: 1
+}
+
 .btn {
     -webkit-transition: 0.3s;
     transition: 0.3s;

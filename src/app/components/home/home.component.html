@@ -120,6 +120,144 @@
   </section>
   <!--React Docker WP-Area-->
 
+  <!--Price-section-->
+  <section class="relative fix" id="price">
+    <div class="section-bg overlay-bg fix">
+      <img
+        src="../assets/images/bg2.jpg"
+        alt="{{ t('priceSection.imageAlt') }}"
+      />
+    </div>
+    <div class="space-80"></div>
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white">
+          <h3 class="text-uppercase">{{ t("priceSection.title") }}</h3>
+          <p>{{ t("priceSection.description") }}</p>
+        </div>
+      </div>
+      <div class="space-60"></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 wow fadeInLeft">
+          <div class="panel price-table text-center">
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.F1Title") }}
+            </h3>
+            <hr />
+            
+            <ul class="list-unstyled">
+              <li>
+                {{ t("priceSection.FIAT") }}
+                <span class="big"
+                  ><strong class="amount">{{
+                    t("priceSection.F1Price")
+                  }}</strong></span
+                > 
+              </li>
+              <li>{{ t("priceSection.F1Feature1") }}</li>
+              <li>{{ t("priceSection.F1Feature2") }}</li>
+              <li>{{ t("priceSection.F1Feature3") }}</li>
+              <li>{{ t("priceSection.F1Feature4") }}</li>
+              <li>{{ t("priceSection.F1Feature5") }}</li>
+            </ul>
+            
+            <hr />
+            <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 wow flipInY">
+          <div class="panel price-table active center text-center">
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.F2Title") }}
+            </h3>
+            <hr />
+            
+            <ul class="list-unstyled">
+              <li>
+                {{ t("priceSection.FIAT") }}
+                <span class="big"
+                  ><strong class="amount">{{
+                    t("priceSection.F2Price")
+                  }}</strong></span
+                >
+              </li>
+              <li>{{ t("priceSection.F2Feature1") }}</li>
+              <li>{{ t("priceSection.F2Feature2") }}</li>
+              <li>{{ t("priceSection.F2Feature3") }}</li>
+              <li>{{ t("priceSection.F2Feature4") }}</li>
+              <li>{{ t("priceSection.F2Feature5") }}</li>
+            </ul>
+            
+            <hr />
+            <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 wow fadeInRight">
+          <div class="panel price-table text-center">
+            <h3 class="text-uppercase price-title">
+              {{ t("priceSection.F3Title") }}
+            </h3>
+            <hr />
+            
+            <ul class="list-unstyled">
+              <li>
+                {{ t("priceSection.FIAT") }}
+                <span class="big"
+                  ><strong class="amount">{{
+                    t("priceSection.F3Price")
+                  }}</strong></span
+                >
+              </li>
+              <li>{{ t("priceSection.F3Feature1") }}</li>
+              <li>{{ t("priceSection.F3Feature2") }}</li>
+              <li>{{ t("priceSection.F3Feature3") }}</li>
+              <li>{{ t("priceSection.F3Feature4") }}</li>
+              <li>{{ t("priceSection.F3Feature5") }}</li>
+            </ul>
+            
+            <hr />
+            <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
+          </div>
+        </div>
+        <sub class="text-white">{{ t("priceSection.footerNote") }}</sub>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-2 col-sm-8 wow flipInY">
+          <div class="panel price-table active center text-center">
+            <h3 class="text-uppercase price-title">
+              Pacote Assinatura Mensal
+            </h3>
+            <hr />
+            
+            <ul class="list-unstyled">
+              <li>{{ t("priceSection.FIAT") }}
+                <span class="big"><strong class="amount">4000</strong></span>
+              </li>
+              <li>10 vídeos por mês</li>
+              <li>1 robô treinado</li>
+              <li>10 páginas de produtos</li>
+              <li>Total separado - R$8000</li>
+              <li><span class="medium">No plano anual - R$4000</span></li>
+            </ul>
+            
+            <hr />
+            <a [routerLink]="['/', currentLang]" fragment="contact" class="btn btn-link text-uppercase">{{
+              t("priceSection.evaluateButton")
+            }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space-80"></div>
+  </section>
+  <!-- Price-section/-->
+
   <!--Client-Section -->
   <section class="gray-bg" id="client">
     <div class="space-80"></div>
