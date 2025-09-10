@@ -2,7 +2,7 @@
   "title":"Nós criamos",
   "menu": {
     "item1": "Vendas Insanas",
-    "item2": "2",
+    "item2": "Preços",
     "item3": "Produtos",
     "item4": "Clientes",
     "item5": "Contato"
@@ -107,6 +107,13 @@
     "F3Feature4": "Atenda todo Brasil",
     "F3Feature5": "PIX caindo 24h/dia",
     "evaluateButton": "Contratar",
+    "F4Title": "Pacote Assinatura Mensal",
+    "F4Price": "4000",
+    "F4Feature1": "10 vídeos por mês",
+    "F4Feature2": "1 robô treinado",
+    "F4Feature3": "10 páginas de produtos",
+    "F4Feature4": "Total separado - R$8000",
+    "F4Feature5": "No plano anual - R$4000",
     "footerNote": "*a partir de"
   },
   "contactSection": {
