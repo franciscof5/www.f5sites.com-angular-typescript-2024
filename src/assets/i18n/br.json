@@ -1,20 +1,19 @@
 {
   "title":"Nós criamos",
   "menu": {
-    "item1": "Vendas Insanas",
+    "item1": "Metodologia",
     "item2": "Preços",
     "item3": "Produtos",
     "item4": "Clientes",
     "item5": "Contato"
   },
   "header": {
-    "videoUrl": "https://www.youtube.com/embed/_x-AE0KEwjs?si=zbrRQ01eZ8vc5DKF",
-    "title": "Francisco Matelli: criador do curso Vendedor Insano e CEO da F5 Sites e Cursos",
-    "subtitle": "Vendas Insanas!!!",
+    "subtitle": "Metodologia F5 \n Para Vender Online",
     "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Nosso fórmula nada secreta: vídeos diários + robô atendimento + site que vende!",
+    "description": "Não perca mais uma venda! \n ✅ Vídeos diários \u00A0\u00A0 ✅ Whatsapp com IA \u00A0\u00A0 ✅ Site que vende ",
     "watchVideo": "F5 Sites no YouTube",
-    "contact": "Agenda uma Call"
+    "contact": "Agenda uma Call",
+    "title": "Criamos vídeos diários para seu negócio, nosso robô de WhatsApp com IA aquece suas leads e encaminha para o link de compra! Tudo automático!"
   },
   "products": {
     "title": "Produtos F5 Sites",
@@ -26,15 +25,15 @@
   },
   "sectionBlobs": {
     "blob1": {
-      "title": "Vídeos Diários",
+      "title": "Pacote Vídeos",
       "description": "Nossa exclusiva ferramenta com IA vai editar e publicar vídeos virais todos os dias na suas redes sociais."
     },
     "blob2": {
-      "title": "Robô WhatsApp",
+      "title": "Zapbot",
       "description": "Nosso robô de atendimento plugado no WhatsApp vai garantir o primeiro atendimento 24h e depois redirecionar para sua equipe."
     },
     "blob3": {
-      "title": "Site que vende",
+      "title": "Site",
       "description": "Um site com botão de compra e checkout confiável vende muito! Vender pela internet é muito fácil e seguro!"
     }
   },
@@ -87,20 +86,23 @@
     "description": "São os preços individuais para cada serviço",
     "F1Title": "Vídeo Diário",
     "F1Price": "200",
+    "F1PriceUnit": "vídeo",
     "F1Feature1": "Vídeo para as redes",
     "F1Feature2": "Gravado na sua loja",
     "F1Feature3": "Original ou editado",
     "F1Feature4": "Receba no WhatsApp",
     "F1Feature5": "Venda produtos ou serviços",
     "F2Title": "Robô WhatsApp",
-    "F2Price": "1000",
+    "F2Price": "800",
+    "F2PriceUnit": "mês",
     "F2Feature1": "Robô no seu WhatsApp",
     "F2Feature2": "Responde 24h/dia",
     "F2Feature3": "Conectado com IA",
     "F2Feature4": "Pode ser pausado",
     "F2Feature5": "Treinado para vender",
     "F3Title": "Site que vende",
-    "F3Price": "500",
+    "F3Price": "100",
+    "F3PriceUnit": "página",
     "F3Feature1": "Página do seu produto",
     "F3Feature2": "Venda com um clique",
     "F3Feature3": "Carrinho de compra",

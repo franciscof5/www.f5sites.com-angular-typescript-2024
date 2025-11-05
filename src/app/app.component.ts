@@ -38,7 +38,7 @@ export class AppComponent implements AfterViewInit {
     './assets/js/vendor/jquery-1.12.4.min.js',
     './assets/js/vendor/bootstrap.min.js',
     './assets/js/owl.carousel.min.js',
-    './assets/js/scrollUp.min.js',
+    // './assets/js/scrollUp.min.js',
     './assets/js/magnific-popup.min.js',
     './assets/js/ripples-min.js',
     './assets/js/spectragram.min.js',

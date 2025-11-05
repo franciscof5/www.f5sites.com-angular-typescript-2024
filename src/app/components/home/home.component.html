@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 
-<ng-container *transloco="let t">
+<ng-container *transloco="let t" >
   <!--Header-Area-->
   <header class="blue-bg relative fix" id="home">
     <div class="section-bg overlay-bg angle-bg ripple jquery-ripples"></div>
@@ -11,8 +11,10 @@
     <div class="container text-white">
       <div class="row">
         <div class="col-xs-12 text-center">
-          <h1 class="text-center text-uppercase" style="font-size: 50px">{{ t("header.subtitle") }}</h1>
-          <p class="text-center" style="font-size: 22px">AAAAAAA
+          <div class="col-md-6 col-md-offset-3">
+            <h1 class="text-center text-uppercase" style="font-size: 40px; white-space: pre-line;">{{ t("header.subtitle") }}</h1>
+          </div>
+          <p class="col-xs-12 text-center" style="font-size: 22px; white-space: pre-line; line-height: 1.8;">
             {{ t("header.description") }}
           </p>
           <div class="space-20"></div>
@@ -20,7 +22,7 @@
             <div class="embed-responsive embed-responsive-16by9">
               <iframe 
                 class="embed-responsive-item" 
-                src="https://www.youtube.com/embed/_x-AE0KEwjs?si=zbrRQ01eZ8vc5DKF" 
+                src="https://www.youtube.com/embed/a_fvKs0vB9k?si=Fj9fB8U_GLsdM28i" 
                 title="Vídeo PT" 
                 allowfullscreen
                 [hidden]="currentLang !== 'br'">
@@ -48,9 +50,12 @@
               </iframe>
             </div>
           </div>
-          <p class="text-center" style="font-size: 22px">{{ t("header.title") }}</p>
-          <div class="space-50"></div>
-          <a
+          <div class="space-20"></div>
+          <!-- <p class="text-center col-md-8 col-md-offset-2" style="font-size: 20px; white-space: pre-line; line-height: 1.4;">
+            {{ t("header.title") }}
+          </p> -->
+          <div class="space-20"></div>
+          <!-- <a
             [routerLink]="['/', language]"
             fragment="contact"
             class="btn btn-warning text-uppercase"
@@ -63,7 +68,7 @@
                   font-size: 24px;
                   bottom: -2px;
                   padding-right: 5px;"></i> {{ t("header.contact") }}
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="space-80"></div>
@@ -71,6 +76,78 @@
     <!--Header-Text/-->
   </header>
   <!--Header-Area/-->
+
+  <!--Work-Section-->
+  <section id="work">
+      <div class="space-20"></div>
+      <div class="container">
+          <div class="row wow fadeInUp">
+              <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+                  <h3 class="text-uppercase">O poder da IA no seu negócio:</h3>
+                  <p>Criamos vídeos diários para seu negócio, treinamos o Zapbot, nosso robô do WhatsApp com IA, que aquece suas leads e encaminha para a sua página de vendas! Tudo automático!</p>
+              </div>
+              <p class="text-center">
+                <a
+                  [routerLink]="['/', language]"
+                  fragment="contact"
+                  class="btn btn-warning text-uppercase"
+                  style="padding: 12px 22px 14px 22px; 
+                        margin-left:6px;
+                        font-size:18px"
+                >
+                  <i class="fa-solid fa-phone-flip"
+                  style="position: relative;
+                        font-size: 24px;
+                        bottom: -2px;
+                        padding-right: 5px;"></i> {{ t("header.contact") }}
+                </a>
+              </p>
+          </div>
+          <div class="space-20"></div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 text-center wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="hover-shadow">
+                      <p class="md-icon" style="font-size: 50px"><span class="fa-solid fa-1 fa-icon-square"></span></p>
+                      <div class="space-20"></div>
+                      <h5 class="text-uppercase">Planejar Vídeos</h5>
+                      <p>Planejamos a produção de um pacote de 10 a 30 vídeos com um cronograma de datas e horários para redes sociais</p>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 text-center wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="hover-shadow">
+                      <p class="md-icon" style="font-size: 50px"><span class="fa-solid fa-2 fa-icon-square"></span></p>
+                      <div class="space-20"></div>
+                      <h5 class="text-uppercase">Treinar Zapbot</h5>
+                      <p>Treinamento do Zapbot WhatsApp, nosso exclusivo robô para WhatsApp que atende seu clientes e vende seus produtos e serviços</p>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 text-center wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="hover-shadow">
+                      <p class="md-icon" style="font-size: 50px"><span class="fa-solid fa-3 fa-icon-square"></span></p>
+                      <div class="space-20"></div>
+                      <h5 class="text-uppercase">Carrinho de Compras</h5>
+                      <p>Com os vídeos prontos e o robô funcionando podemos criar páginas de vendas para cada produto que será vendido online</p>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 text-center wow fadeInUp" data-wow-delay="0.8s">
+                  <div class="hover-shadow">
+                      <p class="md-icon" style="font-size: 50px"><span class="fa-solid fa-4 fa-icon-square"></span></p>
+                      <div class="space-20"></div>
+                      <h5 class="text-uppercase">Ativar Campanha</h5>
+                      <p>Vídeos são agendados e acompanhamos atentamente todos os fluxos, garantindo o funcionamento do robô e a geração das vendas 24/7</p>
+                  </div>
+              </div>
+          </div>
+          <div class="space-60"></div>
+          <div class="row">
+              <div class="col-xs-12 col-md-8 col-md-offset-2 text-center wow fadeInUp">
+                  <div class="down-offset ">
+                      <img src="https://d1ih8jugeo2m5m.cloudfront.net/2025/01/pequenos-negocios-1200x685.webp" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
   <!--Blobs-->
   <section class="section-video relative fix" id="blobs">
@@ -81,7 +158,7 @@
         <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
           <div class="well well-hover text-center">
             <p class="md-icon" style="font-size: 50px">
-              <span class="fa-solid fa-mobile-screen-button"></span>
+              <span class="fa-solid fa-mobile-screen-button fa-icon-square2"></span>
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
@@ -93,7 +170,7 @@
         <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
           <div class="well well-hover text-center">
             <p class="md-icon" style="font-size: 50px">
-              <span class="fa-brands fa-whatsapp"></span>
+              <span class="fa-brands fa-whatsapp fa-icon-square2"></span>
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
@@ -105,7 +182,7 @@
         <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
           <div class="well well-hover text-center">
             <p class="md-icon" style="font-size: 50px">
-              <span class="fa-solid fa-cart-plus"></span>
+              <span class="fa-solid fa-cart-plus fa-icon-square2"></span>
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
@@ -151,8 +228,9 @@
                 <span class="big"
                   ><strong class="amount">{{
                     t("priceSection.F1Price")
-                  }}</strong></span
-                > 
+                  }}</strong>
+                  </span>
+                / {{ t("priceSection.F3PriceUnit") }}
               </li>
               <li>{{ t("priceSection.F1Feature1") }}</li>
               <li>{{ t("priceSection.F1Feature2") }}</li>
@@ -180,8 +258,8 @@
                 <span class="big"
                   ><strong class="amount">{{
                     t("priceSection.F2Price")
-                  }}</strong></span
-                >
+                  }}</strong></span>
+                / {{ t("priceSection.F2PriceUnit") }}
               </li>
               <li>{{ t("priceSection.F2Feature1") }}</li>
               <li>{{ t("priceSection.F2Feature2") }}</li>
@@ -209,8 +287,8 @@
                 <span class="big"
                   ><strong class="amount">{{
                     t("priceSection.F3Price")
-                  }}</strong></span
-                >
+                  }}</strong></span>
+                  / {{ t("priceSection.F3PriceUnit") }}
               </li>
               <li>{{ t("priceSection.F3Feature1") }}</li>
               <li>{{ t("priceSection.F3Feature2") }}</li>
