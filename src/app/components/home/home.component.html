@@ -246,7 +246,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 wow flipInY">
-          <div class="panel price-table active center text-center">
+          <div class="panel price-table center text-center">
             <h3 class="text-uppercase price-title">
               {{ t("priceSection.F2Title") }}
             </h3>
@@ -309,13 +309,17 @@
         <div class="col-xs-12 col-md-offset-2 col-sm-8 wow flipInY">
           <div class="panel price-table active center text-center">
             <h3 class="text-uppercase price-title">
-              {{ t("priceSection.F4Feature1") }}
+              {{ t("priceSection.F4Title") }}
             </h3>
             <hr />
             
             <ul class="list-unstyled">
-              <li>{{ t("priceSection.FIAT") }}
-                <span class="big"><strong class="amount">{{ t("priceSection.F4Price") }}</strong></span>
+              <li>
+                {{ t("priceSection.FIAT") }}
+                <span class="big">
+                  <strong class="amount">{{ t("priceSection.F4Price") }}</strong>
+                </span>
+                / {{ t("priceSection.F4PriceUnit") }}
               </li>
               <li>{{ t("priceSection.F4Feature1") }}</li>
               <li>{{ t("priceSection.F4Feature2") }}</li>
