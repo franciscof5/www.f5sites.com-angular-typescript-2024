@@ -24,6 +24,26 @@
     "lavaggioapp": "Car wash delivery app in Italy",
     "timelapse": "Speed up development videos"
   },
+  "work": {
+    "title": "The Power of AI in Your Business:",
+    "description": "We create daily videos for your business, train Zapbot, our WhatsApp AI robot that warms up your leads and directs them to your sales page! Everything automatic!",
+    "step1": {
+      "title": "Plan Videos",
+      "description": "We plan the production of a package of 10 to 30 videos with a schedule of dates and times for social media"
+    },
+    "step2": {
+      "title": "Train Zapbot",
+      "description": "Training of Zapbot WhatsApp, our exclusive WhatsApp robot that serves your customers and sells your products and services"
+    },
+    "step3": {
+      "title": "Shopping Cart",
+      "description": "With the videos ready and the robot working, we can create sales pages for each product that will be sold online"
+    },
+    "step4": {
+      "title": "Activate Campaign",
+      "description": "Videos are scheduled and we closely monitor all flows, ensuring the robot's operation and generating sales 24/7"
+    }
+  },
   "sectionBlobs": {
     "blob1": {
       "title": "Daily Videos",

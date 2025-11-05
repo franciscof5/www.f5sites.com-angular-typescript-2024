@@ -24,6 +24,26 @@
     "lavaggioapp": "App di consegna lavaggio auto in Italia",
     "timelapse": "Accelera video di sviluppo"
   },
+  "work": {
+    "title": "Il Potere dell'IA nel Tuo Business:",
+    "description": "Creiamo video giornalieri per il tuo business, addestriamo Zapbot, il nostro robot WhatsApp con IA che scalda i tuoi lead e li indirizza alla tua pagina di vendita! Tutto automatico!",
+    "step1": {
+      "title": "Pianificare Video",
+      "description": "Pianifichiamo la produzione di un pacchetto da 10 a 30 video con un programma di date e orari per i social media"
+    },
+    "step2": {
+      "title": "Addestrare Zapbot",
+      "description": "Addestramento di Zapbot WhatsApp, il nostro robot esclusivo per WhatsApp che serve i tuoi clienti e vende i tuoi prodotti e servizi"
+    },
+    "step3": {
+      "title": "Carrello Acquisti",
+      "description": "Con i video pronti e il robot funzionante possiamo creare pagine di vendita per ogni prodotto che verrà venduto online"
+    },
+    "step4": {
+      "title": "Attivare Campagna",
+      "description": "I video sono programmati e monitoriamo attentamente tutti i flussi, garantendo il funzionamento del robot e la generazione di vendite 24/7"
+    }
+  },
   "sectionBlobs": {
     "blob1": {
       "title": "Video quotidiani",
