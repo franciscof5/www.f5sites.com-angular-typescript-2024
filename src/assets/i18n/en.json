@@ -1,20 +1,19 @@
 {
   "title": "We create",
   "menu": {
-    "item1": "Insane Sales",
+    "item1": "Methodology",
     "item2": "Prices",
     "item3": "Products",
     "item4": "Clients",
     "item5": "Contact"
   },
   "header": {
-    "videoUrl": "https://www.youtube.com/embed/_x-AE0KEwjs?si=zbrRQ01eZ8vc5DKF",
-    "title": "Francisco Matelli: creator of the Insane Seller course and CEO of F5 Sites and Courses",
-    "subtitle": "Insane Sales!!!",
+    "subtitle": "F5 Methodology \n To Sell Online",
     "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Our not-so-secret formula: daily videos + chatbot + website that sells!",
+    "description": "Don’t lose another sale! \n ✅ Daily videos \u00A0\u00A0 ✅ WhatsApp with AI \u00A0\u00A0 ✅ A website that sells",
     "watchVideo": "F5 Sites on YouTube",
-    "contact": "Schedule a Call"
+    "contact": "Schedule a Call",
+    "title": "We create daily videos for your business, our AI-powered WhatsApp bot warms up your leads and sends them to your purchase link! All automatic!"
   },
   "products": {
     "title": "F5 Sites Products",
@@ -25,37 +24,37 @@
     "timelapse": "Speed up development videos"
   },
   "work": {
-    "title": "The Power of AI in Your Business:",
-    "description": "We create daily videos for your business, train Zapbot, our WhatsApp AI robot that warms up your leads and directs them to your sales page! Everything automatic!",
+    "title": "The power of AI in your business:",
+    "description": "We create daily videos for your business, train Zapbot — our AI WhatsApp bot — that warms up your leads and drives them to your sales page! All automatic!",
     "step1": {
       "title": "Plan Videos",
-      "description": "We plan the production of a package of 10 to 30 videos with a schedule of dates and times for social media"
+      "description": "We plan a production package of 10 to 30 videos with a schedule of dates and times for social networks."
     },
     "step2": {
       "title": "Train Zapbot",
-      "description": "Training of Zapbot WhatsApp, our exclusive WhatsApp robot that serves your customers and sells your products and services"
+      "description": "Training our exclusive WhatsApp bot that handles your customers and sells your products and services."
     },
     "step3": {
       "title": "Shopping Cart",
-      "description": "With the videos ready and the robot working, we can create sales pages for each product that will be sold online"
+      "description": "With videos ready and the bot running, we can create sales pages for each product to be sold online."
     },
     "step4": {
       "title": "Activate Campaign",
-      "description": "Videos are scheduled and we closely monitor all flows, ensuring the robot's operation and generating sales 24/7"
+      "description": "Videos are scheduled and we carefully monitor all flows, ensuring the bot works and generates sales 24/7."
     }
   },
   "sectionBlobs": {
     "blob1": {
-      "title": "Daily Videos",
-      "description": "Our exclusive AI-powered tool will edit and publish viral videos every day on your social networks."
+      "title": "Video Package",
+      "description": "Our exclusive AI tool will edit and post viral videos every day on your social networks."
     },
     "blob2": {
-      "title": "WhatsApp Bot",
-      "description": "Our bot connected to WhatsApp will provide first support 24/7 and then redirect to your team."
+      "title": "Zapbot",
+      "description": "Our WhatsApp-connected service bot guarantees first contact 24h and then redirects to your team."
     },
     "blob3": {
-      "title": "Website that sells",
-      "description": "A website with a buy button and reliable checkout sells a lot! Selling online is very easy and safe!"
+      "title": "Website",
+      "description": "A website with a buy button and reliable checkout sells a lot! Selling online is easy and secure!"
     }
   },
   "clientSection": {
@@ -72,78 +71,82 @@
     "title": "Features",
     "subtitle": "You decide: we make it happen.",
     "robustProjectsTitle": "Robust Projects",
-    "robustProjectsDescription": "The quality of the code translates into adaptability of the product to our clients’ needs",
-    "customTitle": "Tailored",
-    "customDescription": "Features created especially for your business, custom-made",
+    "robustProjectsDescription": "Code quality translates into easier product adaptation to our clients’ needs.",
+    "customTitle": "Custom-made",
+    "customDescription": "Features created especially for your business, tailor-made.",
     "smartTitle": "Smart",
-    "smartDescription": "The ability of an application to anticipate and predict user behavior",
+    "smartDescription": "The ability of an application to anticipate and predict user behavior.",
     "innovativeTitle": "Innovative",
-    "innovativeDescription": "Top-quality modern screens for the most demanding users",
+    "innovativeDescription": "Modern screen design quality for the most demanding users.",
     "pwaTitle": "PWA",
-    "pwaDescription": "It’s native and available on Google and Apple stores, but can also be accessed via browser",
+    "pwaDescription": "It's native and available on Google and Apple stores, but also accessible via browser.",
     "creativeDesignTitle": "Creative Design",
-    "creativeDesignDescription": "Creation of exclusive and original screens for your project"
+    "creativeDesignDescription": "Creation of exclusive and original interfaces for your project."
   },
   "questionSection": {
     "lavaggioAppTitle": "LavaggioApp.it",
-    "lavaggioAppDescription": "We are launching a subscription service for car washing. It consists of two apps, one for the client and one for the partner, like Uber. Our main technology project for the Italian market.",
-    "manualWashTitle": "Manual car wash delivery",
-    "manualWashDescription": "The home manual wash service was designed to offer convenience and quality. We use special techniques to ensure detailed cleaning of every part. We take care of pick-up and delivery, all without you having to leave home.",
+    "lavaggioAppDescription": "We are launching a car wash subscription service. It consists of two apps, one for clients and one for partners, like Uber. Our main tech project for the Italian market.",
+    "manualWashTitle": "Manual delivery wash",
+    "manualWashDescription": "The home manual wash service was designed for convenience and quality. We use special techniques to ensure detailed cleaning of each part. We handle pickup and delivery — no need for you to leave home.",
     "downloadAndBookTitle": "Download and book",
-    "downloadAndBookDescription": "Download our app and book the service in a few clicks. Easily schedule your delivery.",
-    "exclusiveAIForSectorTitle": "Creating an exclusive AI for the sector",
-    "exclusiveAIForSectorDescription": "We are creating an exclusive AI for the washing sector, designed to accurately assess process quality and guarantee results for each treated item.",
+    "downloadAndBookDescription": "Download our app and schedule the service in just a few clicks. Easily plan your delivery.",
+    "exclusiveAIForSectorTitle": "Creating exclusive AI for the sector",
+    "exclusiveAIForSectorDescription": "We are developing AI specifically for the washing sector, designed to assess process quality and guarantee results for every treated item.",
     "madeInItalyTitle": "Made in Italy 🇮🇹",
-    "madeInItalyDescription": "We are very proud to develop an app here in Italy. Every line of code, every feature is designed and implemented with the passion and quality that characterize \"Made in Italy\" 🇮🇹. We are creating something unique, rooted in our tradition of excellence, to offer the world an innovative and authentically Italian product."
+    "madeInItalyDescription": "We take great pride in developing an app here in Italy. Every line of code, every feature is crafted with the passion and quality that define 'Made in Italy' 🇮🇹. We are creating something unique, rooted in our tradition of excellence, to deliver an innovative and authentically Italian product to the world."
   },
   "videoSection": {
     "discoverYouTubeChannel": "Discover our YouTube channel"
   },
   "priceSection": {
-    "imageAlt": "Image background for price section",
+    "imageAlt": "Background image for price section",
     "title": "Prices",
     "FIAT": "$",
     "period": ".",
-    "description": "These are the individual prices for each service",
-    "F1Title": "Daily Video",
-    "F1Price": "38",
-    "F1Feature1": "Video for social networks",
+    "description": "Individual prices for each service",
+    "F1Title": "Vertical Video",
+    "F1Price": "500",
+    "F1PriceUnit": "video",
+    "F1Feature1": "Video for social media",
     "F1Feature2": "Recorded at your store",
     "F1Feature3": "Original or edited",
     "F1Feature4": "Receive on WhatsApp",
     "F1Feature5": "Sell products or services",
-    "F2Title": "WhatsApp Bot",
-    "F2Price": "190",
+    "F2Title": "Zapbot",
+    "F2Price": "800",
+    "F2PriceUnit": "month",
     "F2Feature1": "Bot on your WhatsApp",
-    "F2Feature2": "Replies 24/7",
+    "F2Feature2": "24-hour response",
     "F2Feature3": "Connected with AI",
     "F2Feature4": "Can be paused",
     "F2Feature5": "Trained to sell",
-    "F3Title": "Website that sells",
-    "F3Price": "95",
-    "F3Feature1": "Your product page",
+    "F3Title": "Selling Website",
+    "F3Price": "500",
+    "F3PriceUnit": "page",
+    "F3Feature1": "Product page",
     "F3Feature2": "One-click purchase",
     "F3Feature3": "Shopping cart",
     "F3Feature4": "Serve all of Brazil",
-    "F3Feature5": "PIX available 24/7",
-    "evaluateButton": "Hire",
-    "F4Title": "Monthly Subscription Package",
-    "F4Price": "760",
-    "F4Feature1": "10 videos per month",
-    "F4Feature2": "1 trained bot",
-    "F4Feature3": "10 product pages",
-    "F4Feature4": "Total separately - $1520",
-    "F4Feature5": "Annual plan - $760",
-    "footerNote": "*starting from"
+    "F3Feature5": "PIX 24/7 payments",
+    "evaluateButton": "Hire now",
+    "F4Title": "Full Campaign",
+    "F4Price": "5000",
+    "F4PriceUnit": "campaign",
+    "F4Feature1": "10 Short Vertical Videos",
+    "F4Feature2": "1 Zapbot connected to your number",
+    "F4Feature3": "5 Product offer pages",
+    "F4Feature4": "Full campaign planning",
+    "F4Feature5": "Limited time offer",
+    "footerNote": "*starting at"
   },
   "contactSection": {
     "imageAlt": "Background image for contact section",
     "contactTitle": "Contact",
     "bookFreeCallTitle": "Book 15 minutes free",
-    "bookFreeCallDescription": "Schedule a free 15-minute video call to present your project.",
-    "location": "We are located in São Paulo, SP.",
+    "bookFreeCallDescription": "Book a free 15-minute video call to present your project.",
+    "location": "We are located in São Paulo, Brazil.",
     "phoneSupport": "Priority phone support for clients",
-    "emailSupport": "Send your contact through the form and we will reply by email to confirm the time.",
+    "emailSupport": "Send your contact through the form and we’ll reply by email to confirm the time.",
     "address": "Global partner",
     "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
   },

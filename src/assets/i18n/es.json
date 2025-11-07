@@ -1,66 +1,65 @@
 {
   "title": "Creamos",
   "menu": {
-    "item1": "Ventas Insanas",
+    "item1": "Metodología",
     "item2": "Precios",
     "item3": "Productos",
     "item4": "Clientes",
     "item5": "Contacto"
   },
   "header": {
-    "videoUrl": "https://www.youtube.com/embed/_x-AE0KEwjs?si=zbrRQ01eZ8vc5DKF",
-    "title": "Francisco Matelli: creador del curso Vendedor Insano y CEO de F5 Sites y Cursos",
-    "subtitle": "¡¡¡Ventas Insanas!!!",
+    "subtitle": "Metodología F5 \n Para Vender en Línea",
     "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Nuestra fórmula no tan secreta: videos diarios + bot de atención + ¡sitio que vende!",
+    "description": "¡No pierdas otra venta! \n ✅ Videos diarios \u00A0\u00A0 ✅ WhatsApp con IA \u00A0\u00A0 ✅ Sitio web que vende",
     "watchVideo": "F5 Sites en YouTube",
-    "contact": "Agenda una llamada"
+    "contact": "Agenda una Llamada",
+    "title": "Creamos videos diarios para tu negocio, nuestro bot de WhatsApp con IA calienta tus leads y los dirige al enlace de compra. ¡Todo automático!"
   },
   "products": {
     "title": "Productos F5 Sites",
     "subtitle": "Lanzamos y desarrollamos nuestros productos.",
-    "projectimer": "Gestión de tiempo para equipos",
+    "projectimer": "Gestión del tiempo para equipos",
     "pomodoros": "Temporizador individual de código abierto",
     "lavaggioapp": "App de lavado de autos a domicilio en Italia",
     "timelapse": "Acelera videos de desarrollo"
   },
   "work": {
-    "title": "El Poder de la IA en tu Negocio:",
-    "description": "¡Creamos videos diarios para tu negocio, entrenamos a Zapbot, nuestro robot de WhatsApp con IA que calienta tus leads y los dirige a tu página de ventas! ¡Todo automático!",
+    "title": "El poder de la IA en tu negocio:",
+    "description": "Creamos videos diarios para tu negocio, entrenamos el Zapbot, nuestro robot de WhatsApp con IA, que calienta tus leads y los dirige a tu página de ventas. ¡Todo automático!",
     "step1": {
       "title": "Planificar Videos",
-      "description": "Planeamos la producción de un paquete de 10 a 30 videos con un cronograma de fechas y horarios para redes sociales"
+      "description": "Planificamos la producción de un paquete de 10 a 30 videos con un cronograma de fechas y horarios para las redes sociales."
     },
     "step2": {
       "title": "Entrenar Zapbot",
-      "description": "Entrenamiento de Zapbot WhatsApp, nuestro robot exclusivo para WhatsApp que atiende a tus clientes y vende tus productos y servicios"
+      "description": "Entrenamiento del Zapbot, nuestro robot exclusivo de WhatsApp que atiende a tus clientes y vende tus productos y servicios."
     },
     "step3": {
       "title": "Carrito de Compras",
-      "description": "Con los videos listos y el robot funcionando podemos crear páginas de ventas para cada producto que se venderá en línea"
+      "description": "Con los videos listos y el robot funcionando, podemos crear páginas de ventas para cada producto que se venderá en línea."
     },
     "step4": {
       "title": "Activar Campaña",
-      "description": "Los videos se programan y monitoreamos atentamente todos los flujos, garantizando el funcionamiento del robot y la generación de ventas 24/7"
+      "description": "Los videos se programan y monitoreamos todos los flujos para garantizar el funcionamiento del robot y la generación de ventas 24/7."
     }
   },
   "sectionBlobs": {
     "blob1": {
-      "title": "Videos diarios",
+      "title": "Paquete de Videos",
       "description": "Nuestra exclusiva herramienta con IA editará y publicará videos virales todos los días en tus redes sociales."
     },
     "blob2": {
-      "title": "Bot de WhatsApp",
-      "description": "Nuestro bot conectado a WhatsApp garantizará la primera atención 24h y luego redirigirá a tu equipo."
+      "title": "Zapbot",
+      "description": "Nuestro robot conectado a WhatsApp garantiza la primera atención las 24 horas y luego redirige a tu equipo."
     },
     "blob3": {
-      "title": "Sitio que vende",
-      "description": "¡Un sitio con botón de compra y checkout confiable vende mucho! ¡Vender por internet es muy fácil y seguro!"
+      "title": "Sitio Web",
+      "description": "¡Un sitio web con botón de compra y pago confiable vende mucho! ¡Vender por internet es fácil y seguro!"
     }
   },
   "clientSection": {
     "title": "Clientes",
-    "description": "A continuación están nuestros principales clientes.",
+    "description": "A continuación se muestran nuestros principales clientes.",
     "clients": {
       "ftd": "FTD 🇧🇷",
       "cogna": "Cogna 🇧🇷",
@@ -72,78 +71,82 @@
     "title": "Funcionalidades",
     "subtitle": "Tú decides: nosotros lo hacemos.",
     "robustProjectsTitle": "Proyectos Robustos",
-    "robustProjectsDescription": "La calidad del código se traduce en facilidad de adaptación del producto a las necesidades de nuestros clientes",
+    "robustProjectsDescription": "La calidad del código se traduce en facilidad de adaptación del producto a las necesidades de nuestros clientes.",
     "customTitle": "A medida",
-    "customDescription": "Funcionalidades creadas especialmente para tu negocio",
+    "customDescription": "Funciones creadas especialmente para tu negocio, hechas a medida.",
     "smartTitle": "Inteligente",
-    "smartDescription": "La capacidad de una aplicación para anticipar y predecir el comportamiento del usuario",
+    "smartDescription": "La capacidad de una aplicación para anticipar y predecir el comportamiento del usuario.",
     "innovativeTitle": "Innovador",
-    "innovativeDescription": "Calidad de las pantallas más modernas para los usuarios más exigentes",
+    "innovativeDescription": "Calidad de las pantallas más modernas para los usuarios más exigentes.",
     "pwaTitle": "PWA",
-    "pwaDescription": "Es nativo y está disponible en la tienda de Google y Apple, pero también se puede acceder por navegador",
+    "pwaDescription": "Es nativa y está disponible en las tiendas de Google y Apple, pero también puede accederse desde el navegador.",
     "creativeDesignTitle": "Diseño Creativo",
-    "creativeDesignDescription": "Creación de pantallas exclusivas y originales para tu proyecto"
+    "creativeDesignDescription": "Creación de pantallas exclusivas y originales para tu proyecto."
   },
   "questionSection": {
     "lavaggioAppTitle": "LavaggioApp.it",
-    "lavaggioAppDescription": "Estamos lanzando un servicio de suscripción para lavado de autos. Se compone de dos aplicaciones, una para el cliente y otra para el socio, como Uber. Nuestro principal proyecto tecnológico para el mercado italiano.",
+    "lavaggioAppDescription": "Estamos lanzando un servicio de suscripción para lavado de autos. Consta de dos aplicaciones, una para el cliente y otra para el socio, como Uber. Nuestro principal proyecto tecnológico para el mercado italiano.",
     "manualWashTitle": "Lavado manual a domicilio",
-    "manualWashDescription": "El servicio de lavado manual a domicilio fue diseñado para ofrecer conveniencia y calidad. Usamos técnicas especiales para garantizar la limpieza detallada de cada parte. Nos encargamos de la recogida y entrega, todo sin que tengas que salir de casa.",
-    "downloadAndBookTitle": "Descarga y agenda",
-    "downloadAndBookDescription": "Descarga nuestra aplicación y agenda el servicio en pocos clics. Con facilidad puedes programar tu entrega.",
+    "manualWashDescription": "El servicio de lavado manual a domicilio fue diseñado para ofrecer comodidad y calidad. Usamos técnicas especiales para garantizar una limpieza detallada de cada parte. Nos encargamos de la recogida y entrega, sin que tengas que salir de casa.",
+    "downloadAndBookTitle": "Descarga y reserva",
+    "downloadAndBookDescription": "Descarga nuestra app y programa el servicio en unos pocos clics. Con facilidad, puedes planificar tu entrega.",
     "exclusiveAIForSectorTitle": "Creando una IA exclusiva para el sector",
-    "exclusiveAIForSectorDescription": "Estamos creando una IA exclusiva para el sector de lavado, diseñada para evaluar con precisión la calidad del proceso y garantizar resultados para cada artículo tratado.",
-    "madeInItalyTitle": "Made in Italy 🇮🇹",
-    "madeInItalyDescription": "Estamos muy orgullosos de desarrollar una aplicación aquí en Italia. Cada línea de código, cada funcionalidad es pensada y realizada con la pasión y calidad que caracterizan el \"Made in Italy\" 🇮🇹. Estamos creando algo único, enraizado en nuestra tradición de excelencia, para ofrecer al mundo un producto innovador y auténticamente italiano."
+    "exclusiveAIForSectorDescription": "Estamos creando una IA exclusiva para el sector del lavado, diseñada para evaluar con precisión la calidad del proceso y garantizar resultados para cada artículo tratado.",
+    "madeInItalyTitle": "Hecho en Italia 🇮🇹",
+    "madeInItalyDescription": "Estamos orgullosos de desarrollar una aplicación aquí en Italia. Cada línea de código, cada funcionalidad está pensada y realizada con la pasión y calidad que caracterizan el 'Made in Italy' 🇮🇹. Estamos creando algo único, arraigado en nuestra tradición de excelencia, para ofrecer al mundo un producto innovador y auténticamente italiano."
   },
   "videoSection": {
-    "discoverYouTubeChannel": "Descubre nuestro canal en YouTube"
+    "discoverYouTubeChannel": "Descubre nuestro canal de YouTube"
   },
   "priceSection": {
     "imageAlt": "Imagen de fondo para la sección de precios",
     "title": "Precios",
-    "FIAT": "€",
+    "FIAT": "$",
     "period": ".",
-    "description": "Estos son los precios individuales para cada servicio",
-    "F1Title": "Vídeo Diario",
-    "F1Price": "36",
-    "F1Feature1": "Vídeo para redes sociales",
+    "description": "Precios individuales para cada servicio",
+    "F1Title": "Video Vertical",
+    "F1Price": "500",
+    "F1PriceUnit": "video",
+    "F1Feature1": "Video para redes sociales",
     "F1Feature2": "Grabado en tu tienda",
     "F1Feature3": "Original o editado",
     "F1Feature4": "Recíbelo en WhatsApp",
     "F1Feature5": "Vende productos o servicios",
-    "F2Title": "Bot de WhatsApp",
-    "F2Price": "180",
-    "F2Feature1": "Bot en tu WhatsApp",
-    "F2Feature2": "Responde 24/7",
+    "F2Title": "Zapbot",
+    "F2Price": "800",
+    "F2PriceUnit": "mes",
+    "F2Feature1": "Robot en tu WhatsApp",
+    "F2Feature2": "Responde 24h al día",
     "F2Feature3": "Conectado con IA",
-    "F2Feature4": "Se puede pausar",
+    "F2Feature4": "Puede pausarse",
     "F2Feature5": "Entrenado para vender",
     "F3Title": "Sitio que vende",
-    "F3Price": "90",
-    "F3Feature1": "Página de tu producto",
+    "F3Price": "500",
+    "F3PriceUnit": "página",
+    "F3Feature1": "Página del producto",
     "F3Feature2": "Compra con un clic",
     "F3Feature3": "Carrito de compras",
-    "F3Feature4": "Atiende a todo Brasil",
-    "F3Feature5": "PIX disponible 24/7",
+    "F3Feature4": "Atiende todo Brasil",
+    "F3Feature5": "PIX las 24h del día",
     "evaluateButton": "Contratar",
-    "F4Title": "Paquete de Suscripción Mensual",
-    "F4Price": "720",
-    "F4Feature1": "10 vídeos por mes",
-    "F4Feature2": "1 bot entrenado",
-    "F4Feature3": "10 páginas de productos",
-    "F4Feature4": "Total por separado - €1440",
-    "F4Feature5": "Plan anual - €720",
-    "footerNote": "*a partir de"
+    "F4Title": "Campaña Completa",
+    "F4Price": "5000",
+    "F4PriceUnit": "campaña",
+    "F4Feature1": "10 Videos Verticales Cortos",
+    "F4Feature2": "1 Zapbot conectado a tu número",
+    "F4Feature3": "5 páginas de oferta de productos",
+    "F4Feature4": "Planificación completa de la campaña",
+    "F4Feature5": "Oferta por tiempo limitado",
+    "footerNote": "*desde"
   },
   "contactSection": {
     "imageAlt": "Imagen de fondo para la sección de contacto",
     "contactTitle": "Contacto",
     "bookFreeCallTitle": "Agenda 15 minutos gratis",
-    "bookFreeCallDescription": "Agenda una videollamada gratuita de 15 minutos para la presentación de tu proyecto.",
-    "location": "Estamos ubicados en São Paulo, SP.",
+    "bookFreeCallDescription": "Agenda una videollamada gratuita de 15 minutos para presentar tu proyecto.",
+    "location": "Estamos ubicados en São Paulo, Brasil.",
     "phoneSupport": "Soporte prioritario por teléfono para clientes",
-    "emailSupport": "Envíanos el contacto a través del formulario y responderemos por correo electrónico para confirmar el horario.",
+    "emailSupport": "Envía el formulario y responderemos por correo electrónico para confirmar el horario.",
     "address": "Socio global",
     "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
   },
