@@ -11,8 +11,11 @@
     <div class="container text-white">
       <div class="row">
         <div class="col-xs-12 text-center">
-          <div class="col-md-6 col-md-offset-3">
-            <h1 class="text-center text-uppercase" style="font-size: 40px; white-space: pre-line;">{{ t("header.subtitle") }}</h1>
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="text-center text-uppercase" style="font-size: 40px; white-space: pre-line;">
+              {{ t("header.subtitle") }}
+              <br /><span>{{ t("header.subtitle_subline") }}</span>
+            </h1>
           </div>
           <p class="col-xs-12 text-center" style="font-size: 22px; white-space: pre-line; line-height: 1.8;">
             {{ t("header.description") }}
@@ -82,7 +85,7 @@
       <div class="space-20"></div>
       <div class="container">
           <div class="row wow fadeInUp">
-              <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+              <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center">
                   <h3 class="text-uppercase">{{ t("work.title") }}</h3>
                   <p>{{ t("work.description") }}</p>
               </div>
@@ -175,10 +178,10 @@
     <div class="space-80"></div>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="col-xs-8 col-xs-offset-2 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
           <div class="well well-hover text-center">
             <p class="md-icon" style="font-size: 50px">
-              <span class="fa-solid fa-mobile-screen-button fa-icon-square2"></span>
+              <span class="fa-solid fa-video fa-icon-square2"></span>
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
@@ -187,10 +190,10 @@
             <p>{{ t("sectionBlobs.blob1.description") }}</p>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="col-xs-8 col-xs-offset-2 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
           <div class="well well-hover text-center">
             <p class="md-icon" style="font-size: 50px">
-              <span class="fa-brands fa-whatsapp fa-icon-square2"></span>
+              <span class="fa-solid fa-microphone fa-icon-square2"></span>
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
@@ -199,10 +202,10 @@
             <p>{{ t("sectionBlobs.blob2.description") }}</p>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-xs-8 col-xs-offset-2 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
           <div class="well well-hover text-center">
             <p class="md-icon" style="font-size: 50px">
-              <span class="fa-solid fa-cart-plus fa-icon-square2"></span>
+              <span class="fa-solid fa-calendar-check fa-icon-square2"></span>
             </p>
             <div class="space-2"></div>
             <h5 class="text-uppercase" style="font-size: 22px">
@@ -323,9 +326,9 @@
             }}</a>
           </div>
         </div>
-        <sub class="text-white">{{ t("priceSection.footerNote") }}</sub>
+        <sub class="text-white" style="font-size:18px;">{{ t("priceSection.footerNote") }}</sub>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-xs-12 col-md-offset-2 col-sm-8 wow flipInY">
           <div class="panel price-table active center text-center">
             <h3 class="text-uppercase price-title">
@@ -354,7 +357,7 @@
             }}</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="space-80"></div>
   </section>
@@ -444,7 +447,7 @@
   <!--Video-Section-->
   <section class="section-video relative fix">
     <div class="space-mobile-100"></div>
-    <a href="https://www.youtube.com/@f5sites" target="_blank">
+    <a href="{{ t('videoSection.youtube_url') }}" target="_blank">
       <div class="section-bg overlay-bg alpha"></div>
       <video class="ivideo" id="cvideo">
         <source

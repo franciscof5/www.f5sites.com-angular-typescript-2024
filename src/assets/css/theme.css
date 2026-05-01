@@ -610,23 +610,6 @@ address {
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-#scrollUp {
-    background-color: #549ED1;
-    border: 1px solid #549ED1;
-    border-radius: 2px;
-    bottom: 30px;
-    color: #ffffff;
-    height: 40px;
-    line-height: 1.8;
-    right: 30px;
-    text-align: center;
-    width: 40px;
-    font-size: 22px;
-}
-
-#scrollUp:hover {
-    background-color: #549ED1;
-}
 
 .img-full {
     width: 100%;

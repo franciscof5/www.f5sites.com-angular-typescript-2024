@@ -1,65 +1,66 @@
 {
-  "title":"Nós criamos",
+  "title": "Nós criamos conteúdo que trabalha por você",
   "menu": {
-    "item1": "Metodologia",
-    "item2": "Preços",
-    "item3": "Produtos",
+    "item1": "Como funciona",
+    "item2": "Planos",
+    "item3": "O que entregamos",
     "item4": "Clientes",
     "item5": "Contato"
   },
   "header": {
-    "subtitle": "Metodologia F5 \n Para Vender Online",
-    "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "Não perca mais uma venda! \n ✅ Vídeos diários \u00A0\u00A0 ✅ Whatsapp com IA \u00A0\u00A0 ✅ Site que vende ",
-    "watchVideo": "F5 Sites no YouTube",
-    "contact": "Agenda uma Call",
-    "title": "Criamos vídeos diários para seu negócio, nosso robô de WhatsApp com IA aquece suas leads e encaminha para o link de compra! Tudo automático!"
+    "subtitle": "Conteúdo recorrente para delivery",
+    "subtitle_subline": "Pacotes de 3 e 6 meses",
+    "flags": "🇧🇷",
+    "description": "🎥 Vlog e bastidores \u00A0\u00A0 🎙 Podcast \u00A0\u00A0 🚀 Vídeos semanais",
+    "watchVideo": "Conheça a F5 Sites",
+    "contact": "Agendar conversa",
+    "title": "Gravamos uma vez, entregamos vídeos toda semana e mantemos seu negócio ativo nas redes por meses."
   },
   "products": {
-    "title": "Produtos F5 Sites",
-    "subtitle": "Lançamos e desenvolvemos nossos produtos.",
-    "projectimer": "Gestão de tempo para equipes",
-    "pomodoros": "Timer individual de código aberto",
-    "lavaggioapp": "App de delivery lavagem de carro na Itália",
-    "timelapse": "Acelere vídeos de desenvolvimento"
+    "title": "O que fazemos hoje",
+    "subtitle": "Conteúdo, constância e posicionamento local.",
+    "projectimer": "Conteúdo recorrente para redes sociais",
+    "pomodoros": "Vídeos verticais para Instagram, TikTok e Shorts",
+    "lavaggioapp": "Podcast nichado para negócios locais",
+    "timelapse": "Planejamento e curadoria de conteúdo"
   },
   "work": {
-    "title": "O poder da IA no seu negócio:",
-    "description": "Criamos vídeos diários para seu negócio, treinamos o Zapbot, nosso robô do WhatsApp com IA, que aquece suas leads e encaminha para a sua página de vendas! Tudo automático!",
+    "title": "Como funciona na prática:",
+    "description": "Nosso modelo é simples: captamos conteúdo real do seu negócio e transformamos isso em vídeos semanais prontos para redes sociais.",
     "step1": {
-      "title": "Planejar Vídeos",
-      "description": "Planejamos a produção de um pacote de 10 a 30 vídeos com um cronograma de datas e horários para redes sociais"
+      "title": "Podcast Delivery",
+      "description": "Gravamos o Podcast Delivery em nossos estúdios, onde apresentamos os empresários, os produtos e sua visão de negócio."
     },
     "step2": {
-      "title": "Treinar Zapbot",
-      "description": "Treinamento do Zapbot WhatsApp, nosso exclusivo robô para WhatsApp que atende seu clientes e vende seus produtos e serviços"
+      "title": "Captação inicial",
+      "description": "Realizamos uma visita presencial para gravar o vlog do negócio, bastidores, equipe, produtos e um episódio de podcast."
     },
     "step3": {
-      "title": "Carrinho de Compras",
-      "description": "Com os vídeos prontos e o robô funcionando podemos criar páginas de vendas para cada produto que será vendido online"
+      "title": "Edição dos vídeos",
+      "description": "Produzimos vídeos curtos e verticais, pensados para engajamento e constância nas redes sociais."
     },
     "step4": {
-      "title": "Ativar Campanha",
-      "description": "Vídeos são agendados e acompanhamos atentamente todos os fluxos, garantindo o funcionamento do robô e a geração das vendas 24/7"
+      "title": "Entrega semanal",
+      "description": "Entregamos 2 vídeos por semana durante todo o período contratado, mantendo seu perfil sempre ativo."
     }
   },
   "sectionBlobs": {
     "blob1": {
-      "title": "Pacote Vídeos",
-      "description": "Nossa exclusiva ferramenta com IA vai editar e publicar vídeos virais todos os dias na suas redes sociais."
+      "title": "Vídeo recorrente",
+      "description": "Conteúdo real do seu negócio, entregue toda semana sem você precisar gravar sempre."
     },
     "blob2": {
-      "title": "Zapbot",
-      "description": "Nosso robô de atendimento plugado no WhatsApp vai garantir o primeiro atendimento 24h e depois redirecionar para sua equipe."
+      "title": "Podcast",
+      "description": "Participação em um podcast nichado, gerando autoridade e material para cortes."
     },
     "blob3": {
-      "title": "Site",
-      "description": "Um site com botão de compra e checkout confiável vende muito! Vender pela internet é muito fácil e seguro!"
+      "title": "Planejamento",
+      "description": "Curadoria e organização do conteúdo para manter constância ao longo dos meses."
     }
   },
   "clientSection": {
     "title": "Clientes",
-    "description": "Abaixo estão nossos principais clientes.",
+    "description": "Algumas marcas e projetos que já trabalharam conosco.",
     "clients": {
       "ftd": "FTD 🇧🇷",
       "cogna": "Cogna 🇧🇷",
@@ -68,90 +69,75 @@
     }
   },
   "featureSection": {
-    "title": "Funcionalidades",
-    "subtitle": "Você decide: nós fazemos.",
-    "robustProjectsTitle": "Projetos Robustos",
-    "robustProjectsDescription": "A qualidade do código se traduz em facilidade de adaptação do produto às necessidades dos nossos clientes",
+    "title": "Por que funciona",
+    "subtitle": "Conteúdo simples, bem feito e constante.",
+    "robustProjectsTitle": "Conteúdo real",
+    "robustProjectsDescription": "Mostramos o dia a dia do negócio, não roteiros artificiais.",
     "customTitle": "Sob medida",
-    "customDescription": "Funcionalidades criadas especialmente para o seu negócio, feitas sob medida",
-    "smartTitle": "Inteligente",
-    "smartDescription": "A capacidade de uma aplicação de antecipar e prever o comportamento do usuário",
-    "innovativeTitle": "Inovador",
-    "innovativeDescription": "Qualidade das telas mais modernas para os usuários mais exigentes",
-    "pwaTitle": "PWA",
-    "pwaDescription": "É nativo e está disponível na loja do Google e da Apple, mas também pode ser acessado pelo navegador",
-    "creativeDesignTitle": "Design Criativo",
-    "creativeDesignDescription": "Criação de telas exclusivas e originais para o seu projeto"
-  },
-  "questionSection": {
-    "lavaggioAppTitle": "LavaggioApp.it",
-    "lavaggioAppDescription": "Estamos lançando um serviço de assinatura para lavagem de carros. São compostos por dois aplicativos, um para o cliente e outro para o parceiro, como o Uber. Nosso principal projeto tecnológico para o mercado italiano.",
-    "manualWashTitle": "Lavagem manual delivery",
-    "manualWashDescription": "O serviço de lavagem manual a domicílio foi projetado para oferecer conveniência e qualidade. Usamos técnicas especiais para garantir a limpeza detalhada de cada peça. Cuidamos da retirada e entrega, tudo sem que você precise sair de casa.",
-    "downloadAndBookTitle": "Baixe e agende",
-    "downloadAndBookDescription": "Baixe nosso aplicativo e agende o serviço em poucos cliques. Com facilidade, você pode programar a sua entrega.",
-    "exclusiveAIForSectorTitle": "Criando uma IA exclusiva para o setor",
-    "exclusiveAIForSectorDescription": "Estamos criando uma IA exclusiva para o setor de lavagem, projetada para avaliar com precisão a qualidade do processo e garantir resultados para cada item tratado.",
-    "madeInItalyTitle": "Made in Italy 🇮🇹",
-    "madeInItalyDescription": "Temos imenso orgulho de desenvolver um aplicativo aqui na Itália. Cada linha de código, cada funcionalidade é pensada e realizada com a paixão e a qualidade que caracterizam o \"Made in Italy\" 🇮🇹. Estamos criando algo único, enraizado na nossa tradição de excelência, para oferecer ao mundo um produto inovador e autenticamente italiano."
+    "customDescription": "Cada gravação reflete a realidade da sua operação.",
+    "smartTitle": "Constância",
+    "smartDescription": "Entrega semanal garante presença contínua nas redes.",
+    "innovativeTitle": "Autoridade local",
+    "innovativeDescription": "Podcast e bastidores fortalecem a marca na cidade.",
+    "pwaTitle": "Formato certo",
+    "pwaDescription": "Vídeos verticais prontos para Reels, Shorts e TikTok.",
+    "creativeDesignTitle": "Curadoria",
+    "creativeDesignDescription": "Selecionamos os melhores momentos para cada vídeo."
   },
   "videoSection": {
-    "discoverYouTubeChannel": "Descubra nosso canal no YouTube"
+    "youtube_url": "https://www.youtube.com/@f5sites",
+    "discoverYouTubeChannel": "Veja exemplos no nosso YouTube"
   },
   "priceSection": {
-    "imageAlt": "Image background for price section",
-    "title": "Preços",
+    "imageAlt": "Imagem de fundo para a seção de preços",
+    "title": "PACOTES FECHADOS",
     "FIAT": "R$",
-    "period": ".",
-    "description": "São os preços individuais para cada serviço",
-    "F1Title": "Vídeo Vertical",
-    "F1Price": "500",
-    "F1PriceUnit": "vídeo",
-    "F1Feature1": "Vídeo para as redes",
-    "F1Feature2": "Gravado na sua loja",
-    "F1Feature3": "Original ou editado",
-    "F1Feature4": "Receba no WhatsApp",
-    "F1Feature5": "Venda produtos ou serviços",
-    "F2Title": "Zapbot",
-    "F2Price": "800",
-    "F2PriceUnit": "mês",
-    "F2Feature1": "Robô no seu WhatsApp",
-    "F2Feature2": "Responde 24h/dia",
-    "F2Feature3": "Conectado com IA",
-    "F2Feature4": "Pode ser pausado",
-    "F2Feature5": "Treinado para vender",
-    "F3Title": "Site que vende",
-    "F3Price": "500",
-    "F3PriceUnit": "página",
-    "F3Feature1": "Página do seu produto",
-    "F3Feature2": "Venda com um clique",
-    "F3Feature3": "Carrinho de compra",
-    "F3Feature4": "Atenda todo Brasil",
-    "F3Feature5": "PIX caindo 24h/dia",
-    "evaluateButton": "Contratar",
-    "F4Title": "Campanha Completa",
-    "F4Price": "5000",
-    "F4PriceUnit": "campanha",
-    "F4Feature1": "10 Vídeos Verticais Curtos",
-    "F4Feature2": "1 Zapbot plugado no seu número",
-    "F4Feature3": "5 páginas de oferta de produtos",
-    "F4Feature4": "Planejamento completo da campanha",
-    "F4Feature5": "Oferta por tempo limitado",
-    "footerNote": "*a partir de"
+    "period": "",
+    "description": "Escolha seu plano ideal",
+    
+    "F1Title": "Essencial 🧩",
+    "F1Price": "R$162",
+    "F1PriceUnit": "video",
+    "F1Feature1": "1 gravação de podcast*",
+    "F1Feature2": "1 visita presencial**",
+    "F1Feature3": "2 vídeos por semana",
+    "F1Feature4": "Pacote 24 vídeos",
+    "F1Feature5": "3x parcelas R$1.300",
+
+    "F2Title": "Completo ⭐",
+    "F2Price": "R$137",
+    "F2PriceUnit": "video",
+    "F2Feature1": "1 gravação de podcast*",
+    "F2Feature2": "1 visita presencial**",
+    "F2Feature3": "2 vídeos por semana",
+    "F2Feature4": "Pacote 48 vídeos",
+    "F2Feature5": "6x parcelas R$1.100",
+
+    "F3Title": "Exclusivo ⛳️",
+    "F3Price": "R$125",
+    "F3PriceUnit": "vídeo",
+    "F3Feature1": "2 gravações de podcast*",
+    "F3Feature2": "2 visitas presenciais**",
+    "F3Feature3": "2 vídeos por semana",
+    "F3Feature4": "Pacote 96 vídeos",
+    "F3Feature5": "12x parcelas R$1.000",
+
+    "evaluateButton": "Quero esse plano",
+    "footerNote": "* Podcast é gravado em um estúdio parceiro já com os custos inclusos no preço ** Na visita presencial gravamos o vlog do restaurante e bastidores, materiais que serão usados para gerar vídeos por meses"
   },
   "contactSection": {
     "imageAlt": "Imagem de fundo para a seção de contato",
     "contactTitle": "Contato",
-    "bookFreeCallTitle": "Agende 15 minutos grátis",
-    "bookFreeCallDescription": "Agende uma videoconferência gratuita de 15 minutos para a apresentação do seu projeto.",
-    "location": "Estamos localizados em São Paulo, SP.",
-    "phoneSupport": "Suporte prioritário por telefone para os clientes",
-    "emailSupport": "Envie o contato através do formulário e responderemos por e-mail para confirmar o horário.",
-    "address": "Global partner",
-    "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
+    "bookFreeCallTitle": "Agende uma conversa",
+    "bookFreeCallDescription": "Uma conversa rápida para entender seu negócio e indicar o melhor plano.",
+    "location": "Itapetininga - SP",
+    "phoneSupport": "Atendimento direto",
+    "emailSupport": "Contato via formulário",
+    "address": "F5 Sites",
+    "languageFlags": "🇧🇷"
   },
   "footer": {
-    "year": "2024",
+    "year": "2026",
     "f5Sites": "F5 Sites",
     "allRightsReserved": "todos os direitos reservados",
     "pageOf": "Página de",
