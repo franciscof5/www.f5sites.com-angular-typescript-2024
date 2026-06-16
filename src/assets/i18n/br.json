@@ -1,146 +1,142 @@
 {
-  "title": "Nós criamos conteúdo que trabalha por você",
+  "title": "A IA que ouve como seu público alvo",
   "menu": {
-    "item1": "Como funciona",
-    "item2": "Planos",
-    "item3": "O que entregamos",
-    "item4": "Clientes",
-    "item5": "Contato"
+    "item1": "Tecnologia",
+    "item2": "Audiências Sintéticas",
+    "item3": "Como funciona",
+    "item4": "Diferenciais",
+    "item5": "API"
   },
   "header": {
-    "subtitle": "Conteúdo recorrente para delivery",
-    "subtitle_subline": "Pacotes de 3 e 6 meses",
+    "subtitle": "Curadoria por Simulação de Audiência",
+    "subtitle_subline": "Cortes validados por 500 mentes sintéticas",
     "flags": "🇧🇷",
-    "description": "🎥 Vlog e bastidores \u00A0\u00A0 🎙 Podcast \u00A0\u00A0 🚀 Vídeos semanais",
-    "watchVideo": "Conheça a F5 Sites",
-    "contact": "Agendar conversa",
-    "title": "Gravamos uma vez, entregamos vídeos toda semana e mantemos seu negócio ativo nas redes por meses."
+    "description": "🧠 Identificação de Tema \u00A0\u00A0 👥 Plateia Simulada \u00A0\u00A0 ✂️ Cortes por Interesse",
+    "watchVideo": "Ver simulação em tempo real",
+    "contact": "Testar meu podcast",
+    "title": "Não corte o que você acha bom. Corte o que sua audiência real pararia para ouvir."
   },
   "products": {
-    "title": "O que fazemos hoje",
-    "subtitle": "Conteúdo, constância e posicionamento local.",
-    "projectimer": "Conteúdo recorrente para redes sociais",
-    "pomodoros": "Vídeos verticais para Instagram, TikTok e Shorts",
-    "lavaggioapp": "Podcast nichado para negócios locais",
-    "timelapse": "Planejamento e curadoria de conteúdo"
+    "title": "O que nossa Engine faz",
+    "subtitle": "Transformamos processamento de linguagem em comportamento humano.",
+    "projectimer": "Mapeamento Semântico de Tema",
+    "pomodoros": "Criação de Avatar de Audiência",
+    "lavaggioapp": "Simulação de Retenção Crítica",
+    "timelapse": "Exportação Automática de Highlights"
   },
   "work": {
-    "title": "Como funciona na prática:",
-    "description": "Nosso modelo é simples: captamos conteúdo real do seu negócio e transformamos isso em vídeos semanais prontos para redes sociais.",
+    "title": "O Processo de Curadoria Sintética:",
+    "description": "Nossa IA não busca apenas palavras-chave, ela simula o interesse coletivo de um nicho específico.",
     "step1": {
-      "title": "Podcast Delivery",
-      "description": "Gravamos o Podcast Delivery em nossos estúdios, onde apresentamos os empresários, os produtos e sua visão de negócio."
+      "title": "Análise de DNA do Conteúdo",
+      "description": "O sistema identifica o tema central, o tom de voz e a complexidade técnica do podcast (ex: Medicina, Finanças, Games)."
     },
     "step2": {
-      "title": "Captação inicial",
-      "description": "Realizamos uma visita presencial para gravar o vlog do negócio, bastidores, equipe, produtos e um episódio de podcast."
+      "title": "Setup da Plateia Digital",
+      "description": "Instanciamos 500 perfis psicográficos que representam o seu público-alvo ideal para 'assistir' ao bruto."
     },
     "step3": {
-      "title": "Edição dos vídeos",
-      "description": "Produzimos vídeos curtos e verticais, pensados para engajamento e constância nas redes sociais."
+      "title": "Mineração por Reação",
+      "description": "A IA mapeia os pontos onde essa plateia simulada teria picos de atenção, dúvida ou entusiasmo."
     },
     "step4": {
-      "title": "Entrega semanal",
-      "description": "Entregamos 2 vídeos por semana durante todo o período contratado, mantendo seu perfil sempre ativo."
+      "title": "Corte de Alta Conversão",
+      "description": "O editor em Python executa os cortes exatamente nas 'pontes de interesse' validadas pela audiência sintética."
     }
   },
   "sectionBlobs": {
     "blob1": {
-      "title": "Vídeo recorrente",
-      "description": "Conteúdo real do seu negócio, entregue toda semana sem você precisar gravar sempre."
+      "title": "Zero Viés Humano",
+      "description": "Elimine o 'eu acho' do editor. Deixe que a simulação baseada em dados escolha o que vai viralizar."
     },
     "blob2": {
-      "title": "Podcast",
-      "description": "Participação em um podcast nichado, gerando autoridade e material para cortes."
+      "title": "Nichagem Extrema",
+      "description": "Se o tema é Direito, a plateia é de advogados. Se é culinária, são chefs. O corte muda conforme o público."
     },
     "blob3": {
-      "title": "Planejamento",
-      "description": "Curadoria e organização do conteúdo para manter constância ao longo dos meses."
+      "title": "Escala Infinita",
+      "description": "Analise 10 horas de podcast simultaneamente com a atenção de milhares de ouvintes simulados."
     }
   },
   "clientSection": {
-    "title": "Clientes",
-    "description": "Algumas marcas e projetos que já trabalharam conosco.",
+    "title": "Engines Integradas",
+    "description": "Tecnologia utilizada para otimizar fluxos de grandes redes de conteúdo.",
     "clients": {
-      "ftd": "FTD 🇧🇷",
-      "cogna": "Cogna 🇧🇷",
-      "ambev": "Ambev 🇧🇷",
-      "edocente": "E-Docente 🇧🇷"
+      "ftd": "Python Core 🇧🇷",
+      "cogna": "LLM Analysis 🇧🇷",
+      "ambev": "Data Processing 🇧🇷",
+      "edocente": "Neural Cuts 🇧🇷"
     }
   },
   "featureSection": {
-    "title": "Por que funciona",
-    "subtitle": "Conteúdo simples, bem feito e constante.",
-    "robustProjectsTitle": "Conteúdo real",
-    "robustProjectsDescription": "Mostramos o dia a dia do negócio, não roteiros artificiais.",
-    "customTitle": "Sob medida",
-    "customDescription": "Cada gravação reflete a realidade da sua operação.",
-    "smartTitle": "Constância",
-    "smartDescription": "Entrega semanal garante presença contínua nas redes.",
-    "innovativeTitle": "Autoridade local",
-    "innovativeDescription": "Podcast e bastidores fortalecem a marca na cidade.",
-    "pwaTitle": "Formato certo",
-    "pwaDescription": "Vídeos verticais prontos para Reels, Shorts e TikTok.",
-    "creativeDesignTitle": "Curadoria",
-    "creativeDesignDescription": "Selecionamos os melhores momentos para cada vídeo."
+    "title": "Por que a Plateia Simulada?",
+    "subtitle": "A próxima evolução do Reels e TikTok não é edição, é curadoria.",
+    "robustProjectsTitle": "Identificação de Tema",
+    "robustProjectsDescription": "Nossa IA entende o contexto profundo, não apenas termos isolados.",
+    "customTitle": "Pontes de Interesse",
+    "customDescription": "Detectamos a transição exata onde o assunto se torna magnético.",
+    "smartTitle": "Audiência de 500 Almas",
+    "smartDescription": "Simulamos um auditório lotado reagindo ao seu conteúdo em milissegundos.",
+    "innovativeTitle": "Validação Estatística",
+    "innovativeDescription": "Cortes gerados com base na probabilidade real de retenção do nicho.",
+    "pwaTitle": "Edição Invisível",
+    "pwaDescription": "O software cuida do timing perfeito entre a fala e o impacto.",
+    "creativeDesignTitle": "Multi-Persona",
+    "creativeDesignDescription": "Teste o mesmo vídeo para diferentes públicos trocando a audiência simulada."
   },
   "videoSection": {
     "youtube_url": "https://www.youtube.com/@f5sites",
-    "discoverYouTubeChannel": "Veja exemplos no nosso YouTube"
+    "discoverYouTubeChannel": "Veja a IA em ação no YouTube"
   },
   "priceSection": {
-    "imageAlt": "Imagem de fundo para a seção de preços",
-    "title": "PACOTES FECHADOS",
-    "FIAT": "R$",
+    "imageAlt": "Modelos de Licenciamento de Software",
+    "title": "PLANOS DE PROCESSAMENTO",
+    "FIAT": "$",
     "period": "",
-    "description": "Escolha seu plano ideal",
-    
-    "F1Title": "Essencial 🧩",
-    "F1Price": "R$162",
-    "F1PriceUnit": "video",
-    "F1Feature1": "1 gravação de podcast*",
-    "F1Feature2": "1 visita presencial**",
-    "F1Feature3": "2 vídeos por semana",
-    "F1Feature4": "Pacote 24 vídeos",
-    "F1Feature5": "3x parcelas R$1.300",
-
-    "F2Title": "Completo ⭐",
-    "F2Price": "R$137",
-    "F2PriceUnit": "video",
-    "F2Feature1": "1 gravação de podcast*",
-    "F2Feature2": "1 visita presencial**",
-    "F2Feature3": "2 vídeos por semana",
-    "F2Feature4": "Pacote 48 vídeos",
-    "F2Feature5": "6x parcelas R$1.100",
-
-    "F3Title": "Exclusivo ⛳️",
-    "F3Price": "R$125",
-    "F3PriceUnit": "vídeo",
-    "F3Feature1": "2 gravações de podcast*",
-    "F3Feature2": "2 visitas presenciais**",
-    "F3Feature3": "2 vídeos por semana",
-    "F3Feature4": "Pacote 96 vídeos",
-    "F3Feature5": "12x parcelas R$1.000",
-
-    "evaluateButton": "Quero esse plano",
-    "footerNote": "* Podcast é gravado em um estúdio parceiro já com os custos inclusos no preço ** Na visita presencial gravamos o vlog do restaurante e bastidores, materiais que serão usados para gerar vídeos por meses"
+    "description": "Edição ultra-rápida via Audiência Sintética",
+    "F1Title": "Single Edit 🧩",
+    "F1Price": "0.05",
+    "F1PriceUnit": "cents/edit",
+    "F1Feature1": "Edição única via IA",
+    "F1Feature2": "Identificação de Tema",
+    "F1Feature3": "Plateia de 500 Avatares",
+    "F1Feature4": "Processamento imediato",
+    "F1Feature5": "Pagamento por uso",
+    "F2Title": "Pack 10 Edit ⭐",
+    "F2Price": "0.45",
+    "F2PriceUnit": "total",
+    "F2Feature1": "Pacote com 10 edições",
+    "F2Feature2": "10% de Desconto aplicado",
+    "F2Feature3": "Ideal para criadores frequentes",
+    "F2Feature4": "Créditos sem expiração",
+    "F2Feature5": "Economia garantida",
+    "F3Title": "Assinatura Automática ⛳️",
+    "F3Price": "Sob Consulta",
+    "F3PriceUnit": "recorrência",
+    "F3Feature1": "Monitoramento de Live",
+    "F3Feature2": "Download Automático pós-live",
+    "F3Feature3": "Edição e corte instantâneo",
+    "F3Feature4": "Fluxo 100% Hands-off",
+    "F3Feature5": "Prioridade total no servidor",
+    "evaluateButton": "Ativar agora",
+    "footerNote": "* Termos de Uso: Todos os cortes gerados são automaticamente publicados em nosso canal oficial de cortes para impulsionar a tecnologia."
   },
   "contactSection": {
-    "imageAlt": "Imagem de fundo para a seção de contato",
+    "imageAlt": "Dashboard de Audiência Sintética",
     "contactTitle": "Contato",
-    "bookFreeCallTitle": "Agende uma conversa",
-    "bookFreeCallDescription": "Uma conversa rápida para entender seu negócio e indicar o melhor plano.",
+    "bookFreeCallTitle": "Integre nossa API",
+    "bookFreeCallDescription": "Transforme sua produtora em uma central de inteligência de dados.",
     "location": "Itapetininga - SP",
-    "phoneSupport": "Atendimento direto",
-    "emailSupport": "Contato via formulário",
-    "address": "F5 Sites",
+    "phoneSupport": "Developer Support",
+    "emailSupport": "api@f5sites.com.br",
+    "address": "F5 Labs / Francisco Matelli",
     "languageFlags": "🇧🇷"
   },
   "footer": {
     "year": "2026",
     "f5Sites": "F5 Sites",
-    "allRightsReserved": "todos os direitos reservados",
-    "pageOf": "Página de",
+    "allRightsReserved": "Tecnologia de Audiência Sintética Patenteada",
+    "pageOf": "Arquitetura por",
     "franciscoMatelli": "Francisco Matelli"
   }
 }
