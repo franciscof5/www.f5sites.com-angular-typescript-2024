@@ -1,0 +1,82 @@
+<app-navbar></app-navbar>
+
+<section class="section-project relative fix overlay-bg alpha">
+  <div class="space-80"></div>
+
+  <div class="container">
+
+    <div class="back-to-home">
+      <a [routerLink]="['/', currentLang]" [fragment]="homeSectionAnchor">
+        <i class="fa-solid fa-arrow-left"></i> Home
+      </a>
+    </div>
+    
+    @if (loading) {
+      <div class="text-center text-white">
+        <p>Carregando...</p>
+      </div>
+    }
+
+    @if (!loading && notFound) {
+      <div class="text-center text-white">
+        <h3>Projeto não encontrado</h3>
+        <p>
+          <a [routerLink]="['/', currentLang]">Voltar para a home</a>
+        </p>
+      </div>
+    }
+
+    @if (!loading && project) {
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center text-white">
+
+          <p class="md-icon" style="font-size: 60px">
+            <span [class]="project.icon"></span>
+          </p>
+
+          <div class="space-2"></div>
+
+          <h1 class="text-uppercase">{{ project.title }}</h1>
+
+          <span [class]="statusClass">{{ project.status }}</span>
+
+          <div class="space-20"></div>
+
+          <p class="project-description">{{ project.description }}</p>
+
+          @if (project.tags.length) {
+            <div class="tag-list">
+              @for (tag of project.tags; track tag) {
+                <span class="tag-pill">{{ tag }}</span>
+              }
+            </div>
+          }
+
+          <div class="space-40"></div>
+
+          @if (links.length) {
+            <div class="link-grid">
+              @for (link of links; track link.key) {
+                <a
+                  [href]="link.url.startsWith('http') ? link.url : 'https://' + link.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span [class]="link.icon"></span>
+                  <span class="link-label">{{ link.label }}</span>
+                </a>
+              }
+            </div>
+          }
+
+        </div>
+      </div>
+    }
+
+  </div>
+
+  <div class="space-80"></div>
+</section>
+
+<app-footer></app-footer>

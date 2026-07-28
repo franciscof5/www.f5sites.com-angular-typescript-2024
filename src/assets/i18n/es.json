@@ -1,103 +1,98 @@
 {
-  "title": "Creamos",
+  "title": "La IA que escucha como tu público objetivo",
   "menu": {
-    "item1": "Metodología",
-    "item2": "Precios",
+    "item1": "Inicio",
     "item3": "Productos",
-    "item4": "Clientes",
+    "item2": "Precios",
+    "item4": "Precios",
     "item5": "Contacto"
   },
   "header": {
-    "subtitle": "Metodología F5 \n Para Vender en Línea",
-    "flags": "🇧🇷🇺🇸🇮🇹🇪🇸",
-    "description": "¡No pierdas otra venta! \n ✅ Videos diarios \u00A0\u00A0 ✅ WhatsApp con IA \u00A0\u00A0 ✅ Sitio web que vende",
-    "watchVideo": "F5 Sites en YouTube",
-    "contact": "Agenda una Llamada",
-    "title": "Creamos videos diarios para tu negocio, nuestro bot de WhatsApp con IA calienta tus leads y los dirige al enlace de compra. ¡Todo automático!"
-  },
-  "products": {
-    "title": "Productos F5 Sites",
-    "subtitle": "Lanzamos y desarrollamos nuestros productos.",
-    "projectimer": "Gestión del tiempo para equipos",
-    "pomodoros": "Temporizador individual de código abierto",
-    "lavaggioapp": "App de lavado de autos a domicilio en Italia",
-    "timelapse": "Acelera videos de desarrollo"
+    "subtitle": "Creamos Productos",
+    "subtitle_subline": "Con Tecnología y Contenido",
+    "flags": "🇪🇸",
+    "description": "🚀 Nuevos Productos \u00A0\u00A0 ☁️ Infraestructura & Cloud \u00A0\u00A0 🤖 Automatización con IA",
+    "watchVideo": "Conoce nuestros proyectos",
+    "contact": "Habla con F5 Sites",
+    "title": "Desarrollamos productos digitales, infraestructura escalable y soluciones de IA que transforman ideas en negocios.",
+    "whatsappLink": "https://wa.me/5511958877900?text=Hola%2C%20visité%20el%20sitio%20web%20de%20F5%20Sites%20y%20me%20gustaría%20agendar%20una%20reunión"
   },
   "work": {
-    "title": "El poder de la IA en tu negocio:",
-    "description": "Creamos videos diarios para tu negocio, entrenamos el Zapbot, nuestro robot de WhatsApp con IA, que calienta tus leads y los dirige a tu página de ventas. ¡Todo automático!",
+    "title": "Transformación que Genera Impacto:",
+    "description": "Creamos y lanzamos productos digitales impulsados por tecnología y contenido.",
     "step1": {
-      "title": "Planificar Videos",
-      "description": "Planificamos la producción de un paquete de 10 a 30 videos con un cronograma de fechas y horarios para las redes sociales."
+      "title": "Plan de Contenido",
+      "description": "Creamos un calendario de publicación de videos basado en un guion desarrollado junto con el cliente. Con Sultano editamos y programamos los videos."
     },
     "step2": {
-      "title": "Entrenar Zapbot",
-      "description": "Entrenamiento del Zapbot, nuestro robot exclusivo de WhatsApp que atiende a tus clientes y vende tus productos y servicios."
+      "title": "Atención con IA",
+      "description": "Con Zapbot entrenamos la IA para responder a tus clientes, resolver dudas y aumentar las ventas."
     },
     "step3": {
-      "title": "Carrito de Compras",
-      "description": "Con los videos listos y el robot funcionando, podemos crear páginas de ventas para cada producto que se venderá en línea."
+      "title": "Sitio Web que Vende",
+      "description": "Creamos un sitio web moderno y adaptable para tu marca o producto, diseñado para convertir visitantes en clientes."
     },
     "step4": {
-      "title": "Activar Campaña",
-      "description": "Los videos se programan y monitoreamos todos los flujos para garantizar el funcionamiento del robot y la generación de ventas 24/7."
+      "title": "Publicidad de Pago",
+      "description": "Una vez completadas todas las etapas, lanzamos campañas publicitarias para impulsar tus resultados."
     }
   },
-  "sectionBlobs": {
-    "blob1": {
-      "title": "Paquete de Videos",
-      "description": "Nuestra exclusiva herramienta con IA editará y publicará videos virales todos los días en tus redes sociales."
-    },
-    "blob2": {
-      "title": "Zapbot",
-      "description": "Nuestro robot conectado a WhatsApp garantiza la primera atención las 24 horas y luego redirige a tu equipo."
-    },
-    "blob3": {
-      "title": "Sitio Web",
-      "description": "¡Un sitio web con botón de compra y pago confiable vende mucho! ¡Vender por internet es fácil y seguro!"
-    }
+  "products": {
+    "title": "Nuestros Productos",
+    "subtitle": "Desarrollados por F5 Sites",
+    "active": [
+      {
+        "icon": "fa-solid fa-video fa-icon-square2",
+        "title": "PodCut",
+        "description": "Editor de podcasts con IA que transforma episodios largos en shorts virales mediante selección inteligente de clips y conversión automática a formato vertical."
+      }
+    ]
   },
   "clientSection": {
-    "title": "Clientes",
-    "description": "A continuación se muestran nuestros principales clientes.",
-    "clients": {
-      "ftd": "FTD 🇧🇷",
-      "cogna": "Cogna 🇧🇷",
-      "ambev": "Ambev 🇧🇷",
-      "edocente": "E-Docente 🇧🇷"
-    }
+    "title": "Clientes de F5 Sites",
+    "description": "Empresas y profesionales que utilizan nuestros productos.",
+    "clients": [
+      {
+        "name": "FTD 🇧🇷",
+        "url": "https://ftd.com.br",
+        "image": "../assets/images/client/FTD-logo.png"
+      },
+      {
+        "name": "Cogna 🇧🇷",
+        "url": "https://cogna.com.br",
+        "image": "../assets/images/client/cogna--600.png"
+      },
+      {
+        "name": "Ambev 🇧🇷",
+        "url": "https://www.ambev.com.br",
+        "image": "../assets/images/client/ambev-logo-3-47191638.png"
+      },
+      {
+        "name": "Edocente 🇧🇷",
+        "url": "https://www.edocente.com.br",
+        "image": "../assets/images/client/edocente_logo.png"
+      }
+    ]
   },
   "featureSection": {
-    "title": "Funcionalidades",
-    "subtitle": "Tú decides: nosotros lo hacemos.",
-    "robustProjectsTitle": "Proyectos Robustos",
-    "robustProjectsDescription": "La calidad del código se traduce en facilidad de adaptación del producto a las necesidades de nuestros clientes.",
-    "customTitle": "A medida",
-    "customDescription": "Funciones creadas especialmente para tu negocio, hechas a medida.",
-    "smartTitle": "Inteligente",
-    "smartDescription": "La capacidad de una aplicación para anticipar y predecir el comportamiento del usuario.",
-    "innovativeTitle": "Innovador",
-    "innovativeDescription": "Calidad de las pantallas más modernas para los usuarios más exigentes.",
-    "pwaTitle": "PWA",
-    "pwaDescription": "Es nativa y está disponible en las tiendas de Google y Apple, pero también puede accederse desde el navegador.",
-    "creativeDesignTitle": "Diseño Creativo",
-    "creativeDesignDescription": "Creación de pantallas exclusivas y originales para tu proyecto."
-  },
-  "questionSection": {
-    "lavaggioAppTitle": "LavaggioApp.it",
-    "lavaggioAppDescription": "Estamos lanzando un servicio de suscripción para lavado de autos. Consta de dos aplicaciones, una para el cliente y otra para el socio, como Uber. Nuestro principal proyecto tecnológico para el mercado italiano.",
-    "manualWashTitle": "Lavado manual a domicilio",
-    "manualWashDescription": "El servicio de lavado manual a domicilio fue diseñado para ofrecer comodidad y calidad. Usamos técnicas especiales para garantizar una limpieza detallada de cada parte. Nos encargamos de la recogida y entrega, sin que tengas que salir de casa.",
-    "downloadAndBookTitle": "Descarga y reserva",
-    "downloadAndBookDescription": "Descarga nuestra app y programa el servicio en unos pocos clics. Con facilidad, puedes planificar tu entrega.",
-    "exclusiveAIForSectorTitle": "Creando una IA exclusiva para el sector",
-    "exclusiveAIForSectorDescription": "Estamos creando una IA exclusiva para el sector del lavado, diseñada para evaluar con precisión la calidad del proceso y garantizar resultados para cada artículo tratado.",
-    "madeInItalyTitle": "Hecho en Italia 🇮🇹",
-    "madeInItalyDescription": "Estamos orgullosos de desarrollar una aplicación aquí en Italia. Cada línea de código, cada funcionalidad está pensada y realizada con la pasión y calidad que caracterizan el 'Made in Italy' 🇮🇹. Estamos creando algo único, arraigado en nuestra tradición de excelencia, para ofrecer al mundo un producto innovador y auténticamente italiano."
+    "title": "¿Por qué Audiencia Sintética?",
+    "subtitle": "La próxima evolución de Reels y TikTok no es la edición, sino la curación del contenido.",
+    "robustProjectsTitle": "Identificación de Temas",
+    "robustProjectsDescription": "Nuestra IA comprende el contexto profundo, no solo palabras clave aisladas.",
+    "customTitle": "Puentes de Interés",
+    "customDescription": "Detectamos el momento exacto en el que un tema se vuelve irresistible.",
+    "smartTitle": "Audiencia de 500 Almas",
+    "smartDescription": "Simulamos un auditorio lleno reaccionando a tu contenido en milisegundos.",
+    "innovativeTitle": "Validación Estadística",
+    "innovativeDescription": "Los clips se generan según la probabilidad real de retención de tu nicho.",
+    "pwaTitle": "Edición Invisible",
+    "pwaDescription": "El software sincroniza perfectamente el ritmo entre el discurso y el impacto.",
+    "creativeDesignTitle": "Multi-Persona",
+    "creativeDesignDescription": "Prueba el mismo video con diferentes públicos cambiando la audiencia simulada."
   },
   "videoSection": {
     "youtube_url": "https://www.youtube.com/@f5sites",
-    "discoverYouTubeChannel": "Descubre nuestro canal de YouTube"
+    "discoverYouTubeChannel": "Canal de YouTube de F5 Sites"
   },
   "priceSection": {
     "imageAlt": "Imagen de fondo para la sección de precios",
@@ -105,57 +100,90 @@
     "FIAT": "$",
     "period": ".",
     "description": "Precios individuales para cada servicio",
-    "F1Title": "Video Vertical",
-    "F1Price": "500",
+    "F1Title": "Paquete de Videos",
+    "F1Price": "5",
     "F1PriceUnit": "video",
-    "F1Feature1": "Video para redes sociales",
-    "F1Feature2": "Grabado en tu tienda",
-    "F1Feature3": "Original o editado",
-    "F1Feature4": "Recíbelo en WhatsApp",
+    "F1Feature1": "Videos para redes sociales",
+    "F1Feature2": "Formato vertical y horizontal",
+    "F1Feature3": "Subtítulos estilo karaoke",
+    "F1Feature4": "Promociona tu negocio",
     "F1Feature5": "Vende productos o servicios",
-    "F2Title": "Zapbot",
-    "F2Price": "800",
+    "F2Title": "IA Zapbot",
+    "F2Price": "200",
     "F2PriceUnit": "mes",
-    "F2Feature1": "Robot en tu WhatsApp",
-    "F2Feature2": "Responde 24h al día",
-    "F2Feature3": "Conectado con IA",
+    "F2Feature1": "Bot para tu WhatsApp",
+    "F2Feature2": "Respuestas 24/7",
+    "F2Feature3": "Impulsado por IA",
     "F2Feature4": "Puede pausarse",
-    "F2Feature5": "Entrenado para vender",
-    "F3Title": "Sitio que vende",
+    "F2Feature5": "Precio por bot",
+    "F3Title": "Sitio Web de Ventas",
     "F3Price": "500",
     "F3PriceUnit": "página",
-    "F3Feature1": "Página del producto",
-    "F3Feature2": "Compra con un clic",
+    "F3Feature1": "Landing page o página de producto",
+    "F3Feature2": "Pago sencillo",
     "F3Feature3": "Carrito de compras",
-    "F3Feature4": "Atiende todo Brasil",
-    "F3Feature5": "PIX las 24h del día",
-    "evaluateButton": "Contratar",
+    "F3Feature4": "Acepta las principales tarjetas",
+    "F3Feature5": "Suscripciones incluidas",
+    "evaluateButton": "Contratar ahora",
     "F4Title": "Campaña Completa",
     "F4Price": "5000",
     "F4PriceUnit": "campaña",
-    "F4Feature1": "10 Videos Verticales Cortos",
+    "F4Feature1": "10 videos cortos verticales",
     "F4Feature2": "1 Zapbot conectado a tu número",
-    "F4Feature3": "5 páginas de oferta de productos",
+    "F4Feature3": "5 páginas de producto",
     "F4Feature4": "Planificación completa de la campaña",
-    "F4Feature5": "Oferta por tiempo limitado",
+    "F4Feature5": "Publicidad en redes incluida",
     "footerNote": "*desde"
   },
+  "priceSection2": {
+    "imageAlt": "Modelos de Licenciamiento de Software",
+    "title": "PLANES DE PROCESAMIENTO",
+    "FIAT": "$",
+    "period": "",
+    "description": "Edición ultrarrápida mediante Audiencia Sintética",
+    "F1Title": "Edición Individual 🧩",
+    "F1Price": "0.05",
+    "F1PriceUnit": "por edición",
+    "F1Feature1": "Edición con IA",
+    "F1Feature2": "Identificación de temas",
+    "F1Feature3": "Audiencia simulada de 500 avatares",
+    "F1Feature4": "Procesamiento inmediato",
+    "F1Feature5": "Pago por uso",
+    "F2Title": "Paquete de 10 Ediciones ⭐",
+    "F2Price": "0.45",
+    "F2PriceUnit": "total",
+    "F2Feature1": "Paquete con 10 ediciones",
+    "F2Feature2": "10% de descuento incluido",
+    "F2Feature3": "Ideal para creadores frecuentes",
+    "F2Feature4": "Créditos sin vencimiento",
+    "F2Feature5": "Ahorro garantizado",
+    "F3Title": "Suscripción Automática ⛳️",
+    "F3Price": "Consultar",
+    "F3PriceUnit": "suscripción",
+    "F3Feature1": "Monitoreo de transmisiones en vivo",
+    "F3Feature2": "Descarga automática después del directo",
+    "F3Feature3": "Edición y recorte instantáneos",
+    "F3Feature4": "Flujo de trabajo 100% automático",
+    "F3Feature5": "Máxima prioridad en el servidor",
+    "evaluateButton": "Activar ahora",
+    "footerNote": "* Términos de uso: todos los clips generados se publican automáticamente en nuestro canal oficial para mejorar continuamente la tecnología."
+  },
   "contactSection": {
-    "imageAlt": "Imagen de fondo para la sección de contacto",
+    "imageAlt": "Panel de Audiencia Sintética",
     "contactTitle": "Contacto",
-    "bookFreeCallTitle": "Agenda 15 minutos gratis",
-    "bookFreeCallDescription": "Agenda una videollamada gratuita de 15 minutos para presentar tu proyecto.",
-    "location": "Estamos ubicados en São Paulo, Brasil.",
-    "phoneSupport": "Soporte prioritario por teléfono para clientes",
-    "emailSupport": "Envía el formulario y responderemos por correo electrónico para confirmar el horario.",
-    "address": "Socio global",
-    "languageFlags": "🇧🇷🇺🇸🇮🇹🇪🇸"
+    "bookFreeCallTitle": "Integra nuestra API",
+    "bookFreeCallDescription": "Convierte tu productora en un centro de inteligencia de datos.",
+    "location": "Itapetininga - SP, Brasil",
+    "phoneSupport": "Soporte para Desarrolladores",
+    "emailSupport": "api@f5sites.com.br",
+    "address": "F5 Labs / Francisco Matelli",
+    "languageFlags": "🇪🇸"
   },
   "footer": {
-    "year": "2024",
+    "year": "2026",
     "f5Sites": "F5 Sites",
-    "allRightsReserved": "todos los derechos reservados",
-    "pageOf": "Página de",
+    "allRightsReserved": "Tecnología de Audiencia Sintética Patentada",
+    "pageOf": "Arquitectura por",
     "franciscoMatelli": "Francisco Matelli"
   }
 }

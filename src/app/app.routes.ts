@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ZapbotComponent } from './components/zapbot/zapbot.component';
 import { LanguageGuard } from './language.guard';  // Import LanguageGuard
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 
 export const routes: Routes = [
   {
@@ -13,7 +14,7 @@ export const routes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'zapbot', component: ZapbotComponent },
-      
+      { path: 'projects/:slug', component: ProjectDetailComponent },
     ],
   },
   { path: '**', redirectTo: 'en' }, // Default redirect to English

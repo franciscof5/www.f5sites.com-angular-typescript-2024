@@ -1,72 +1,78 @@
 {
   "title": "A IA que ouve como seu público alvo",
   "menu": {
-    "item1": "Tecnologia",
-    "item2": "Audiências Sintéticas",
-    "item3": "Como funciona",
-    "item4": "Diferenciais",
-    "item5": "API"
+    "item1": "Home",
+    "item3": "Produtos",
+    "item2": "Preços",
+    "item4": "Preços",
+    "item5": "Contato"
   },
   "header": {
-    "subtitle": "Curadoria por Simulação de Audiência",
-    "subtitle_subline": "Cortes validados por 500 mentes sintéticas",
+    "subtitle": "Criamos Produtos",
+    "subtitle_subline": "Com Tecnologia e Conteúdo",
     "flags": "🇧🇷",
-    "description": "🧠 Identificação de Tema \u00A0\u00A0 👥 Plateia Simulada \u00A0\u00A0 ✂️ Cortes por Interesse",
-    "watchVideo": "Ver simulação em tempo real",
-    "contact": "Testar meu podcast",
-    "title": "Não corte o que você acha bom. Corte o que sua audiência real pararia para ouvir."
-  },
-  "products": {
-    "title": "O que nossa Engine faz",
-    "subtitle": "Transformamos processamento de linguagem em comportamento humano.",
-    "projectimer": "Mapeamento Semântico de Tema",
-    "pomodoros": "Criação de Avatar de Audiência",
-    "lavaggioapp": "Simulação de Retenção Crítica",
-    "timelapse": "Exportação Automática de Highlights"
+    "description": "🚀 Novos Produtos \u00A0\u00A0 ☁️ Infra & Cloud \u00A0\u00A0 🤖 Automação com IA",
+    "watchVideo": "Conheça nossos projetos",
+    "contact": "Fale com a F5 Sites",
+    "title": "Construímos produtos digitais, infraestrutura escalável e soluções de IA que transformam ideias em negócios.",
+    "whatsappLink": "https://wa.me/5511958877900?text=Olá%2C%20vim%20pelo%20site%20da%20F5%20Sites%20e%20gostaria%20de%20agendar%20uma%20reunião"
   },
   "work": {
-    "title": "O Processo de Curadoria Sintética:",
-    "description": "Nossa IA não busca apenas palavras-chave, ela simula o interesse coletivo de um nicho específico.",
+    "title": "Transformação que Impacta:",
+    "description": "Criamos, lançamos produtos digitais que impactam através de tecnologia e conteúdo",
     "step1": {
-      "title": "Análise de DNA do Conteúdo",
-      "description": "O sistema identifica o tema central, o tom de voz e a complexidade técnica do podcast (ex: Medicina, Finanças, Games)."
+      "title": "Plano de Conteúdo",
+      "description": "Criamos um calendário de postagem de vídeos com base em roteiro elaborado com o cliente. Com Sultano editamos e agendamos os vídeos"
     },
     "step2": {
-      "title": "Setup da Plateia Digital",
-      "description": "Instanciamos 500 perfis psicográficos que representam o seu público-alvo ideal para 'assistir' ao bruto."
+      "title": "Atendimento com IA",
+      "description": "Com Zapbot treinamentos a IA para fazer o atendimento do seu cliente, tirar dúvidas e vender."
     },
     "step3": {
-      "title": "Mineração por Reação",
-      "description": "A IA mapeia os pontos onde essa plateia simulada teria picos de atenção, dúvida ou entusiasmo."
+      "title": "Site que Vende",
+      "description": "Criamos para sua marca ou produto um site que vende e converte, com design moderno e responsivo."
     },
     "step4": {
-      "title": "Corte de Alta Conversão",
-      "description": "O editor em Python executa os cortes exatamente nas 'pontes de interesse' validadas pela audiência sintética."
+      "title": "Tráfego Pago",
+      "description": "Após todas as etapas prontas. Executamos o tráfego pago para alavancar seus resultados."
     }
   },
-  "sectionBlobs": {
-    "blob1": {
-      "title": "Zero Viés Humano",
-      "description": "Elimine o 'eu acho' do editor. Deixe que a simulação baseada em dados escolha o que vai viralizar."
-    },
-    "blob2": {
-      "title": "Nichagem Extrema",
-      "description": "Se o tema é Direito, a plateia é de advogados. Se é culinária, são chefs. O corte muda conforme o público."
-    },
-    "blob3": {
-      "title": "Escala Infinita",
-      "description": "Analise 10 horas de podcast simultaneamente com a atenção de milhares de ouvintes simulados."
-    }
+  "products": {
+    "title": "Nossos Produtos",
+    "subtitle": "Desenvolvidos pela F5 Sites",
+    "active": [
+      {
+        "icon": "fa-solid fa-video fa-icon-square2",
+        "title": "PodCut",
+        "description": "Cortador de podcasts longos em shorts virais, com curadoria de cortes por IA e verticalização automática de vídeos."
+      }
+    ]
   },
   "clientSection": {
-    "title": "Engines Integradas",
-    "description": "Tecnologia utilizada para otimizar fluxos de grandes redes de conteúdo.",
-    "clients": {
-      "ftd": "Python Core 🇧🇷",
-      "cogna": "LLM Analysis 🇧🇷",
-      "ambev": "Data Processing 🇧🇷",
-      "edocente": "Neural Cuts 🇧🇷"
-    }
+    "title": "Clientes F5 Sites",
+    "description": "Empresas e pessoas que utilizam nossos produtos.",
+    "clients": [
+        {
+          "name": "FTD 🇧🇷",
+          "url": "https://ftd.com.br",
+          "image": "../assets/images/client/FTD-logo.png"
+        },
+        {
+          "name": "Cogna 🇧🇷",
+          "url": "https://cogna.com.br",
+          "image": "../assets/images/client/cogna--600.png"
+        },
+        {
+          "name": "Ambev 🇧🇷",
+          "url": "https://www.ambev.com.br",
+          "image": "../assets/images/client/ambev-logo-3-47191638.png"
+        },
+        {
+          "name": "Edocente 🇧🇷",
+          "url": "https://www.edocente.com.br",
+          "image": "../assets/images/client/edocente_logo.png"
+        }
+      ]
   },
   "featureSection": {
     "title": "Por que a Plateia Simulada?",
@@ -86,9 +92,50 @@
   },
   "videoSection": {
     "youtube_url": "https://www.youtube.com/@f5sites",
-    "discoverYouTubeChannel": "Veja a IA em ação no YouTube"
+    "discoverYouTubeChannel": "Canal F5 Sites no YouTube"
   },
   "priceSection": {
+    "imageAlt": "Background image for price section",
+    "title": "Prices",
+    "FIAT": "$",
+    "period": ".",
+    "description": "Individual prices for each service",
+    "F1Title": "Video Pack",
+    "F1Price": "5",
+    "F1PriceUnit": "video",
+    "F1Feature1": "Video for social media",
+    "F1Feature2": "Vertical and horizontal",
+    "F1Feature3": "Karaoke subtitles",
+    "F1Feature4": "Promote your business",
+    "F1Feature5": "Sell products or services",
+    "F2Title": "AI Zapbot",
+    "F2Price": "200",
+    "F2PriceUnit": "month",
+    "F2Feature1": "Bot on your WhatsApp",
+    "F2Feature2": "24-hour response",
+    "F2Feature3": "Connected with AI",
+    "F2Feature4": "Can be paused",
+    "F2Feature5": "Price per bot",
+    "F3Title": "Selling Website",
+    "F3Price": "500",
+    "F3PriceUnit": "page",
+    "F3Feature1": "Product or Landing Page",
+    "F3Feature2": "Easy checkout",
+    "F3Feature3": "Shopping cart",
+    "F3Feature4": "All major credit cards",
+    "F3Feature5": "Subscritions included",
+    "evaluateButton": "Hire now",
+    "F4Title": "Full Campaign",
+    "F4Price": "5000",
+    "F4PriceUnit": "campaign",
+    "F4Feature1": "10 Short Vertical Videos",
+    "F4Feature2": "1 Zapbot connected to your number",
+    "F4Feature3": "5 Product offer pages",
+    "F4Feature4": "Full campaign planning",
+    "F4Feature5": "Social ads included",
+    "footerNote": "*starting at"
+  },
+  "priceSection2": {
     "imageAlt": "Modelos de Licenciamento de Software",
     "title": "PLANOS DE PROCESSAMENTO",
     "FIAT": "$",

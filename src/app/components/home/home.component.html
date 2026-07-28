@@ -100,7 +100,7 @@
                     margin-left:6px;
                     font-size:18px;
                   " 
-                 href="https://wa.me/393509973657?text=Olá%2C%20vim%20pelo%20site%20da%20F5%20Sites%20e%20gostaria%20de%20agendar%20uma%20reunião" target="_blank">
+                 href="{{ t('header.whatsappLink') }}" target="_blank">
                 <span class="fa-brands fa-whatsapp" 
                   style="
                     color: #FFF;
@@ -172,50 +172,49 @@
       </div>
   </section>
 
-  <!--Blobs-->
-  <section class="section-video relative fix" id="blobs">
+  <!--Products -->
+  <section class="section-video relative fix" id="products">
     <div class="section-bg overlay-bg alpha"></div>
     <div class="space-80"></div>
+    
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
-          <div class="well well-hover text-center">
-            <p class="md-icon" style="font-size: 50px">
-              <span class="fa-solid fa-video fa-icon-square2"></span>
-            </p>
-            <div class="space-2"></div>
-            <h5 class="text-uppercase" style="font-size: 22px">
-              {{ t("sectionBlobs.blob1.title") }}
-            </h5>
-            <p>{{ t("sectionBlobs.blob1.description") }}</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
-          <div class="well well-hover text-center">
-            <p class="md-icon" style="font-size: 50px">
-              <span class="fa-solid fa-microphone fa-icon-square2"></span>
-            </p>
-            <div class="space-2"></div>
-            <h5 class="text-uppercase" style="font-size: 22px">
-              {{ t("sectionBlobs.blob2.title") }}
-            </h5>
-            <p>{{ t("sectionBlobs.blob2.description") }}</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-          <div class="well well-hover text-center">
-            <p class="md-icon" style="font-size: 50px">
-              <span class="fa-solid fa-calendar-check fa-icon-square2"></span>
-            </p>
-            <div class="space-2"></div>
-            <h5 class="text-uppercase" style="font-size: 22px">
-              {{ t("sectionBlobs.blob3.title") }}
-            </h5>
-            <p>{{ t("sectionBlobs.blob3.description") }}</p>
-          </div>
+      <div class="row wow fadeInUp">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center text-white">
+          <h3 class="text-uppercase">{{ t("products.title") }}</h3>
+          <p>{{ t("products.subtitle") }}</p>
         </div>
       </div>
+      <div class="space-60"></div>
+        @for (row of blobRows; track $index) {
+          <div class="row">
+            @for (blob of row; track $index) {
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp"
+                [attr.data-wow-delay]="(0.2 + $index * 0.2) + 's'"
+              >
+                <div
+                  class="well well-hover text-center"
+                  (click)="goToProject(blob.slug)"
+                  style="cursor: pointer"
+                >
+                  <p class="md-icon" style="font-size: 50px">
+                    <span [class]="blob.icon"></span>
+                  </p>
+
+                  <div class="space-2"></div>
+
+                  <h5 class="text-uppercase" style="font-size: 22px">
+                    {{ blob.title }}
+                  </h5>
+
+                  <p>{{ blob.description }}</p>
+                </div>
+              </div>
+            }
+          </div>
+        }
     </div>
+
     <div class="space-60"></div>
   </section>
   <!--React Docker WP-Area-->
@@ -374,70 +373,33 @@
         </div>
       </div>
       <div class="space-60"></div>
-      <div class="row">
-        <a href="https://ftd.com.br" alt="FTD" target="_blank">
-          <div
-            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="single-team relative panel fix">
-              <img src="../assets/images/client/FTD-logo.png" alt="" />
-              <div class="team_details text-center">
-                <h5 class="text-uppercase">
-                  {{ t("clientSection.clients.ftd") }}
-                </h5>
+      <div class="container">
+        @for (row of clientRows; track $index) {
+          <div class="row">
+            @for (client of row; track $index) {
+              <div
+                class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
+                [attr.data-wow-delay]="(0.2 + $index * 0.2) + 's'"
+              >
+                <a
+                  [href]="client.url"
+                  [attr.alt]="client.name"
+                  target="_blank"
+                >
+                  <div class="single-team relative panel fix">
+                    <img [src]="client.image" [alt]="client.name" />
+
+                    <div class="team_details text-center">
+                      <h5 class="text-uppercase">
+                        {{ client.name }}
+                      </h5>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </div>
+            }
           </div>
-        </a>
-        <a href="https://cogna.com.br" alt="cogna" target="_blank">
-          <div
-            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
-            <div class="single-team relative panel fix">
-              <img src="../assets/images/client/cogna--600.png" alt="" />
-              <div class="team_details text-center">
-                <h5 class="text-uppercase">
-                  {{ t("clientSection.clients.cogna") }}
-                </h5>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.ambev.com.br" alt="Ambev" target="_blank">
-          <div
-            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
-            <div class="single-team relative panel fix">
-              <img
-                src="../assets/images/client/ambev-logo-3-47191638.png"
-                alt=""
-              />
-              <div class="team_details text-center">
-                <h5 class="text-uppercase">
-                  {{ t("clientSection.clients.ambev") }}
-                </h5>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.edocente.com.br/" alt="edocente" target="_blank">
-          <div
-            class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <div class="single-team relative panel fix">
-              <img src="../assets/images/client/edocente_logo.png" alt="" />
-              <div class="team_details text-center">
-                <h5 class="text-uppercase">
-                  {{ t("clientSection.clients.edocente") }}
-                </h5>
-              </div>
-            </div>
-          </div>
-        </a>
+        }
       </div>
     </div>
     <div class="space-80"></div>
@@ -517,7 +479,7 @@
                       </div>
                     </td>
                     <td>
-                      <a href="mailto:francisco@f5sites.it">{{
+                      <a href="mailto:contato@f5sites.com">{{
                         t("contactSection.emailSupport")
                       }}</a>
                     </td>

@@ -1,0 +1,94 @@
+.project-description {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Status badge */
+.badge-status {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badge-production   { background: #2ecc71; color: #fff; }
+.badge-startup       { background: #3498db; color: #fff; }
+.badge-paused        { background: #f39c12; color: #fff; }
+.badge-discontinued  { background: #7f8c8d; color: #fff; }
+.badge-default       { background: #34495e; color: #fff; }
+
+/* Tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tag-pill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* Link grid */
+.link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.project-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.project-link .link-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+back-to-home {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.back-to-home a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+}
+
+.back-to-home a:hover {
+  opacity: 1;
+  color: #fff;
+}
