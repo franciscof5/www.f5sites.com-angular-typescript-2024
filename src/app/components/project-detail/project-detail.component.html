@@ -12,8 +12,72 @@
     </div>
     
     @if (loading) {
-      <div class="text-center text-white">
-        <p>Carregando...</p>
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center text-white">
+
+          <p class="md-icon" style="font-size: 60px">
+            <span class="fa-solid fa-cube loading-placeholder-icon"></span>
+          </p>
+
+          <div class="space-2"></div>
+
+          <h1 class="text-uppercase">
+            <span class="loading-placeholder loading-title"></span>
+          </h1>
+
+          <span class="badge-default badge-status">
+            <span class="loading-placeholder loading-status"></span>
+          </span>
+
+          <div class="space-20"></div>
+
+          <p class="project-description">
+            <span class="loading-placeholder loading-line w-100"></span>
+            <span class="loading-placeholder loading-line w-95"></span>
+            <span class="loading-placeholder loading-line w-80"></span>
+          </p>
+
+          <div class="tag-list">
+            <span class="tag-pill">
+              <span class="loading-placeholder loading-tag"></span>
+            </span>
+
+            <span class="tag-pill">
+              <span class="loading-placeholder loading-tag"></span>
+            </span>
+
+            <span class="tag-pill">
+              <span class="loading-placeholder loading-tag"></span>
+            </span>
+          </div>
+
+          <div class="space-40"></div>
+
+          <div class="link-grid">
+
+            <a class="project-link">
+              <span class="fa-solid fa-globe"></span>
+              <span class="loading-placeholder loading-link"></span>
+            </a>
+
+            <a class="project-link">
+              <span class="fa-brands fa-github"></span>
+              <span class="loading-placeholder loading-link"></span>
+            </a>
+
+            <a class="project-link">
+              <span class="fa-solid fa-book"></span>
+              <span class="loading-placeholder loading-link"></span>
+            </a>
+
+            <a class="project-link">
+              <span class="fa-solid fa-link"></span>
+              <span class="loading-placeholder loading-link"></span>
+            </a>
+
+          </div>
+
+        </div>
       </div>
     }
 

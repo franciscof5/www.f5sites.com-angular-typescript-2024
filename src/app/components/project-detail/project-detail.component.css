@@ -92,3 +92,82 @@ back-to-home {
   opacity: 1;
   color: #fff;
 }
+
+.loading-placeholder {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 6px;
+  background: rgba(255,255,255,.12);
+}
+
+.loading-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.18),
+    transparent
+  );
+  animation: skeleton 1.5s infinite;
+}
+
+@keyframes skeleton {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.loading-placeholder-icon {
+  color: rgba(255,255,255,.25);
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0%,100% {
+    opacity: .25;
+  }
+
+  50% {
+    opacity: .6;
+  }
+}
+
+.loading-title {
+  width: 260px;
+  height: 38px;
+}
+
+.loading-status {
+  width: 90px;
+  height: 18px;
+}
+
+.loading-line {
+  display: block;
+  height: 16px;
+  margin: 10px auto;
+}
+
+.loading-tag {
+  width: 70px;
+  height: 16px;
+}
+
+.loading-link {
+  width: 110px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.w-100 { width: 100%; }
+.w-95  { width: 95%; }
+.w-80  { width: 80%; }
+
+.project-link {
+  pointer-events: none;
+}
