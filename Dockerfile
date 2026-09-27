@@ -34,7 +34,7 @@ COPY server ./server
 
 RUN apk add nano
 
-EXPOSE 3000
+EXPOSE 80
 
 # Inicia o servidor Node
 CMD ["node", "server/index.js"]
