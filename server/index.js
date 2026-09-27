@@ -2,12 +2,37 @@ require('dotenv').config();
 
 const path = require('path');
 const express = require('express');
-const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = process.env.PORT || 80;
 
 app.use(express.json());
+
+const RESEND_ENDPOINT = 'https://api.resend.com/emails';
+
+// Accepts either RESEND_API_KEY or the existing SMTP_PASS (both hold the re_ key).
+const RESEND_API_KEY = process.env.RESEND_API_KEY || process.env.SMTP_PASS;
+const EMAIL_FROM = process.env.EMAIL_FROM;
+
+const extractAddress = (value) => {
+  if (!value) return '';
+  const match = String(value).match(/<([^>]+)>/);
+  return (match ? match[1] : String(value)).trim();
+};
+
+const EMAIL_TO = process.env.EMAIL_TO || extractAddress(EMAIL_FROM);
+
+if (!RESEND_API_KEY) {
+  console.error(
+    '[contact] Missing RESEND_API_KEY (or SMTP_PASS) env var - contact form will fail.'
+  );
+}
+if (!EMAIL_FROM) {
+  console.error('[contact] Missing EMAIL_FROM env var - contact form will fail.');
+}
+if (!EMAIL_TO) {
+  console.error('[contact] Missing EMAIL_TO env var - contact form will fail.');
+}
 
 const escapeHtml = (value) =>
   String(value == null ? '' : value)
@@ -16,16 +41,6 @@ const escapeHtml = (value) =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
-
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT) || 587,
-  secure: Number(process.env.SMTP_PORT) === 465,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-});
 
 app.post('/api/contact', async (req, res) => {
   const {
@@ -43,6 +58,12 @@ app.post('/api/contact', async (req, res) => {
     return res
       .status(400)
       .json({ ok: false, error: 'Email and language are required.' });
+  }
+
+  if (!RESEND_API_KEY || !EMAIL_FROM || !EMAIL_TO) {
+    return res
+      .status(500)
+      .json({ ok: false, error: 'Email service is not configured.' });
   }
 
   const fullName = [firstName, lastName].filter(Boolean).join(' ');
@@ -79,21 +100,41 @@ app.post('/api/contact', async (req, res) => {
   `;
 
   try {
-    await transporter.sendMail({
-      from: process.env.EMAIL_FROM,
-      to: process.env.EMAIL_TO || process.env.EMAIL_FROM,
-      replyTo: email,
-      subject,
-      text,
-      html,
+    const response = await fetch(RESEND_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: EMAIL_FROM,
+        to: [EMAIL_TO],
+        reply_to: email,
+        subject,
+        text,
+        html,
+      }),
     });
 
-    return res.json({ ok: true });
+    const data = await response.json().catch(() => ({}));
+
+    if (!response.ok) {
+      console.error('[contact] Resend error:', response.status, data);
+      return res.status(502).json({
+        ok: false,
+        error: 'Failed to send email.',
+        detail: data && (data.message || data.error),
+      });
+    }
+
+    return res.json({ ok: true, id: data.id });
   } catch (error) {
-    console.error('Failed to send contact email:', error);
-    return res
-      .status(500)
-      .json({ ok: false, error: 'Failed to send email.' });
+    console.error('[contact] Request failed:', error);
+    return res.status(502).json({
+      ok: false,
+      error: 'Failed to send email.',
+      detail: error.message,
+    });
   }
 });
 
