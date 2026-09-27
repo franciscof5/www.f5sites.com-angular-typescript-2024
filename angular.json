@@ -71,6 +71,7 @@
             "port": 4200,
             "poll": 1000,
             "publicHost": "localhost:4200",
+            "proxyConfig": "proxy.conf.json",
             "allowedHosts": ["www.f5sites.com", "f5sites.com", "localhost"]
           },
           "configurations": {

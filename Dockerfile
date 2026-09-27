@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copie o package.json e o package-lock.json para instalar dependências
 COPY package.json ./
-##COPY package-lock.json ./
+COPY package-lock.json ./
 
 # Instale as dependências do Node.js
 RUN npm install
@@ -14,27 +14,27 @@ RUN npm install
 COPY . .
 
 # Realiza o build da aplicação Angular
-# RUN npm run build
 RUN npm run build -- --configuration=production
 
-# Etapa 2: Preparação para produção com NGINX
-FROM nginx:alpine AS app
+# Etapa 2: Runtime com Node (serve o Angular + API de contato via Resend)
+FROM node:18-alpine AS app
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /app
 
-# Remove os arquivos padrão do NGINX
-RUN rm -rf ./*
+ENV NODE_ENV=production
 
-# Copia o build gerado na etapa anterior para o diretório correto no NGINX
-COPY --from=build /app/dist/f5sites-angular /usr/share/nginx/html
+# Instala apenas as dependências de produção (express, nodemailer, dotenv)
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --omit=dev && npm cache clean --force
 
-COPY default.conf /etc/nginx/conf.d/default.conf
+# Copia o build do Angular e o servidor
+COPY --from=build /app/dist ./dist
+COPY server ./server
 
 RUN apk add nano
 
-# Exponha a porta padrão do NGINX
-# EXPOSE 80
+EXPOSE 3000
 
-# Inicia o NGINX
-CMD ["nginx", "-g", "daemon off;"]
-
+# Inicia o servidor Node
+CMD ["node", "server/index.js"]

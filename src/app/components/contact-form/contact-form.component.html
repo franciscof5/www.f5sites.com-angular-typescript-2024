@@ -1,0 +1,113 @@
+<ng-container *transloco="let t">
+  <form class="contact-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-group" [class.has-error]="submitted && controls['email'].invalid">
+      <label for="contact-email">{{ t("contactForm.email") }}*</label>
+      <input
+        id="contact-email"
+        type="email"
+        class="form-control"
+        formControlName="email"
+        autocomplete="email"
+      />
+      <p class="help-block" *ngIf="submitted && controls['email'].errors?.['required']">
+        {{ t("contactForm.required") }}
+      </p>
+      <p class="help-block" *ngIf="submitted && controls['email'].errors?.['email']">
+        {{ t("contactForm.invalidEmail") }}
+      </p>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-first-name">{{ t("contactForm.firstName") }}</label>
+      <input
+        id="contact-first-name"
+        type="text"
+        class="form-control"
+        formControlName="firstName"
+        autocomplete="given-name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="contact-last-name">{{ t("contactForm.lastName") }}</label>
+      <input
+        id="contact-last-name"
+        type="text"
+        class="form-control"
+        formControlName="lastName"
+        autocomplete="family-name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="contact-phone">{{ t("contactForm.phone") }}</label>
+      <input
+        id="contact-phone"
+        type="tel"
+        class="form-control"
+        formControlName="phone"
+        autocomplete="tel"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="contact-street">{{ t("contactForm.street") }}</label>
+      <input
+        id="contact-street"
+        type="text"
+        class="form-control"
+        formControlName="street"
+        autocomplete="street-address"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="contact-company">{{ t("contactForm.company") }}</label>
+      <input
+        id="contact-company"
+        type="text"
+        class="form-control"
+        formControlName="company"
+        autocomplete="organization"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="contact-site">{{ t("contactForm.site") }}</label>
+      <input
+        id="contact-site"
+        type="text"
+        class="form-control"
+        formControlName="site"
+        autocomplete="url"
+      />
+    </div>
+
+    <div class="form-group" [class.has-error]="submitted && controls['language'].invalid">
+      <label for="contact-language">{{ t("contactForm.language") }}*</label>
+      <select id="contact-language" class="form-control" formControlName="language">
+        <option value="" disabled>{{ t("contactForm.selectLanguage") }}</option>
+        <option value="it">{{ t("contactForm.languageItalian") }}</option>
+        <option value="en">{{ t("contactForm.languageEnglish") }}</option>
+        <option value="br">{{ t("contactForm.languagePortuguese") }}</option>
+        <option value="es">{{ t("contactForm.languageSpanish") }}</option>
+      </select>
+      <p class="help-block" *ngIf="submitted && controls['language'].errors?.['required']">
+        {{ t("contactForm.required") }}
+      </p>
+    </div>
+
+    <div class="space-20"></div>
+
+    <button type="submit" class="btn btn-warning text-uppercase" [disabled]="status === 'sending'">
+      {{ status === "sending" ? t("contactForm.sending") : t("contactForm.submit") }}
+    </button>
+
+    <p class="text-success" *ngIf="status === 'success'">
+      {{ t("contactForm.success") }}
+    </p>
+    <p class="text-danger" *ngIf="status === 'error'">
+      {{ t("contactForm.error") }}
+    </p>
+  </form>
+</ng-container>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
 import { RouterModule, RouterLink, Router } from '@angular/router';
 import { LanguageSelectorModule } from '../language-selector/language-selector.module';
-import { LeadFormComponent } from '../form_espocrm/lead-form.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -19,7 +19,7 @@ import { ProjectStats, Project } from '../../models/projects';
     LanguageSelectorModule,
     RouterLink,
     RouterModule,
-    LeadFormComponent,
+    ContactFormComponent,
     FormsModule,
     FooterComponent,
     NavbarComponent

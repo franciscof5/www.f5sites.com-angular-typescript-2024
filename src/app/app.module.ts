@@ -7,7 +7,7 @@ import { TranslocoModule } from '@jsverse/transloco'; // Descomente se for usar
 
 // Components
 import { AppComponent } from './app.component';
-import { LeadFormComponent } from './components/form_espocrm/lead-form.component'; // Ajuste o caminho conforme sua estrutura
+import { ContactFormComponent } from './components/contact-form/contact-form.component'; // Ajuste o caminho conforme sua estrutura
 
 // Services
 // import { EspoCrmService } from './services/espocrm.service';
@@ -17,7 +17,7 @@ import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LeadFormComponent,
+    ContactFormComponent,
     AboutComponent
   ],
   imports: [

@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
 import { TranslocoPipe } from '@jsverse/transloco'; // ← Adicione esta linha
-import { LeadFormComponent } from '../../components/form_espocrm/lead-form.component';
+import { ContactFormComponent } from '../../components/contact-form/contact-form.component';
 import { TranslocoModule } from '@jsverse/transloco';
 import { RouterModule, RouterLink } from '@angular/router';
 import { LanguageSelectorModule } from '../language-selector/language-selector.module';
@@ -19,7 +19,7 @@ import { FooterComponent } from '../footer/footer.component'
     LanguageSelectorModule,
     RouterLink,
     RouterModule,
-    LeadFormComponent,
+    ContactFormComponent,
     TranslocoPipe,
     // FormsModule,
     FooterComponent,
