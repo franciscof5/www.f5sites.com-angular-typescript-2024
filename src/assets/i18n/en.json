@@ -179,6 +179,27 @@
     "address": "F5 Labs / Francisco Matelli",
     "languageFlags": "🇺🇸"
   },
+  "contactForm": {
+    "email": "Email",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone Number",
+    "street": "Street Address",
+    "company": "Company",
+    "site": "Site",
+    "language": "Languages",
+    "selectLanguage": "Select a language",
+    "languageItalian": "Italiano",
+    "languageEnglish": "English",
+    "languagePortuguese": "Português",
+    "languageSpanish": "Español",
+    "required": "Please complete this required field.",
+    "invalidEmail": "Please enter a valid email address.",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Something went wrong. Please try again."
+  },
   "footer": {
     "year": "2026",
     "f5Sites": "F5 Sites",

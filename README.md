@@ -1,7 +1,10 @@
-# TODO
+# MOVIDO OBSIDIAN
+
+## TODO
 
 - [ ] Sultano features
-- [ ] ByCuts description
+- [ ] Persist json localStorage
+- [ ] PodCut description
   - [ ] Sponsour us
   - [ ] F5sites new copy (https://calendar.google.com/calendar/u/0/r/eventedit/Y2xoNjRjOWk2ZGozMGI5a2M1aWppYjlrYzRwamViYjE2OWk2Y2I5bGM0c202ZHIxY29zM2dvOWhjayA5cW82NHNqbjRzNmY2Y2w3Njg0NnNqZWdtc0Bn)
 
